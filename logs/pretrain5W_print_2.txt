@@ -1,0 +1,1233 @@
+
+===== New run: 2025-10-03T17:44:05.803328 =====
+timm version: 1.0.17
+pretrained cfg: {'url': 'https://github.com/SwinTransformer/storage/releases/download/v2.0.0/swinv2_large_patch4_window12to24_192to384_22kto1k_ft.pth', 'hf_hub_id': 'timm/swinv2_large_window12to24_192to384.ms_in22k_ft_in1k', 'architecture': 'swinv2_large_window12to24_192to384', 'tag': 'ms_in22k_ft_in1k', 'custom_load': False, 'input_size': (3, 384, 384), 'fixed_input_size': True, 'interpolation': 'bicubic', 'crop_pct': 1.0, 'crop_mode': 'center', 'mean': (0.485, 0.456, 0.406), 'std': (0.229, 0.224, 0.225), 'num_classes': 1000, 'pool_size': (12, 12), 'first_conv': 'patch_embed.proj', 'classifier': 'head.fc', 'license': 'mit'}
+[DP] Using DataParallel with 3 GPUs
+Starting training on train_B (SwinV2-Large@384) with Gradient Accumulation...
+Iter 50/40000 | Loss 8.4600 | LR_b 1.00e-05 | LR_h 5.00e-05
+Iter 100/40000 | Loss 8.7827 | LR_b 2.00e-05 | LR_h 1.00e-04
+Iter 150/40000 | Loss 8.4915 | LR_b 3.00e-05 | LR_h 1.50e-04
+Iter 200/40000 | Loss 7.4592 | LR_b 4.00e-05 | LR_h 2.00e-04
+[Eval-EMA] Iter 200 Acc: 0.000000
+[BEST] Acc improved -1.000000 → 0.000000 at iter 200. Saved BEST to ../model2/Large_best.pth
+Iter 250/40000 | Loss 7.1443 | LR_b 5.00e-05 | LR_h 2.50e-04
+Iter 250/40000 | Loss 7.1443 | LR_b 5.00e-05 | LR_h 2.50e-04
+Iter 300/40000 | Loss 6.1748 | LR_b 6.00e-05 | LR_h 3.00e-04
+Iter 350/40000 | Loss 6.9611 | LR_b 7.00e-05 | LR_h 3.50e-04
+Iter 400/40000 | Loss 5.1261 | LR_b 8.00e-05 | LR_h 4.00e-04
+[Eval-EMA] Iter 400 Acc: 0.000000
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 450/40000 | Loss 6.2909 | LR_b 9.00e-05 | LR_h 4.50e-04
+Iter 500/40000 | Loss 6.1106 | LR_b 1.00e-04 | LR_h 5.00e-04
+Iter 550/40000 | Loss 7.5074 | LR_b 1.00e-04 | LR_h 5.00e-04
+Iter 600/40000 | Loss 6.1852 | LR_b 1.00e-04 | LR_h 5.00e-04
+[Eval-EMA] Iter 600 Acc: 0.009000
+[BEST] Acc improved 0.000000 → 0.009000 at iter 600. Saved BEST to ../model2/Large_best.pth
+Iter 650/40000 | Loss 4.7089 | LR_b 1.00e-04 | LR_h 5.00e-04
+Iter 700/40000 | Loss 5.8326 | LR_b 1.00e-04 | LR_h 5.00e-04
+Iter 750/40000 | Loss 5.9218 | LR_b 1.00e-04 | LR_h 5.00e-04
+Iter 800/40000 | Loss 6.3597 | LR_b 1.00e-04 | LR_h 5.00e-04
+[Eval-EMA] Iter 800 Acc: 0.066000
+[BEST] Acc improved 0.009000 → 0.066000 at iter 800. Saved BEST to ../model2/Large_best.pth
+[Save] Saved to ../model2/Large_1.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 2. 
+  warnings.warn(str(msg))
+Iter 850/40000 | Loss 5.9956 | LR_b 1.00e-04 | LR_h 5.00e-04
+Iter 900/40000 | Loss 5.6666 | LR_b 1.00e-04 | LR_h 5.00e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 2. 
+  warnings.warn(str(msg))
+Iter 950/40000 | Loss 5.0742 | LR_b 1.00e-04 | LR_h 5.00e-04
+Iter 1000/40000 | Loss 7.0702 | LR_b 1.00e-04 | LR_h 5.00e-04
+[Eval-EMA] Iter 1000 Acc: 0.183000
+[BEST] Acc improved 0.066000 → 0.183000 at iter 1000. Saved BEST to ../model2/Large_best.pth
+Iter 1050/40000 | Loss 5.4566 | LR_b 1.00e-04 | LR_h 5.00e-04
+Iter 1100/40000 | Loss 4.2881 | LR_b 9.99e-05 | LR_h 5.00e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 1150/40000 | Loss 3.6324 | LR_b 9.99e-05 | LR_h 5.00e-04
+Iter 1200/40000 | Loss 5.4763 | LR_b 9.99e-05 | LR_h 5.00e-04
+[Eval-EMA] Iter 1200 Acc: 0.268000
+[BEST] Acc improved 0.183000 → 0.268000 at iter 1200. Saved BEST to ../model2/Large_best.pth
+Iter 1250/40000 | Loss 5.5970 | LR_b 9.99e-05 | LR_h 5.00e-04
+Iter 1300/40000 | Loss 4.3642 | LR_b 9.99e-05 | LR_h 4.99e-04
+Iter 1350/40000 | Loss 5.4846 | LR_b 9.99e-05 | LR_h 4.99e-04
+Iter 1400/40000 | Loss 3.0976 | LR_b 9.99e-05 | LR_h 4.99e-04
+[Eval-EMA] Iter 1400 Acc: 0.293000
+[BEST] Acc improved 0.268000 → 0.293000 at iter 1400. Saved BEST to ../model2/Large_best.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 1450/40000 | Loss 5.5166 | LR_b 9.99e-05 | LR_h 4.99e-04
+Iter 1500/40000 | Loss 3.0498 | LR_b 9.98e-05 | LR_h 4.99e-04
+Iter 1550/40000 | Loss 5.8018 | LR_b 9.98e-05 | LR_h 4.99e-04
+Iter 1600/40000 | Loss 5.1613 | LR_b 9.98e-05 | LR_h 4.99e-04
+[Eval-EMA] Iter 1600 Acc: 0.344000
+[BEST] Acc improved 0.293000 → 0.344000 at iter 1600. Saved BEST to ../model2/Large_best.pth
+[Save] Saved to ../model2/Large_1.pth
+Iter 1650/40000 | Loss 4.2539 | LR_b 9.98e-05 | LR_h 4.99e-04
+Iter 1700/40000 | Loss 4.8209 | LR_b 9.98e-05 | LR_h 4.99e-04
+Iter 1750/40000 | Loss 4.9259 | LR_b 9.98e-05 | LR_h 4.99e-04
+Iter 1800/40000 | Loss 4.3644 | LR_b 9.97e-05 | LR_h 4.99e-04
+[Eval-EMA] Iter 1800 Acc: 0.394000
+[BEST] Acc improved 0.344000 → 0.394000 at iter 1800. Saved BEST to ../model2/Large_best.pth
+Iter 1850/40000 | Loss 3.8913 | LR_b 9.97e-05 | LR_h 4.99e-04
+Iter 1900/40000 | Loss 3.0981 | LR_b 9.97e-05 | LR_h 4.98e-04
+Iter 1950/40000 | Loss 5.2642 | LR_b 9.97e-05 | LR_h 4.98e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:3402: DecompressionBombWarning: Image size (117762898 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:3402: DecompressionBombWarning: Image size (98427840 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Iter 2000/40000 | Loss 3.9861 | LR_b 9.96e-05 | LR_h 4.98e-04
+[Eval-EMA] Iter 2000 Acc: 0.381000
+Iter 2050/40000 | Loss 4.8407 | LR_b 9.96e-05 | LR_h 4.98e-04
+Iter 2100/40000 | Loss 3.5891 | LR_b 9.96e-05 | LR_h 4.98e-04
+Iter 2150/40000 | Loss 3.4183 | LR_b 9.96e-05 | LR_h 4.98e-04
+Iter 2200/40000 | Loss 5.1866 | LR_b 9.95e-05 | LR_h 4.98e-04
+[Eval-EMA] Iter 2200 Acc: 0.428000
+[BEST] Acc improved 0.394000 → 0.428000 at iter 2200. Saved BEST to ../model2/Large_best.pth
+Iter 2250/40000 | Loss 3.7593 | LR_b 9.95e-05 | LR_h 4.98e-04
+Iter 2300/40000 | Loss 4.6195 | LR_b 9.95e-05 | LR_h 4.97e-04
+Iter 2350/40000 | Loss 5.2165 | LR_b 9.95e-05 | LR_h 4.97e-04
+Iter 2400/40000 | Loss 4.1994 | LR_b 9.94e-05 | LR_h 4.97e-04
+[Eval-EMA] Iter 2400 Acc: 0.428000
+[Save] Saved to ../model2/Large_1.pth
+Iter 2450/40000 | Loss 3.1892 | LR_b 9.94e-05 | LR_h 4.97e-04
+Iter 2500/40000 | Loss 5.2380 | LR_b 9.94e-05 | LR_h 4.97e-04
+Iter 2550/40000 | Loss 3.7007 | LR_b 9.93e-05 | LR_h 4.97e-04
+Iter 2600/40000 | Loss 4.2158 | LR_b 9.93e-05 | LR_h 4.97e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+[Eval-EMA] Iter 2600 Acc: 0.430000
+[BEST] Acc improved 0.428000 → 0.430000 at iter 2600. Saved BEST to ../model2/Large_best.pth
+Iter 2650/40000 | Loss 5.1106 | LR_b 9.93e-05 | LR_h 4.96e-04
+Iter 2700/40000 | Loss 2.9722 | LR_b 9.92e-05 | LR_h 4.96e-04
+Iter 2750/40000 | Loss 4.7389 | LR_b 9.92e-05 | LR_h 4.96e-04
+Iter 2800/40000 | Loss 4.6504 | LR_b 9.92e-05 | LR_h 4.96e-04
+[Eval-EMA] Iter 2800 Acc: 0.451000
+[BEST] Acc improved 0.430000 → 0.451000 at iter 2800. Saved BEST to ../model2/Large_best.pth
+Iter 2850/40000 | Loss 4.8621 | LR_b 9.91e-05 | LR_h 4.96e-04
+Iter 2900/40000 | Loss 3.6068 | LR_b 9.91e-05 | LR_h 4.95e-04
+Iter 2950/40000 | Loss 3.8278 | LR_b 9.91e-05 | LR_h 4.95e-04
+Iter 3000/40000 | Loss 4.2415 | LR_b 9.90e-05 | LR_h 4.95e-04
+[Eval-EMA] Iter 3000 Acc: 0.466000
+[BEST] Acc improved 0.451000 → 0.466000 at iter 3000. Saved BEST to ../model2/Large_best.pth
+Iter 3050/40000 | Loss 3.7641 | LR_b 9.90e-05 | LR_h 4.95e-04
+Iter 3100/40000 | Loss 3.3443 | LR_b 9.89e-05 | LR_h 4.95e-04
+Iter 3150/40000 | Loss 3.5085 | LR_b 9.89e-05 | LR_h 4.94e-04
+Iter 3200/40000 | Loss 3.9069 | LR_b 9.89e-05 | LR_h 4.94e-04
+[Eval-EMA] Iter 3200 Acc: 0.498000
+[BEST] Acc improved 0.466000 → 0.498000 at iter 3200. Saved BEST to ../model2/Large_best.pth
+[Save] Saved to ../model2/Large_1.pth
+Iter 3250/40000 | Loss 4.0539 | LR_b 9.88e-05 | LR_h 4.94e-04
+Iter 3300/40000 | Loss 4.0859 | LR_b 9.88e-05 | LR_h 4.94e-04
+Iter 3350/40000 | Loss 4.9701 | LR_b 9.87e-05 | LR_h 4.94e-04
+Iter 3400/40000 | Loss 3.2748 | LR_b 9.87e-05 | LR_h 4.93e-04
+[Eval-EMA] Iter 3400 Acc: 0.497000
+Iter 3450/40000 | Loss 3.8798 | LR_b 9.86e-05 | LR_h 4.93e-04
+Iter 3500/40000 | Loss 3.7464 | LR_b 9.86e-05 | LR_h 4.93e-04
+Iter 3550/40000 | Loss 3.1165 | LR_b 9.85e-05 | LR_h 4.93e-04
+Iter 3600/40000 | Loss 4.6912 | LR_b 9.85e-05 | LR_h 4.92e-04
+[Eval-EMA] Iter 3600 Acc: 0.478000
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/JpegImagePlugin.py:890: UserWarning: Image appears to be a malformed MPO file, it will be interpreted as a base JPEG file
+  warnings.warn(
+Iter 3650/40000 | Loss 6.2956 | LR_b 9.84e-05 | LR_h 4.92e-04
+Iter 3700/40000 | Loss 4.6142 | LR_b 9.84e-05 | LR_h 4.92e-04
+Iter 3750/40000 | Loss 2.7071 | LR_b 9.83e-05 | LR_h 4.92e-04
+Iter 3800/40000 | Loss 5.0742 | LR_b 9.83e-05 | LR_h 4.91e-04
+[Eval-EMA] Iter 3800 Acc: 0.503000
+[BEST] Acc improved 0.498000 → 0.503000 at iter 3800. Saved BEST to ../model2/Large_best.pth
+Iter 3850/40000 | Loss 5.1058 | LR_b 9.82e-05 | LR_h 4.91e-04
+Iter 3900/40000 | Loss 3.3496 | LR_b 9.82e-05 | LR_h 4.91e-04
+Iter 3950/40000 | Loss 3.6076 | LR_b 9.81e-05 | LR_h 4.91e-04
+Iter 4000/40000 | Loss 2.9997 | LR_b 9.81e-05 | LR_h 4.90e-04
+[Eval-EMA] Iter 4000 Acc: 0.501000
+[Save] Saved to ../model2/Large_1.pth
+Iter 4050/40000 | Loss 3.3988 | LR_b 9.80e-05 | LR_h 4.90e-04
+Iter 4100/40000 | Loss 4.0697 | LR_b 9.80e-05 | LR_h 4.90e-04
+Iter 4150/40000 | Loss 3.6847 | LR_b 9.79e-05 | LR_h 4.90e-04
+Iter 4200/40000 | Loss 6.2961 | LR_b 9.79e-05 | LR_h 4.89e-04
+[Eval-EMA] Iter 4200 Acc: 0.520000
+[BEST] Acc improved 0.503000 → 0.520000 at iter 4200. Saved BEST to ../model2/Large_best.pth
+Iter 4250/40000 | Loss 3.7518 | LR_b 9.78e-05 | LR_h 4.89e-04
+Iter 4300/40000 | Loss 3.3872 | LR_b 9.77e-05 | LR_h 4.89e-04
+Iter 4350/40000 | Loss 4.1320 | LR_b 9.77e-05 | LR_h 4.88e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 2. 
+  warnings.warn(str(msg))
+Iter 4400/40000 | Loss 4.2455 | LR_b 9.76e-05 | LR_h 4.88e-04
+[Eval-EMA] Iter 4400 Acc: 0.529000
+[BEST] Acc improved 0.520000 → 0.529000 at iter 4400. Saved BEST to ../model2/Large_best.pth
+Iter 4450/40000 | Loss 2.9788 | LR_b 9.76e-05 | LR_h 4.88e-04
+Iter 4500/40000 | Loss 4.6938 | LR_b 9.75e-05 | LR_h 4.87e-04
+Iter 4550/40000 | Loss 4.0964 | LR_b 9.74e-05 | LR_h 4.87e-04
+Iter 4600/40000 | Loss 4.5466 | LR_b 9.74e-05 | LR_h 4.87e-04
+[Eval-EMA] Iter 4600 Acc: 0.564000
+[BEST] Acc improved 0.529000 → 0.564000 at iter 4600. Saved BEST to ../model2/Large_best.pth
+Iter 4650/40000 | Loss 4.5583 | LR_b 9.73e-05 | LR_h 4.87e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Iter 4700/40000 | Loss 3.1103 | LR_b 9.72e-05 | LR_h 4.86e-04
+Iter 4750/40000 | Loss 4.8668 | LR_b 9.72e-05 | LR_h 4.86e-04
+Iter 4800/40000 | Loss 3.8755 | LR_b 9.71e-05 | LR_h 4.86e-04
+[Eval-EMA] Iter 4800 Acc: 0.521000
+[Save] Saved to ../model2/Large_1.pth
+Iter 4850/40000 | Loss 3.0431 | LR_b 9.70e-05 | LR_h 4.85e-04
+Iter 4900/40000 | Loss 4.6168 | LR_b 9.70e-05 | LR_h 4.85e-04
+Iter 4950/40000 | Loss 4.4299 | LR_b 9.69e-05 | LR_h 4.85e-04
+Iter 5000/40000 | Loss 4.1138 | LR_b 9.68e-05 | LR_h 4.84e-04
+[Eval-EMA] Iter 5000 Acc: 0.542000
+Iter 5050/40000 | Loss 4.3097 | LR_b 9.68e-05 | LR_h 4.84e-04
+Iter 5100/40000 | Loss 3.8338 | LR_b 9.67e-05 | LR_h 4.83e-04
+Iter 5150/40000 | Loss 3.9159 | LR_b 9.66e-05 | LR_h 4.83e-04
+Iter 5200/40000 | Loss 3.4838 | LR_b 9.65e-05 | LR_h 4.83e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+[Eval-EMA] Iter 5200 Acc: 0.544000
+Iter 5250/40000 | Loss 5.0980 | LR_b 9.65e-05 | LR_h 4.82e-04
+Iter 5300/40000 | Loss 2.9082 | LR_b 9.64e-05 | LR_h 4.82e-04
+Iter 5350/40000 | Loss 3.3198 | LR_b 9.63e-05 | LR_h 4.82e-04
+Iter 5400/40000 | Loss 3.2846 | LR_b 9.63e-05 | LR_h 4.81e-04
+[Eval-EMA] Iter 5400 Acc: 0.547000
+Iter 5450/40000 | Loss 4.9439 | LR_b 9.62e-05 | LR_h 4.81e-04
+Iter 5500/40000 | Loss 2.7976 | LR_b 9.61e-05 | LR_h 4.80e-04
+Iter 5550/40000 | Loss 3.8153 | LR_b 9.60e-05 | LR_h 4.80e-04
+Iter 5600/40000 | Loss 3.0816 | LR_b 9.59e-05 | LR_h 4.80e-04
+[Eval-EMA] Iter 5600 Acc: 0.567000
+[BEST] Acc improved 0.564000 → 0.567000 at iter 5600. Saved BEST to ../model2/Large_best.pth
+[Save] Saved to ../model2/Large_1.pth
+Iter 5650/40000 | Loss 3.6131 | LR_b 9.59e-05 | LR_h 4.79e-04
+Iter 5700/40000 | Loss 3.2729 | LR_b 9.58e-05 | LR_h 4.79e-04
+Iter 5750/40000 | Loss 4.1017 | LR_b 9.57e-05 | LR_h 4.79e-04
+Iter 5800/40000 | Loss 3.4751 | LR_b 9.56e-05 | LR_h 4.78e-04
+[Eval-EMA] Iter 5800 Acc: 0.562000
+Iter 5850/40000 | Loss 2.7929 | LR_b 9.55e-05 | LR_h 4.78e-04
+Iter 5900/40000 | Loss 4.1151 | LR_b 9.55e-05 | LR_h 4.77e-04
+Iter 5950/40000 | Loss 3.7476 | LR_b 9.54e-05 | LR_h 4.77e-04
+Iter 6000/40000 | Loss 4.4646 | LR_b 9.53e-05 | LR_h 4.76e-04
+[Eval-EMA] Iter 6000 Acc: 0.520000
+Iter 6050/40000 | Loss 2.8845 | LR_b 9.52e-05 | LR_h 4.76e-04
+Iter 6100/40000 | Loss 3.7562 | LR_b 9.51e-05 | LR_h 4.76e-04
+Iter 6150/40000 | Loss 3.8513 | LR_b 9.50e-05 | LR_h 4.75e-04
+Iter 6200/40000 | Loss 3.4607 | LR_b 9.50e-05 | LR_h 4.75e-04
+[Eval-EMA] Iter 6200 Acc: 0.559000
+Iter 6250/40000 | Loss 2.7944 | LR_b 9.49e-05 | LR_h 4.74e-04
+Iter 6300/40000 | Loss 3.6446 | LR_b 9.48e-05 | LR_h 4.74e-04
+Iter 6350/40000 | Loss 3.0952 | LR_b 9.47e-05 | LR_h 4.73e-04
+Iter 6400/40000 | Loss 4.7457 | LR_b 9.46e-05 | LR_h 4.73e-04
+[Eval-EMA] Iter 6400 Acc: 0.548000
+[Save] Saved to ../model2/Large_1.pth
+Iter 6450/40000 | Loss 2.4333 | LR_b 9.45e-05 | LR_h 4.73e-04
+Iter 6500/40000 | Loss 4.5004 | LR_b 9.44e-05 | LR_h 4.72e-04
+Iter 6550/40000 | Loss 4.0869 | LR_b 9.43e-05 | LR_h 4.72e-04
+Iter 6600/40000 | Loss 3.5465 | LR_b 9.42e-05 | LR_h 4.71e-04
+[Eval-EMA] Iter 6600 Acc: 0.569000
+[BEST] Acc improved 0.567000 → 0.569000 at iter 6600. Saved BEST to ../model2/Large_best.pth
+Iter 6650/40000 | Loss 4.0745 | LR_b 9.41e-05 | LR_h 4.71e-04
+Iter 6700/40000 | Loss 3.7069 | LR_b 9.40e-05 | LR_h 4.70e-04
+Iter 6750/40000 | Loss 4.0680 | LR_b 9.40e-05 | LR_h 4.70e-04
+Iter 6800/40000 | Loss 3.8210 | LR_b 9.39e-05 | LR_h 4.69e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+[Eval-EMA] Iter 6800 Acc: 0.553000
+Iter 6850/40000 | Loss 4.0692 | LR_b 9.38e-05 | LR_h 4.69e-04
+Iter 6900/40000 | Loss 3.6347 | LR_b 9.37e-05 | LR_h 4.68e-04
+Iter 6950/40000 | Loss 4.6751 | LR_b 9.36e-05 | LR_h 4.68e-04
+Iter 7000/40000 | Loss 4.6012 | LR_b 9.35e-05 | LR_h 4.67e-04
+[Eval-EMA] Iter 7000 Acc: 0.568000
+Iter 7050/40000 | Loss 3.8821 | LR_b 9.34e-05 | LR_h 4.67e-04
+Iter 7100/40000 | Loss 2.9364 | LR_b 9.33e-05 | LR_h 4.66e-04
+Iter 7150/40000 | Loss 3.7470 | LR_b 9.32e-05 | LR_h 4.66e-04
+Iter 7200/40000 | Loss 3.4529 | LR_b 9.31e-05 | LR_h 4.65e-04
+[Eval-EMA] Iter 7200 Acc: 0.546000
+[Save] Saved to ../model2/Large_1.pth
+Iter 7250/40000 | Loss 3.6083 | LR_b 9.30e-05 | LR_h 4.65e-04
+Iter 7300/40000 | Loss 4.0793 | LR_b 9.29e-05 | LR_h 4.64e-04
+Iter 7350/40000 | Loss 4.1999 | LR_b 9.28e-05 | LR_h 4.64e-04
+Iter 7400/40000 | Loss 3.5038 | LR_b 9.27e-05 | LR_h 4.63e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+[Eval-EMA] Iter 7400 Acc: 0.569000
+Iter 7450/40000 | Loss 3.3327 | LR_b 9.26e-05 | LR_h 4.63e-04
+Iter 7500/40000 | Loss 3.8509 | LR_b 9.25e-05 | LR_h 4.62e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:3402: DecompressionBombWarning: Image size (92366680 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Iter 7550/40000 | Loss 4.2065 | LR_b 9.23e-05 | LR_h 4.62e-04
+Iter 7600/40000 | Loss 3.0134 | LR_b 9.22e-05 | LR_h 4.61e-04
+[Eval-EMA] Iter 7600 Acc: 0.564000
+Iter 7650/40000 | Loss 1.8351 | LR_b 9.21e-05 | LR_h 4.61e-04
+Iter 7700/40000 | Loss 3.2795 | LR_b 9.20e-05 | LR_h 4.60e-04
+Iter 7750/40000 | Loss 3.3303 | LR_b 9.19e-05 | LR_h 4.60e-04
+Iter 7800/40000 | Loss 3.2034 | LR_b 9.18e-05 | LR_h 4.59e-04
+[Eval-EMA] Iter 7800 Acc: 0.563000
+Iter 7850/40000 | Loss 4.3852 | LR_b 9.17e-05 | LR_h 4.58e-04
+Iter 7900/40000 | Loss 4.1374 | LR_b 9.16e-05 | LR_h 4.58e-04
+Iter 7950/40000 | Loss 4.4296 | LR_b 9.15e-05 | LR_h 4.57e-04
+Iter 8000/40000 | Loss 3.3583 | LR_b 9.14e-05 | LR_h 4.57e-04
+[Eval-EMA] Iter 8000 Acc: 0.579000
+[BEST] Acc improved 0.569000 → 0.579000 at iter 8000. Saved BEST to ../model2/Large_best.pth
+[Save] Saved to ../model2/Large_1.pth
+Iter 8050/40000 | Loss 4.3798 | LR_b 9.13e-05 | LR_h 4.56e-04
+Iter 8100/40000 | Loss 2.0708 | LR_b 9.11e-05 | LR_h 4.56e-04
+Iter 8150/40000 | Loss 3.3496 | LR_b 9.10e-05 | LR_h 4.55e-04
+Iter 8200/40000 | Loss 4.2924 | LR_b 9.09e-05 | LR_h 4.55e-04
+[Eval-EMA] Iter 8200 Acc: 0.565000
+Iter 8250/40000 | Loss 2.7415 | LR_b 9.08e-05 | LR_h 4.54e-04
+Iter 8300/40000 | Loss 3.9495 | LR_b 9.07e-05 | LR_h 4.53e-04
+Iter 8350/40000 | Loss 3.2129 | LR_b 9.06e-05 | LR_h 4.53e-04
+Iter 8400/40000 | Loss 4.1548 | LR_b 9.05e-05 | LR_h 4.52e-04
+[Eval-EMA] Iter 8400 Acc: 0.595000
+[BEST] Acc improved 0.579000 → 0.595000 at iter 8400. Saved BEST to ../model2/Large_best.pth
+Iter 8450/40000 | Loss 4.1187 | LR_b 9.03e-05 | LR_h 4.52e-04
+Iter 8500/40000 | Loss 3.9235 | LR_b 9.02e-05 | LR_h 4.51e-04
+Iter 8550/40000 | Loss 4.6160 | LR_b 9.01e-05 | LR_h 4.50e-04
+Iter 8600/40000 | Loss 4.4440 | LR_b 9.00e-05 | LR_h 4.50e-04
+[Eval-EMA] Iter 8600 Acc: 0.578000
+Iter 8650/40000 | Loss 3.8031 | LR_b 8.99e-05 | LR_h 4.49e-04
+Iter 8700/40000 | Loss 4.2084 | LR_b 8.97e-05 | LR_h 4.49e-04
+Iter 8750/40000 | Loss 3.9855 | LR_b 8.96e-05 | LR_h 4.48e-04
+Iter 8800/40000 | Loss 3.6217 | LR_b 8.95e-05 | LR_h 4.47e-04
+[Eval-EMA] Iter 8800 Acc: 0.591000
+[Save] Saved to ../model2/Large_1.pth
+Iter 8850/40000 | Loss 3.6529 | LR_b 8.94e-05 | LR_h 4.47e-04
+Iter 8900/40000 | Loss 3.3983 | LR_b 8.93e-05 | LR_h 4.46e-04
+Iter 8950/40000 | Loss 4.4021 | LR_b 8.91e-05 | LR_h 4.46e-04
+Iter 9000/40000 | Loss 4.2266 | LR_b 8.90e-05 | LR_h 4.45e-04
+[Eval-EMA] Iter 9000 Acc: 0.560000
+Iter 9050/40000 | Loss 4.2513 | LR_b 8.89e-05 | LR_h 4.44e-04
+Iter 9100/40000 | Loss 4.6018 | LR_b 8.88e-05 | LR_h 4.44e-04
+Iter 9150/40000 | Loss 3.4262 | LR_b 8.86e-05 | LR_h 4.43e-04
+Iter 9200/40000 | Loss 2.7847 | LR_b 8.85e-05 | LR_h 4.43e-04
+[Eval-EMA] Iter 9200 Acc: 0.577000
+Iter 9250/40000 | Loss 4.3275 | LR_b 8.84e-05 | LR_h 4.42e-04
+Iter 9300/40000 | Loss 2.7921 | LR_b 8.82e-05 | LR_h 4.41e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/JpegImagePlugin.py:890: UserWarning: Image appears to be a malformed MPO file, it will be interpreted as a base JPEG file
+  warnings.warn(
+Iter 9350/40000 | Loss 5.2081 | LR_b 8.81e-05 | LR_h 4.41e-04
+Iter 9400/40000 | Loss 3.6574 | LR_b 8.80e-05 | LR_h 4.40e-04
+[Eval-EMA] Iter 9400 Acc: 0.571000
+Iter 9450/40000 | Loss 3.3808 | LR_b 8.79e-05 | LR_h 4.39e-04
+Iter 9500/40000 | Loss 3.7566 | LR_b 8.77e-05 | LR_h 4.39e-04
+Iter 9550/40000 | Loss 3.4155 | LR_b 8.76e-05 | LR_h 4.38e-04
+Iter 9600/40000 | Loss 4.4796 | LR_b 8.75e-05 | LR_h 4.37e-04
+[Eval-EMA] Iter 9600 Acc: 0.588000
+[Save] Saved to ../model2/Large_1.pth
+Iter 9650/40000 | Loss 3.3708 | LR_b 8.73e-05 | LR_h 4.37e-04
+Iter 9700/40000 | Loss 4.2864 | LR_b 8.72e-05 | LR_h 4.36e-04
+Iter 9750/40000 | Loss 4.4728 | LR_b 8.71e-05 | LR_h 4.35e-04
+Iter 9800/40000 | Loss 2.6341 | LR_b 8.69e-05 | LR_h 4.35e-04
+[Eval-EMA] Iter 9800 Acc: 0.593000
+Iter 9850/40000 | Loss 2.5605 | LR_b 8.68e-05 | LR_h 4.34e-04
+Iter 9900/40000 | Loss 3.4074 | LR_b 8.67e-05 | LR_h 4.33e-04
+Iter 9950/40000 | Loss 3.1432 | LR_b 8.65e-05 | LR_h 4.33e-04
+Iter 10000/40000 | Loss 3.1453 | LR_b 8.64e-05 | LR_h 4.32e-04
+[Eval-EMA] Iter 10000 Acc: 0.567000
+Iter 10050/40000 | Loss 4.5349 | LR_b 8.63e-05 | LR_h 4.31e-04
+Iter 10100/40000 | Loss 3.4980 | LR_b 8.61e-05 | LR_h 4.31e-04
+Iter 10150/40000 | Loss 4.1327 | LR_b 8.60e-05 | LR_h 4.30e-04
+Iter 10200/40000 | Loss 4.7770 | LR_b 8.58e-05 | LR_h 4.29e-04
+[Eval-EMA] Iter 10200 Acc: 0.604000
+[BEST] Acc improved 0.595000 → 0.604000 at iter 10200. Saved BEST to ../model2/Large_best.pth
+Iter 10250/40000 | Loss 3.3960 | LR_b 8.57e-05 | LR_h 4.29e-04
+Iter 10300/40000 | Loss 4.0715 | LR_b 8.56e-05 | LR_h 4.28e-04
+Iter 10350/40000 | Loss 2.2198 | LR_b 8.54e-05 | LR_h 4.27e-04
+Iter 10400/40000 | Loss 4.1594 | LR_b 8.53e-05 | LR_h 4.26e-04
+[Eval-EMA] Iter 10400 Acc: 0.587000
+[Save] Saved to ../model2/Large_1.pth
+Iter 10450/40000 | Loss 3.1527 | LR_b 8.51e-05 | LR_h 4.26e-04
+Iter 10500/40000 | Loss 3.7888 | LR_b 8.50e-05 | LR_h 4.25e-04
+Iter 10550/40000 | Loss 3.2047 | LR_b 8.49e-05 | LR_h 4.24e-04
+Iter 10600/40000 | Loss 3.0853 | LR_b 8.47e-05 | LR_h 4.24e-04
+[Eval-EMA] Iter 10600 Acc: 0.588000
+Iter 10650/40000 | Loss 2.9199 | LR_b 8.46e-05 | LR_h 4.23e-04
+Iter 10700/40000 | Loss 3.0682 | LR_b 8.44e-05 | LR_h 4.22e-04
+Iter 10750/40000 | Loss 4.2565 | LR_b 8.43e-05 | LR_h 4.21e-04
+Iter 10800/40000 | Loss 3.2834 | LR_b 8.41e-05 | LR_h 4.21e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+[Eval-EMA] Iter 10800 Acc: 0.580000
+Iter 10850/40000 | Loss 3.5607 | LR_b 8.40e-05 | LR_h 4.20e-04
+Iter 10900/40000 | Loss 2.8453 | LR_b 8.39e-05 | LR_h 4.19e-04
+Iter 10950/40000 | Loss 3.9410 | LR_b 8.37e-05 | LR_h 4.19e-04
+Iter 11000/40000 | Loss 3.8736 | LR_b 8.36e-05 | LR_h 4.18e-04
+[Eval-EMA] Iter 11000 Acc: 0.612000
+[BEST] Acc improved 0.604000 → 0.612000 at iter 11000. Saved BEST to ../model2/Large_best.pth
+Iter 11050/40000 | Loss 4.8771 | LR_b 8.34e-05 | LR_h 4.17e-04
+Iter 11100/40000 | Loss 3.6810 | LR_b 8.33e-05 | LR_h 4.16e-04
+Iter 11150/40000 | Loss 3.4278 | LR_b 8.31e-05 | LR_h 4.16e-04
+Iter 11200/40000 | Loss 3.5523 | LR_b 8.30e-05 | LR_h 4.15e-04
+[Eval-EMA] Iter 11200 Acc: 0.628000
+[BEST] Acc improved 0.612000 → 0.628000 at iter 11200. Saved BEST to ../model2/Large_best.pth
+[Save] Saved to ../model2/Large_1.pth
+Iter 11250/40000 | Loss 2.4677 | LR_b 8.28e-05 | LR_h 4.14e-04
+Iter 11300/40000 | Loss 4.1190 | LR_b 8.27e-05 | LR_h 4.13e-04
+Iter 11350/40000 | Loss 3.4609 | LR_b 8.25e-05 | LR_h 4.13e-04
+Iter 11400/40000 | Loss 2.9474 | LR_b 8.24e-05 | LR_h 4.12e-04
+[Eval-EMA] Iter 11400 Acc: 0.605000
+Iter 11450/40000 | Loss 4.1246 | LR_b 8.22e-05 | LR_h 4.11e-04
+Iter 11500/40000 | Loss 3.3344 | LR_b 8.21e-05 | LR_h 4.10e-04
+Iter 11550/40000 | Loss 3.6220 | LR_b 8.19e-05 | LR_h 4.10e-04
+Iter 11600/40000 | Loss 4.7268 | LR_b 8.18e-05 | LR_h 4.09e-04
+[Eval-EMA] Iter 11600 Acc: 0.593000
+Iter 11650/40000 | Loss 3.0792 | LR_b 8.16e-05 | LR_h 4.08e-04
+Iter 11700/40000 | Loss 3.4738 | LR_b 8.14e-05 | LR_h 4.07e-04
+Iter 11750/40000 | Loss 3.1438 | LR_b 8.13e-05 | LR_h 4.06e-04
+Iter 11800/40000 | Loss 2.6587 | LR_b 8.11e-05 | LR_h 4.06e-04
+[Eval-EMA] Iter 11800 Acc: 0.595000
+Iter 11850/40000 | Loss 3.0301 | LR_b 8.10e-05 | LR_h 4.05e-04
+Iter 11900/40000 | Loss 3.4279 | LR_b 8.08e-05 | LR_h 4.04e-04
+Iter 11950/40000 | Loss 3.5082 | LR_b 8.07e-05 | LR_h 4.03e-04
+Iter 12000/40000 | Loss 3.2448 | LR_b 8.05e-05 | LR_h 4.03e-04
+[Eval-EMA] Iter 12000 Acc: 0.595000
+[Save] Saved to ../model2/Large_1.pth
+Iter 12050/40000 | Loss 2.6891 | LR_b 8.03e-05 | LR_h 4.02e-04
+Iter 12100/40000 | Loss 2.2582 | LR_b 8.02e-05 | LR_h 4.01e-04
+Iter 12150/40000 | Loss 3.3619 | LR_b 8.00e-05 | LR_h 4.00e-04
+Iter 12200/40000 | Loss 3.4486 | LR_b 7.99e-05 | LR_h 3.99e-04
+[Eval-EMA] Iter 12200 Acc: 0.604000
+Iter 12250/40000 | Loss 2.5588 | LR_b 7.97e-05 | LR_h 3.99e-04
+Iter 12300/40000 | Loss 2.3005 | LR_b 7.96e-05 | LR_h 3.98e-04
+Iter 12350/40000 | Loss 3.1791 | LR_b 7.94e-05 | LR_h 3.97e-04
+Iter 12400/40000 | Loss 3.1603 | LR_b 7.92e-05 | LR_h 3.96e-04
+[Eval-EMA] Iter 12400 Acc: 0.566000
+Iter 12450/40000 | Loss 3.9802 | LR_b 7.91e-05 | LR_h 3.95e-04
+Iter 12500/40000 | Loss 3.9595 | LR_b 7.89e-05 | LR_h 3.95e-04
+Iter 12550/40000 | Loss 3.0026 | LR_b 7.87e-05 | LR_h 3.94e-04
+Iter 12600/40000 | Loss 3.4654 | LR_b 7.86e-05 | LR_h 3.93e-04
+[Eval-EMA] Iter 12600 Acc: 0.595000
+Iter 12650/40000 | Loss 3.0041 | LR_b 7.84e-05 | LR_h 3.92e-04
+Iter 12700/40000 | Loss 3.1988 | LR_b 7.83e-05 | LR_h 3.91e-04
+Iter 12750/40000 | Loss 4.0563 | LR_b 7.81e-05 | LR_h 3.90e-04
+Iter 12800/40000 | Loss 4.3756 | LR_b 7.79e-05 | LR_h 3.90e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+[Eval-EMA] Iter 12800 Acc: 0.609000
+[Save] Saved to ../model2/Large_1.pth
+Iter 12850/40000 | Loss 3.1435 | LR_b 7.78e-05 | LR_h 3.89e-04
+Iter 12900/40000 | Loss 3.6595 | LR_b 7.76e-05 | LR_h 3.88e-04
+Iter 12950/40000 | Loss 4.9933 | LR_b 7.74e-05 | LR_h 3.87e-04
+Iter 13000/40000 | Loss 4.4136 | LR_b 7.73e-05 | LR_h 3.86e-04
+[Eval-EMA] Iter 13000 Acc: 0.591000
+Iter 13050/40000 | Loss 2.6951 | LR_b 7.71e-05 | LR_h 3.85e-04
+Iter 13100/40000 | Loss 3.5286 | LR_b 7.69e-05 | LR_h 3.85e-04
+Iter 13150/40000 | Loss 2.6580 | LR_b 7.68e-05 | LR_h 3.84e-04
+Iter 13200/40000 | Loss 2.5186 | LR_b 7.66e-05 | LR_h 3.83e-04
+[Eval-EMA] Iter 13200 Acc: 0.599000
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 2. 
+  warnings.warn(str(msg))
+Iter 13250/40000 | Loss 3.1956 | LR_b 7.64e-05 | LR_h 3.82e-04
+Iter 13300/40000 | Loss 2.6819 | LR_b 7.63e-05 | LR_h 3.81e-04
+Iter 13350/40000 | Loss 3.7388 | LR_b 7.61e-05 | LR_h 3.80e-04
+Iter 13400/40000 | Loss 3.4481 | LR_b 7.59e-05 | LR_h 3.80e-04
+[Eval-EMA] Iter 13400 Acc: 0.598000
+Iter 13450/40000 | Loss 4.3420 | LR_b 7.57e-05 | LR_h 3.79e-04
+Iter 13500/40000 | Loss 3.5165 | LR_b 7.56e-05 | LR_h 3.78e-04
+Iter 13550/40000 | Loss 3.4471 | LR_b 7.54e-05 | LR_h 3.77e-04
+Iter 13600/40000 | Loss 3.7924 | LR_b 7.52e-05 | LR_h 3.76e-04
+[Eval-EMA] Iter 13600 Acc: 0.580000
+[Save] Saved to ../model2/Large_1.pth
+Iter 13650/40000 | Loss 3.7749 | LR_b 7.51e-05 | LR_h 3.75e-04
+Iter 13700/40000 | Loss 2.9058 | LR_b 7.49e-05 | LR_h 3.74e-04
+Iter 13750/40000 | Loss 4.2091 | LR_b 7.47e-05 | LR_h 3.74e-04
+Iter 13800/40000 | Loss 4.0535 | LR_b 7.45e-05 | LR_h 3.73e-04
+[Eval-EMA] Iter 13800 Acc: 0.585000
+Iter 13850/40000 | Loss 2.4484 | LR_b 7.44e-05 | LR_h 3.72e-04
+Iter 13900/40000 | Loss 3.3475 | LR_b 7.42e-05 | LR_h 3.71e-04
+Iter 13950/40000 | Loss 3.3047 | LR_b 7.40e-05 | LR_h 3.70e-04
+Iter 14000/40000 | Loss 3.2154 | LR_b 7.38e-05 | LR_h 3.69e-04
+[Eval-EMA] Iter 14000 Acc: 0.637000
+[BEST] Acc improved 0.628000 → 0.637000 at iter 14000. Saved BEST to ../model2/Large_best.pth
+Iter 14050/40000 | Loss 4.4360 | LR_b 7.37e-05 | LR_h 3.68e-04
+Iter 14100/40000 | Loss 4.7326 | LR_b 7.35e-05 | LR_h 3.67e-04
+Iter 14150/40000 | Loss 3.3180 | LR_b 7.33e-05 | LR_h 3.67e-04
+Iter 14200/40000 | Loss 5.2125 | LR_b 7.31e-05 | LR_h 3.66e-04
+[Eval-EMA] Iter 14200 Acc: 0.595000
+Iter 14250/40000 | Loss 3.8801 | LR_b 7.30e-05 | LR_h 3.65e-04
+Iter 14300/40000 | Loss 2.4774 | LR_b 7.28e-05 | LR_h 3.64e-04
+Iter 14350/40000 | Loss 4.1121 | LR_b 7.26e-05 | LR_h 3.63e-04
+Iter 14400/40000 | Loss 3.0404 | LR_b 7.24e-05 | LR_h 3.62e-04
+[Eval-EMA] Iter 14400 Acc: 0.610000
+[Save] Saved to ../model2/Large_1.pth
+Iter 14450/40000 | Loss 2.7166 | LR_b 7.23e-05 | LR_h 3.61e-04
+Iter 14500/40000 | Loss 2.4219 | LR_b 7.21e-05 | LR_h 3.60e-04
+Iter 14550/40000 | Loss 3.4196 | LR_b 7.19e-05 | LR_h 3.60e-04
+Iter 14600/40000 | Loss 3.8628 | LR_b 7.17e-05 | LR_h 3.59e-04
+[Eval-EMA] Iter 14600 Acc: 0.600000
+Iter 14650/40000 | Loss 3.9874 | LR_b 7.15e-05 | LR_h 3.58e-04
+Iter 14700/40000 | Loss 3.3672 | LR_b 7.14e-05 | LR_h 3.57e-04
+Iter 14750/40000 | Loss 4.5983 | LR_b 7.12e-05 | LR_h 3.56e-04
+Iter 14800/40000 | Loss 3.1121 | LR_b 7.10e-05 | LR_h 3.55e-04
+[Eval-EMA] Iter 14800 Acc: 0.609000
+Iter 14850/40000 | Loss 3.4589 | LR_b 7.08e-05 | LR_h 3.54e-04
+Iter 14900/40000 | Loss 3.8687 | LR_b 7.06e-05 | LR_h 3.53e-04
+Iter 14950/40000 | Loss 2.6401 | LR_b 7.05e-05 | LR_h 3.52e-04
+Iter 15000/40000 | Loss 2.9703 | LR_b 7.03e-05 | LR_h 3.51e-04
+[Eval-EMA] Iter 15000 Acc: 0.565000
+Iter 15050/40000 | Loss 2.0572 | LR_b 7.01e-05 | LR_h 3.50e-04
+Iter 15100/40000 | Loss 3.8592 | LR_b 6.99e-05 | LR_h 3.50e-04
+Iter 15150/40000 | Loss 4.5401 | LR_b 6.97e-05 | LR_h 3.49e-04
+Iter 15200/40000 | Loss 3.3836 | LR_b 6.96e-05 | LR_h 3.48e-04
+[Eval-EMA] Iter 15200 Acc: 0.604000
+[Save] Saved to ../model2/Large_1.pth
+Iter 15250/40000 | Loss 3.5731 | LR_b 6.94e-05 | LR_h 3.47e-04
+Iter 15300/40000 | Loss 2.3815 | LR_b 6.92e-05 | LR_h 3.46e-04
+Iter 15350/40000 | Loss 3.7400 | LR_b 6.90e-05 | LR_h 3.45e-04
+Iter 15400/40000 | Loss 3.0342 | LR_b 6.88e-05 | LR_h 3.44e-04
+[Eval-EMA] Iter 15400 Acc: 0.619000
+Iter 15450/40000 | Loss 3.0416 | LR_b 6.86e-05 | LR_h 3.43e-04
+Iter 15500/40000 | Loss 3.2313 | LR_b 6.84e-05 | LR_h 3.42e-04
+Iter 15550/40000 | Loss 3.9921 | LR_b 6.83e-05 | LR_h 3.41e-04
+Iter 15600/40000 | Loss 3.0691 | LR_b 6.81e-05 | LR_h 3.40e-04
+[Eval-EMA] Iter 15600 Acc: 0.590000
+Iter 15650/40000 | Loss 2.8641 | LR_b 6.79e-05 | LR_h 3.39e-04
+Iter 15700/40000 | Loss 3.6936 | LR_b 6.77e-05 | LR_h 3.39e-04
+Iter 15750/40000 | Loss 2.9415 | LR_b 6.75e-05 | LR_h 3.38e-04
+Iter 15800/40000 | Loss 3.9484 | LR_b 6.73e-05 | LR_h 3.37e-04
+[Eval-EMA] Iter 15800 Acc: 0.614000
+Iter 15850/40000 | Loss 2.1423 | LR_b 6.71e-05 | LR_h 3.36e-04
+Iter 15900/40000 | Loss 3.5561 | LR_b 6.70e-05 | LR_h 3.35e-04
+Iter 15950/40000 | Loss 3.4278 | LR_b 6.68e-05 | LR_h 3.34e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 16000/40000 | Loss 3.7959 | LR_b 6.66e-05 | LR_h 3.33e-04
+[Eval-EMA] Iter 16000 Acc: 0.597000
+[Save] Saved to ../model2/Large_1.pth
+Iter 16050/40000 | Loss 2.8570 | LR_b 6.64e-05 | LR_h 3.32e-04
+Iter 16100/40000 | Loss 2.9437 | LR_b 6.62e-05 | LR_h 3.31e-04
+Iter 16150/40000 | Loss 2.7445 | LR_b 6.60e-05 | LR_h 3.30e-04
+Iter 16200/40000 | Loss 2.3443 | LR_b 6.58e-05 | LR_h 3.29e-04
+[Eval-EMA] Iter 16200 Acc: 0.612000
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 16250/40000 | Loss 2.6053 | LR_b 6.56e-05 | LR_h 3.28e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/JpegImagePlugin.py:890: UserWarning: Image appears to be a malformed MPO file, it will be interpreted as a base JPEG file
+  warnings.warn(
+Iter 16300/40000 | Loss 3.1430 | LR_b 6.55e-05 | LR_h 3.27e-04
+Iter 16350/40000 | Loss 4.5720 | LR_b 6.53e-05 | LR_h 3.26e-04
+Iter 16400/40000 | Loss 3.3842 | LR_b 6.51e-05 | LR_h 3.25e-04
+[Eval-EMA] Iter 16400 Acc: 0.607000
+Iter 16450/40000 | Loss 1.9621 | LR_b 6.49e-05 | LR_h 3.24e-04
+Iter 16500/40000 | Loss 3.1339 | LR_b 6.47e-05 | LR_h 3.23e-04
+Iter 16550/40000 | Loss 2.4193 | LR_b 6.45e-05 | LR_h 3.23e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 16600/40000 | Loss 2.5476 | LR_b 6.43e-05 | LR_h 3.22e-04
+[Eval-EMA] Iter 16600 Acc: 0.597000
+Iter 16650/40000 | Loss 3.5498 | LR_b 6.41e-05 | LR_h 3.21e-04
+Iter 16700/40000 | Loss 2.9529 | LR_b 6.39e-05 | LR_h 3.20e-04
+Iter 16750/40000 | Loss 3.3737 | LR_b 6.37e-05 | LR_h 3.19e-04
+Iter 16800/40000 | Loss 3.6589 | LR_b 6.36e-05 | LR_h 3.18e-04
+[Eval-EMA] Iter 16800 Acc: 0.589000
+[Save] Saved to ../model2/Large_1.pth
+Iter 16850/40000 | Loss 3.0596 | LR_b 6.34e-05 | LR_h 3.17e-04
+Iter 16900/40000 | Loss 4.1002 | LR_b 6.32e-05 | LR_h 3.16e-04
+Iter 16950/40000 | Loss 2.8060 | LR_b 6.30e-05 | LR_h 3.15e-04
+Iter 17000/40000 | Loss 3.8422 | LR_b 6.28e-05 | LR_h 3.14e-04
+[Eval-EMA] Iter 17000 Acc: 0.601000
+Iter 17050/40000 | Loss 2.9112 | LR_b 6.26e-05 | LR_h 3.13e-04
+Iter 17100/40000 | Loss 3.3907 | LR_b 6.24e-05 | LR_h 3.12e-04
+Iter 17150/40000 | Loss 3.1140 | LR_b 6.22e-05 | LR_h 3.11e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 17200/40000 | Loss 1.8898 | LR_b 6.20e-05 | LR_h 3.10e-04
+[Eval-EMA] Iter 17200 Acc: 0.614000
+Iter 17250/40000 | Loss 3.0008 | LR_b 6.18e-05 | LR_h 3.09e-04
+Iter 17300/40000 | Loss 2.7056 | LR_b 6.16e-05 | LR_h 3.08e-04
+Iter 17350/40000 | Loss 3.1717 | LR_b 6.14e-05 | LR_h 3.07e-04
+Iter 17400/40000 | Loss 2.5935 | LR_b 6.12e-05 | LR_h 3.06e-04
+[Eval-EMA] Iter 17400 Acc: 0.637000
+Iter 17450/40000 | Loss 3.2755 | LR_b 6.10e-05 | LR_h 3.05e-04
+Iter 17500/40000 | Loss 3.6340 | LR_b 6.09e-05 | LR_h 3.04e-04
+Iter 17550/40000 | Loss 3.0468 | LR_b 6.07e-05 | LR_h 3.03e-04
+Iter 17600/40000 | Loss 3.7229 | LR_b 6.05e-05 | LR_h 3.02e-04
+[Eval-EMA] Iter 17600 Acc: 0.589000
+[Save] Saved to ../model2/Large_1.pth
+Iter 17650/40000 | Loss 2.5077 | LR_b 6.03e-05 | LR_h 3.01e-04
+Iter 17700/40000 | Loss 3.5278 | LR_b 6.01e-05 | LR_h 3.00e-04
+Iter 17750/40000 | Loss 2.7367 | LR_b 5.99e-05 | LR_h 2.99e-04
+Iter 17800/40000 | Loss 3.0303 | LR_b 5.97e-05 | LR_h 2.98e-04
+[Eval-EMA] Iter 17800 Acc: 0.607000
+Iter 17850/40000 | Loss 2.8944 | LR_b 5.95e-05 | LR_h 2.97e-04
+Iter 17900/40000 | Loss 3.4369 | LR_b 5.93e-05 | LR_h 2.96e-04
+Iter 17950/40000 | Loss 3.5553 | LR_b 5.91e-05 | LR_h 2.95e-04
+Iter 18000/40000 | Loss 2.8197 | LR_b 5.89e-05 | LR_h 2.95e-04
+[Eval-EMA] Iter 18000 Acc: 0.603000
+Iter 18050/40000 | Loss 2.4973 | LR_b 5.87e-05 | LR_h 2.94e-04
+Iter 18100/40000 | Loss 3.3969 | LR_b 5.85e-05 | LR_h 2.93e-04
+Iter 18150/40000 | Loss 2.4861 | LR_b 5.83e-05 | LR_h 2.92e-04
+Iter 18200/40000 | Loss 3.2026 | LR_b 5.81e-05 | LR_h 2.91e-04
+[Eval-EMA] Iter 18200 Acc: 0.594000
+Iter 18250/40000 | Loss 2.9288 | LR_b 5.79e-05 | LR_h 2.90e-04
+Iter 18300/40000 | Loss 3.0228 | LR_b 5.77e-05 | LR_h 2.89e-04
+Iter 18350/40000 | Loss 3.0570 | LR_b 5.75e-05 | LR_h 2.88e-04
+Iter 18400/40000 | Loss 3.1932 | LR_b 5.73e-05 | LR_h 2.87e-04
+[Eval-EMA] Iter 18400 Acc: 0.620000
+[Save] Saved to ../model2/Large_1.pth
+Iter 18450/40000 | Loss 2.6468 | LR_b 5.71e-05 | LR_h 2.86e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Iter 18500/40000 | Loss 3.8964 | LR_b 5.69e-05 | LR_h 2.85e-04
+Iter 18550/40000 | Loss 1.8448 | LR_b 5.67e-05 | LR_h 2.84e-04
+Iter 18600/40000 | Loss 4.9765 | LR_b 5.65e-05 | LR_h 2.83e-04
+[Eval-EMA] Iter 18600 Acc: 0.611000
+Iter 18650/40000 | Loss 2.8326 | LR_b 5.63e-05 | LR_h 2.82e-04
+Iter 18700/40000 | Loss 4.5413 | LR_b 5.62e-05 | LR_h 2.81e-04
+Iter 18750/40000 | Loss 3.8139 | LR_b 5.60e-05 | LR_h 2.80e-04
+Iter 18800/40000 | Loss 2.8482 | LR_b 5.58e-05 | LR_h 2.79e-04
+[Eval-EMA] Iter 18800 Acc: 0.627000
+Iter 18850/40000 | Loss 2.4888 | LR_b 5.56e-05 | LR_h 2.78e-04
+Iter 18900/40000 | Loss 2.2616 | LR_b 5.54e-05 | LR_h 2.77e-04
+Iter 18950/40000 | Loss 2.6952 | LR_b 5.52e-05 | LR_h 2.76e-04
+Iter 19000/40000 | Loss 2.3376 | LR_b 5.50e-05 | LR_h 2.75e-04
+[Eval-EMA] Iter 19000 Acc: 0.612000
+Iter 19050/40000 | Loss 3.1297 | LR_b 5.48e-05 | LR_h 2.74e-04
+Iter 19100/40000 | Loss 2.9681 | LR_b 5.46e-05 | LR_h 2.73e-04
+Iter 19150/40000 | Loss 3.3618 | LR_b 5.44e-05 | LR_h 2.72e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 2. 
+  warnings.warn(str(msg))
+Iter 19200/40000 | Loss 3.1510 | LR_b 5.42e-05 | LR_h 2.71e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+[Eval-EMA] Iter 19200 Acc: 0.611000
+[Save] Saved to ../model2/Large_1.pth
+Iter 19250/40000 | Loss 3.1419 | LR_b 5.40e-05 | LR_h 2.70e-04
+Iter 19300/40000 | Loss 2.9133 | LR_b 5.38e-05 | LR_h 2.69e-04
+Iter 19350/40000 | Loss 2.9542 | LR_b 5.36e-05 | LR_h 2.68e-04
+Iter 19400/40000 | Loss 2.7753 | LR_b 5.34e-05 | LR_h 2.67e-04
+[Eval-EMA] Iter 19400 Acc: 0.626000
+Iter 19450/40000 | Loss 2.8634 | LR_b 5.32e-05 | LR_h 2.66e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 2. 
+  warnings.warn(str(msg))
+Iter 19500/40000 | Loss 2.8636 | LR_b 5.30e-05 | LR_h 2.65e-04
+Iter 19550/40000 | Loss 2.1956 | LR_b 5.28e-05 | LR_h 2.64e-04
+Iter 19600/40000 | Loss 2.7268 | LR_b 5.26e-05 | LR_h 2.63e-04
+[Eval-EMA] Iter 19600 Acc: 0.624000
+Iter 19650/40000 | Loss 2.2805 | LR_b 5.24e-05 | LR_h 2.62e-04
+Iter 19700/40000 | Loss 3.6176 | LR_b 5.22e-05 | LR_h 2.61e-04
+Iter 19750/40000 | Loss 3.3417 | LR_b 5.20e-05 | LR_h 2.60e-04
+Iter 19800/40000 | Loss 3.6179 | LR_b 5.18e-05 | LR_h 2.59e-04
+[Eval-EMA] Iter 19800 Acc: 0.602000
+Iter 19850/40000 | Loss 2.7287 | LR_b 5.16e-05 | LR_h 2.58e-04
+Iter 19900/40000 | Loss 2.4909 | LR_b 5.14e-05 | LR_h 2.57e-04
+Iter 19950/40000 | Loss 2.1642 | LR_b 5.12e-05 | LR_h 2.56e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 2. 
+  warnings.warn(str(msg))
+Iter 20000/40000 | Loss 4.2956 | LR_b 5.10e-05 | LR_h 2.55e-04
+[Eval-EMA] Iter 20000 Acc: 0.601000
+[Save] Saved to ../model2/Large_1.pth
+Iter 20050/40000 | Loss 2.9895 | LR_b 5.08e-05 | LR_h 2.54e-04
+Iter 20100/40000 | Loss 2.1380 | LR_b 5.06e-05 | LR_h 2.53e-04
+Iter 20150/40000 | Loss 2.5612 | LR_b 5.04e-05 | LR_h 2.52e-04
+Iter 20200/40000 | Loss 2.7038 | LR_b 5.02e-05 | LR_h 2.51e-04
+[Eval-EMA] Iter 20200 Acc: 0.623000
+Iter 20250/40000 | Loss 3.0324 | LR_b 5.00e-05 | LR_h 2.50e-04
+Iter 20300/40000 | Loss 2.7345 | LR_b 4.98e-05 | LR_h 2.49e-04
+Iter 20350/40000 | Loss 4.5116 | LR_b 4.96e-05 | LR_h 2.48e-04
+Iter 20400/40000 | Loss 2.2741 | LR_b 4.94e-05 | LR_h 2.47e-04
+[Eval-EMA] Iter 20400 Acc: 0.632000
+Iter 20450/40000 | Loss 2.0296 | LR_b 4.92e-05 | LR_h 2.46e-04
+Iter 20500/40000 | Loss 1.5980 | LR_b 4.90e-05 | LR_h 2.45e-04
+Iter 20550/40000 | Loss 2.4106 | LR_b 4.88e-05 | LR_h 2.44e-04
+Iter 20600/40000 | Loss 2.2446 | LR_b 4.86e-05 | LR_h 2.43e-04
+[Eval-EMA] Iter 20600 Acc: 0.596000
+Iter 20650/40000 | Loss 2.3425 | LR_b 4.84e-05 | LR_h 2.42e-04
+Iter 20700/40000 | Loss 2.5672 | LR_b 4.82e-05 | LR_h 2.41e-04
+Iter 20750/40000 | Loss 3.1516 | LR_b 4.80e-05 | LR_h 2.40e-04
+Iter 20800/40000 | Loss 3.3689 | LR_b 4.78e-05 | LR_h 2.39e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+[Eval-EMA] Iter 20800 Acc: 0.610000
+[Save] Saved to ../model2/Large_1.pth
+Iter 20850/40000 | Loss 2.7406 | LR_b 4.76e-05 | LR_h 2.38e-04
+Iter 20900/40000 | Loss 1.7745 | LR_b 4.74e-05 | LR_h 2.37e-04
+Iter 20950/40000 | Loss 3.0180 | LR_b 4.72e-05 | LR_h 2.36e-04
+Iter 21000/40000 | Loss 2.0933 | LR_b 4.70e-05 | LR_h 2.35e-04
+[Eval-EMA] Iter 21000 Acc: 0.620000
+Iter 21050/40000 | Loss 2.7009 | LR_b 4.68e-05 | LR_h 2.34e-04
+Iter 21100/40000 | Loss 3.5084 | LR_b 4.66e-05 | LR_h 2.33e-04
+Iter 21150/40000 | Loss 3.9635 | LR_b 4.64e-05 | LR_h 2.32e-04
+Iter 21200/40000 | Loss 2.2602 | LR_b 4.62e-05 | LR_h 2.31e-04
+[Eval-EMA] Iter 21200 Acc: 0.617000
+Iter 21250/40000 | Loss 3.3606 | LR_b 4.60e-05 | LR_h 2.30e-04
+Iter 21300/40000 | Loss 3.1198 | LR_b 4.58e-05 | LR_h 2.29e-04
+Iter 21350/40000 | Loss 2.0262 | LR_b 4.56e-05 | LR_h 2.28e-04
+Iter 21400/40000 | Loss 2.3851 | LR_b 4.54e-05 | LR_h 2.27e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+[Eval-EMA] Iter 21400 Acc: 0.605000
+Iter 21450/40000 | Loss 2.9127 | LR_b 4.52e-05 | LR_h 2.26e-04
+Iter 21500/40000 | Loss 3.5058 | LR_b 4.50e-05 | LR_h 2.25e-04
+Iter 21550/40000 | Loss 2.6779 | LR_b 4.48e-05 | LR_h 2.24e-04
+Iter 21600/40000 | Loss 2.6906 | LR_b 4.46e-05 | LR_h 2.23e-04
+[Eval-EMA] Iter 21600 Acc: 0.592000
+[Save] Saved to ../model2/Large_1.pth
+Iter 21650/40000 | Loss 1.9288 | LR_b 4.44e-05 | LR_h 2.22e-04
+Iter 21700/40000 | Loss 2.6596 | LR_b 4.43e-05 | LR_h 2.21e-04
+Iter 21750/40000 | Loss 3.6788 | LR_b 4.41e-05 | LR_h 2.20e-04
+Iter 21800/40000 | Loss 3.1471 | LR_b 4.39e-05 | LR_h 2.19e-04
+[Eval-EMA] Iter 21800 Acc: 0.632000
+Iter 21850/40000 | Loss 2.1220 | LR_b 4.37e-05 | LR_h 2.18e-04
+Iter 21900/40000 | Loss 2.9955 | LR_b 4.35e-05 | LR_h 2.17e-04
+Iter 21950/40000 | Loss 2.7338 | LR_b 4.33e-05 | LR_h 2.16e-04
+Iter 22000/40000 | Loss 2.5353 | LR_b 4.31e-05 | LR_h 2.15e-04
+[Eval-EMA] Iter 22000 Acc: 0.595000
+Iter 22050/40000 | Loss 3.6517 | LR_b 4.29e-05 | LR_h 2.14e-04
+Iter 22100/40000 | Loss 2.4190 | LR_b 4.27e-05 | LR_h 2.13e-04
+Iter 22150/40000 | Loss 2.6701 | LR_b 4.25e-05 | LR_h 2.12e-04
+Iter 22200/40000 | Loss 4.1825 | LR_b 4.23e-05 | LR_h 2.11e-04
+[Eval-EMA] Iter 22200 Acc: 0.630000
+Iter 22250/40000 | Loss 2.3768 | LR_b 4.21e-05 | LR_h 2.10e-04
+Iter 22300/40000 | Loss 2.9938 | LR_b 4.19e-05 | LR_h 2.09e-04
+Iter 22350/40000 | Loss 3.1898 | LR_b 4.17e-05 | LR_h 2.08e-04
+Iter 22400/40000 | Loss 3.3161 | LR_b 4.15e-05 | LR_h 2.07e-04
+[Eval-EMA] Iter 22400 Acc: 0.636000
+[Save] Saved to ../model2/Large_1.pth
+Iter 22450/40000 | Loss 2.3027 | LR_b 4.13e-05 | LR_h 2.06e-04
+Iter 22500/40000 | Loss 3.9364 | LR_b 4.11e-05 | LR_h 2.06e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 2. 
+  warnings.warn(str(msg))
+Iter 22550/40000 | Loss 3.2223 | LR_b 4.09e-05 | LR_h 2.05e-04
+Iter 22600/40000 | Loss 3.1160 | LR_b 4.07e-05 | LR_h 2.04e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+[Eval-EMA] Iter 22600 Acc: 0.617000
+Iter 22650/40000 | Loss 2.2378 | LR_b 4.05e-05 | LR_h 2.03e-04
+Iter 22700/40000 | Loss 2.7163 | LR_b 4.03e-05 | LR_h 2.02e-04
+Iter 22750/40000 | Loss 3.0004 | LR_b 4.01e-05 | LR_h 2.01e-04
+Iter 22800/40000 | Loss 4.1494 | LR_b 3.99e-05 | LR_h 2.00e-04
+[Eval-EMA] Iter 22800 Acc: 0.631000
+Iter 22850/40000 | Loss 3.4259 | LR_b 3.97e-05 | LR_h 1.99e-04
+Iter 22900/40000 | Loss 2.5318 | LR_b 3.95e-05 | LR_h 1.98e-04
+Iter 22950/40000 | Loss 2.6324 | LR_b 3.93e-05 | LR_h 1.97e-04
+Iter 23000/40000 | Loss 3.3293 | LR_b 3.92e-05 | LR_h 1.96e-04
+[Eval-EMA] Iter 23000 Acc: 0.585000
+Iter 23050/40000 | Loss 3.1636 | LR_b 3.90e-05 | LR_h 1.95e-04
+Iter 23100/40000 | Loss 2.8571 | LR_b 3.88e-05 | LR_h 1.94e-04
+Iter 23150/40000 | Loss 2.5911 | LR_b 3.86e-05 | LR_h 1.93e-04
+Iter 23200/40000 | Loss 2.1997 | LR_b 3.84e-05 | LR_h 1.92e-04
+[Eval-EMA] Iter 23200 Acc: 0.637000
+[Save] Saved to ../model2/Large_1.pth
+Iter 23250/40000 | Loss 2.4970 | LR_b 3.82e-05 | LR_h 1.91e-04
+Iter 23300/40000 | Loss 2.2625 | LR_b 3.80e-05 | LR_h 1.90e-04
+Iter 23350/40000 | Loss 3.0044 | LR_b 3.78e-05 | LR_h 1.89e-04
+Iter 23400/40000 | Loss 3.2507 | LR_b 3.76e-05 | LR_h 1.88e-04
+[Eval-EMA] Iter 23400 Acc: 0.618000
+Iter 23450/40000 | Loss 4.5588 | LR_b 3.74e-05 | LR_h 1.87e-04
+Iter 23500/40000 | Loss 3.6578 | LR_b 3.72e-05 | LR_h 1.86e-04
+Iter 23550/40000 | Loss 3.9561 | LR_b 3.70e-05 | LR_h 1.85e-04
+Iter 23600/40000 | Loss 2.2000 | LR_b 3.68e-05 | LR_h 1.84e-04
+[Eval-EMA] Iter 23600 Acc: 0.630000
+Iter 23650/40000 | Loss 2.3078 | LR_b 3.66e-05 | LR_h 1.83e-04
+Iter 23700/40000 | Loss 2.0709 | LR_b 3.65e-05 | LR_h 1.82e-04
+Iter 23750/40000 | Loss 2.7658 | LR_b 3.63e-05 | LR_h 1.81e-04
+Iter 23800/40000 | Loss 2.1342 | LR_b 3.61e-05 | LR_h 1.80e-04
+[Eval-EMA] Iter 23800 Acc: 0.616000
+Iter 23850/40000 | Loss 2.7907 | LR_b 3.59e-05 | LR_h 1.79e-04
+Iter 23900/40000 | Loss 2.6817 | LR_b 3.57e-05 | LR_h 1.78e-04
+Iter 23950/40000 | Loss 3.2777 | LR_b 3.55e-05 | LR_h 1.78e-04
+Iter 24000/40000 | Loss 2.4274 | LR_b 3.53e-05 | LR_h 1.77e-04
+[Eval-EMA] Iter 24000 Acc: 0.630000
+[Save] Saved to ../model2/Large_1.pth
+Iter 24050/40000 | Loss 3.0181 | LR_b 3.51e-05 | LR_h 1.76e-04
+Iter 24100/40000 | Loss 2.6772 | LR_b 3.49e-05 | LR_h 1.75e-04
+Iter 24150/40000 | Loss 2.8979 | LR_b 3.47e-05 | LR_h 1.74e-04
+Iter 24200/40000 | Loss 2.6751 | LR_b 3.46e-05 | LR_h 1.73e-04
+[Eval-EMA] Iter 24200 Acc: 0.633000
+Iter 24250/40000 | Loss 2.9453 | LR_b 3.44e-05 | LR_h 1.72e-04
+Iter 24300/40000 | Loss 3.3145 | LR_b 3.42e-05 | LR_h 1.71e-04
+Iter 24350/40000 | Loss 3.1632 | LR_b 3.40e-05 | LR_h 1.70e-04
+Iter 24400/40000 | Loss 3.4507 | LR_b 3.38e-05 | LR_h 1.69e-04
+[Eval-EMA] Iter 24400 Acc: 0.626000
+Iter 24450/40000 | Loss 3.3827 | LR_b 3.36e-05 | LR_h 1.68e-04
+Iter 24500/40000 | Loss 4.0992 | LR_b 3.34e-05 | LR_h 1.67e-04
+Iter 24550/40000 | Loss 2.3128 | LR_b 3.32e-05 | LR_h 1.66e-04
+Iter 24600/40000 | Loss 2.3067 | LR_b 3.30e-05 | LR_h 1.65e-04
+[Eval-EMA] Iter 24600 Acc: 0.648000
+[BEST] Acc improved 0.637000 → 0.648000 at iter 24600. Saved BEST to ../model2/Large_best.pth
+Iter 24650/40000 | Loss 3.8312 | LR_b 3.29e-05 | LR_h 1.64e-04
+Iter 24700/40000 | Loss 2.9623 | LR_b 3.27e-05 | LR_h 1.63e-04
+Iter 24750/40000 | Loss 2.6049 | LR_b 3.25e-05 | LR_h 1.62e-04
+Iter 24800/40000 | Loss 2.6521 | LR_b 3.23e-05 | LR_h 1.62e-04
+[Eval-EMA] Iter 24800 Acc: 0.614000
+[Save] Saved to ../model2/Large_1.pth
+Iter 24850/40000 | Loss 2.6841 | LR_b 3.21e-05 | LR_h 1.61e-04
+Iter 24900/40000 | Loss 2.6666 | LR_b 3.19e-05 | LR_h 1.60e-04
+Iter 24950/40000 | Loss 3.0948 | LR_b 3.17e-05 | LR_h 1.59e-04
+Iter 25000/40000 | Loss 3.5259 | LR_b 3.16e-05 | LR_h 1.58e-04
+[Eval-EMA] Iter 25000 Acc: 0.628000
+Iter 25050/40000 | Loss 3.2513 | LR_b 3.14e-05 | LR_h 1.57e-04
+Iter 25100/40000 | Loss 3.4020 | LR_b 3.12e-05 | LR_h 1.56e-04
+Iter 25150/40000 | Loss 3.0899 | LR_b 3.10e-05 | LR_h 1.55e-04
+Iter 25200/40000 | Loss 2.7547 | LR_b 3.08e-05 | LR_h 1.54e-04
+[Eval-EMA] Iter 25200 Acc: 0.623000
+Iter 25250/40000 | Loss 2.8482 | LR_b 3.06e-05 | LR_h 1.53e-04
+Iter 25300/40000 | Loss 3.4663 | LR_b 3.05e-05 | LR_h 1.52e-04
+Iter 25350/40000 | Loss 2.6049 | LR_b 3.03e-05 | LR_h 1.51e-04
+Iter 25400/40000 | Loss 3.1410 | LR_b 3.01e-05 | LR_h 1.50e-04
+[Eval-EMA] Iter 25400 Acc: 0.632000
+Iter 25450/40000 | Loss 3.4323 | LR_b 2.99e-05 | LR_h 1.50e-04
+Iter 25500/40000 | Loss 3.7477 | LR_b 2.97e-05 | LR_h 1.49e-04
+Iter 25550/40000 | Loss 2.7115 | LR_b 2.95e-05 | LR_h 1.48e-04
+Iter 25600/40000 | Loss 2.6353 | LR_b 2.94e-05 | LR_h 1.47e-04
+[Eval-EMA] Iter 25600 Acc: 0.627000
+[Save] Saved to ../model2/Large_1.pth
+Iter 25650/40000 | Loss 3.0830 | LR_b 2.92e-05 | LR_h 1.46e-04
+Iter 25700/40000 | Loss 3.5824 | LR_b 2.90e-05 | LR_h 1.45e-04
+Iter 25750/40000 | Loss 2.4642 | LR_b 2.88e-05 | LR_h 1.44e-04
+Iter 25800/40000 | Loss 2.7099 | LR_b 2.86e-05 | LR_h 1.43e-04
+[Eval-EMA] Iter 25800 Acc: 0.618000
+Iter 25850/40000 | Loss 3.4265 | LR_b 2.85e-05 | LR_h 1.42e-04
+Iter 25900/40000 | Loss 2.1011 | LR_b 2.83e-05 | LR_h 1.41e-04
+Iter 25950/40000 | Loss 2.1045 | LR_b 2.81e-05 | LR_h 1.41e-04
+Iter 26000/40000 | Loss 2.0772 | LR_b 2.79e-05 | LR_h 1.40e-04
+[Eval-EMA] Iter 26000 Acc: 0.620000
+Iter 26050/40000 | Loss 2.1295 | LR_b 2.77e-05 | LR_h 1.39e-04
+Iter 26100/40000 | Loss 2.3510 | LR_b 2.76e-05 | LR_h 1.38e-04
+Iter 26150/40000 | Loss 2.3938 | LR_b 2.74e-05 | LR_h 1.37e-04
+Iter 26200/40000 | Loss 3.2025 | LR_b 2.72e-05 | LR_h 1.36e-04
+[Eval-EMA] Iter 26200 Acc: 0.617000
+Iter 26250/40000 | Loss 3.0610 | LR_b 2.70e-05 | LR_h 1.35e-04
+Iter 26300/40000 | Loss 2.4723 | LR_b 2.69e-05 | LR_h 1.34e-04
+Iter 26350/40000 | Loss 2.3923 | LR_b 2.67e-05 | LR_h 1.33e-04
+Iter 26400/40000 | Loss 2.3027 | LR_b 2.65e-05 | LR_h 1.33e-04
+[Eval-EMA] Iter 26400 Acc: 0.662000
+[BEST] Acc improved 0.648000 → 0.662000 at iter 26400. Saved BEST to ../model2/Large_best.pth
+[Save] Saved to ../model2/Large_1.pth
+Iter 26450/40000 | Loss 2.5359 | LR_b 2.63e-05 | LR_h 1.32e-04
+Iter 26500/40000 | Loss 1.5777 | LR_b 2.62e-05 | LR_h 1.31e-04
+Iter 26550/40000 | Loss 2.6663 | LR_b 2.60e-05 | LR_h 1.30e-04
+Iter 26600/40000 | Loss 2.1726 | LR_b 2.58e-05 | LR_h 1.29e-04
+[Eval-EMA] Iter 26600 Acc: 0.637000
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:3402: DecompressionBombWarning: Image size (117762898 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:3402: DecompressionBombWarning: Image size (104641929 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Iter 26650/40000 | Loss 2.2838 | LR_b 2.56e-05 | LR_h 1.28e-04
+Iter 26700/40000 | Loss 2.8857 | LR_b 2.55e-05 | LR_h 1.27e-04
+Iter 26750/40000 | Loss 2.5532 | LR_b 2.53e-05 | LR_h 1.26e-04
+Iter 26800/40000 | Loss 2.7603 | LR_b 2.51e-05 | LR_h 1.26e-04
+[Eval-EMA] Iter 26800 Acc: 0.612000
+Iter 26850/40000 | Loss 3.2931 | LR_b 2.49e-05 | LR_h 1.25e-04
+Iter 26900/40000 | Loss 2.3751 | LR_b 2.48e-05 | LR_h 1.24e-04
+Iter 26950/40000 | Loss 2.0924 | LR_b 2.46e-05 | LR_h 1.23e-04
+Iter 27000/40000 | Loss 3.3827 | LR_b 2.44e-05 | LR_h 1.22e-04
+[Eval-EMA] Iter 27000 Acc: 0.652000
+Iter 27050/40000 | Loss 2.9036 | LR_b 2.43e-05 | LR_h 1.21e-04
+Iter 27100/40000 | Loss 3.2715 | LR_b 2.41e-05 | LR_h 1.20e-04
+Iter 27150/40000 | Loss 3.4958 | LR_b 2.39e-05 | LR_h 1.20e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/JpegImagePlugin.py:890: UserWarning: Image appears to be a malformed MPO file, it will be interpreted as a base JPEG file
+  warnings.warn(
+Iter 27200/40000 | Loss 2.3936 | LR_b 2.38e-05 | LR_h 1.19e-04
+[Eval-EMA] Iter 27200 Acc: 0.627000
+[Save] Saved to ../model2/Large_1.pth
+Iter 27250/40000 | Loss 3.3099 | LR_b 2.36e-05 | LR_h 1.18e-04
+Iter 27300/40000 | Loss 3.1275 | LR_b 2.34e-05 | LR_h 1.17e-04
+Iter 27350/40000 | Loss 3.1771 | LR_b 2.32e-05 | LR_h 1.16e-04
+Iter 27400/40000 | Loss 2.7944 | LR_b 2.31e-05 | LR_h 1.15e-04
+[Eval-EMA] Iter 27400 Acc: 0.618000
+Iter 27450/40000 | Loss 2.6523 | LR_b 2.29e-05 | LR_h 1.15e-04
+Iter 27500/40000 | Loss 2.0984 | LR_b 2.27e-05 | LR_h 1.14e-04
+Iter 27550/40000 | Loss 3.8366 | LR_b 2.26e-05 | LR_h 1.13e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/JpegImagePlugin.py:890: UserWarning: Image appears to be a malformed MPO file, it will be interpreted as a base JPEG file
+  warnings.warn(
+Iter 27600/40000 | Loss 1.7675 | LR_b 2.24e-05 | LR_h 1.12e-04
+[Eval-EMA] Iter 27600 Acc: 0.628000
+Iter 27650/40000 | Loss 2.2400 | LR_b 2.22e-05 | LR_h 1.11e-04
+Iter 27700/40000 | Loss 2.1337 | LR_b 2.21e-05 | LR_h 1.10e-04
+Iter 27750/40000 | Loss 2.4396 | LR_b 2.19e-05 | LR_h 1.10e-04
+Iter 27800/40000 | Loss 2.4571 | LR_b 2.18e-05 | LR_h 1.09e-04
+[Eval-EMA] Iter 27800 Acc: 0.654000
+Iter 27850/40000 | Loss 3.1723 | LR_b 2.16e-05 | LR_h 1.08e-04
+Iter 27900/40000 | Loss 2.7721 | LR_b 2.14e-05 | LR_h 1.07e-04
+Iter 27950/40000 | Loss 2.7357 | LR_b 2.13e-05 | LR_h 1.06e-04
+Iter 28000/40000 | Loss 2.5244 | LR_b 2.11e-05 | LR_h 1.05e-04
+[Eval-EMA] Iter 28000 Acc: 0.627000
+[Save] Saved to ../model2/Large_1.pth
+Iter 28050/40000 | Loss 2.0915 | LR_b 2.09e-05 | LR_h 1.05e-04
+Iter 28100/40000 | Loss 2.9892 | LR_b 2.08e-05 | LR_h 1.04e-04
+Iter 28150/40000 | Loss 3.6602 | LR_b 2.06e-05 | LR_h 1.03e-04
+Iter 28200/40000 | Loss 2.9743 | LR_b 2.05e-05 | LR_h 1.02e-04
+[Eval-EMA] Iter 28200 Acc: 0.627000
+Iter 28250/40000 | Loss 1.8694 | LR_b 2.03e-05 | LR_h 1.01e-04
+Iter 28300/40000 | Loss 2.6630 | LR_b 2.01e-05 | LR_h 1.01e-04
+Iter 28350/40000 | Loss 2.9121 | LR_b 2.00e-05 | LR_h 9.99e-05
+Iter 28400/40000 | Loss 3.3924 | LR_b 1.98e-05 | LR_h 9.91e-05
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+[Eval-EMA] Iter 28400 Acc: 0.639000
+Iter 28450/40000 | Loss 2.4419 | LR_b 1.97e-05 | LR_h 9.83e-05
+Iter 28500/40000 | Loss 1.9334 | LR_b 1.95e-05 | LR_h 9.75e-05
+Iter 28550/40000 | Loss 2.2416 | LR_b 1.93e-05 | LR_h 9.67e-05
+Iter 28600/40000 | Loss 3.5810 | LR_b 1.92e-05 | LR_h 9.59e-05
+[Eval-EMA] Iter 28600 Acc: 0.622000
+Iter 28650/40000 | Loss 2.8611 | LR_b 1.90e-05 | LR_h 9.51e-05
+Iter 28700/40000 | Loss 2.5105 | LR_b 1.89e-05 | LR_h 9.44e-05
+Iter 28750/40000 | Loss 2.5202 | LR_b 1.87e-05 | LR_h 9.36e-05
+Iter 28800/40000 | Loss 3.0898 | LR_b 1.86e-05 | LR_h 9.28e-05
+[Eval-EMA] Iter 28800 Acc: 0.630000
+[Save] Saved to ../model2/Large_1.pth
+Iter 28850/40000 | Loss 2.5641 | LR_b 1.84e-05 | LR_h 9.20e-05
+Iter 28900/40000 | Loss 1.9925 | LR_b 1.83e-05 | LR_h 9.13e-05
+Iter 28950/40000 | Loss 2.8414 | LR_b 1.81e-05 | LR_h 9.05e-05
+Iter 29000/40000 | Loss 2.8397 | LR_b 1.79e-05 | LR_h 8.97e-05
+[Eval-EMA] Iter 29000 Acc: 0.642000
+Iter 29050/40000 | Loss 3.2553 | LR_b 1.78e-05 | LR_h 8.90e-05
+Iter 29100/40000 | Loss 2.2680 | LR_b 1.76e-05 | LR_h 8.82e-05
+Iter 29150/40000 | Loss 3.0902 | LR_b 1.75e-05 | LR_h 8.75e-05
+Iter 29200/40000 | Loss 2.3531 | LR_b 1.73e-05 | LR_h 8.67e-05
+[Eval-EMA] Iter 29200 Acc: 0.628000
+Iter 29250/40000 | Loss 3.2658 | LR_b 1.72e-05 | LR_h 8.60e-05
+Iter 29300/40000 | Loss 2.2509 | LR_b 1.70e-05 | LR_h 8.52e-05
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:3402: DecompressionBombWarning: Image size (92366680 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Iter 29350/40000 | Loss 1.9255 | LR_b 1.69e-05 | LR_h 8.45e-05
+Iter 29400/40000 | Loss 2.9080 | LR_b 1.67e-05 | LR_h 8.37e-05
+[Eval-EMA] Iter 29400 Acc: 0.645000
+Iter 29450/40000 | Loss 3.6378 | LR_b 1.66e-05 | LR_h 8.30e-05
+Iter 29500/40000 | Loss 1.6791 | LR_b 1.64e-05 | LR_h 8.22e-05
+Iter 29550/40000 | Loss 2.8427 | LR_b 1.63e-05 | LR_h 8.15e-05
+Iter 29600/40000 | Loss 2.9048 | LR_b 1.62e-05 | LR_h 8.08e-05
+[Eval-EMA] Iter 29600 Acc: 0.646000
+[Save] Saved to ../model2/Large_1.pth
+Iter 29650/40000 | Loss 3.2509 | LR_b 1.60e-05 | LR_h 8.00e-05
+Iter 29700/40000 | Loss 3.0189 | LR_b 1.59e-05 | LR_h 7.93e-05
+Iter 29750/40000 | Loss 2.9073 | LR_b 1.57e-05 | LR_h 7.86e-05
+Iter 29800/40000 | Loss 2.7968 | LR_b 1.56e-05 | LR_h 7.79e-05
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+[Eval-EMA] Iter 29800 Acc: 0.623000
+Iter 29850/40000 | Loss 3.6487 | LR_b 1.54e-05 | LR_h 7.71e-05
+Iter 29900/40000 | Loss 2.8006 | LR_b 1.53e-05 | LR_h 7.64e-05
+Iter 29950/40000 | Loss 3.2087 | LR_b 1.51e-05 | LR_h 7.57e-05
+Iter 30000/40000 | Loss 2.6469 | LR_b 1.50e-05 | LR_h 7.50e-05
+[Eval-EMA] Iter 30000 Acc: 0.644000
+Iter 30050/40000 | Loss 1.8884 | LR_b 1.49e-05 | LR_h 7.43e-05
+Iter 30100/40000 | Loss 2.1224 | LR_b 1.47e-05 | LR_h 7.36e-05
+Iter 30150/40000 | Loss 2.6496 | LR_b 1.46e-05 | LR_h 7.29e-05
+Iter 30200/40000 | Loss 2.3574 | LR_b 1.44e-05 | LR_h 7.22e-05
+[Eval-EMA] Iter 30200 Acc: 0.645000
+Iter 30250/40000 | Loss 2.6366 | LR_b 1.43e-05 | LR_h 7.15e-05
+Iter 30300/40000 | Loss 3.7856 | LR_b 1.42e-05 | LR_h 7.08e-05
+Iter 30350/40000 | Loss 2.7709 | LR_b 1.40e-05 | LR_h 7.01e-05
+Iter 30400/40000 | Loss 2.8467 | LR_b 1.39e-05 | LR_h 6.94e-05
+[Eval-EMA] Iter 30400 Acc: 0.635000
+[Save] Saved to ../model2/Large_1.pth
+Iter 30450/40000 | Loss 1.7244 | LR_b 1.37e-05 | LR_h 6.87e-05
+Iter 30500/40000 | Loss 2.0022 | LR_b 1.36e-05 | LR_h 6.80e-05
+Iter 30550/40000 | Loss 2.5932 | LR_b 1.35e-05 | LR_h 6.74e-05
+Iter 30600/40000 | Loss 1.8807 | LR_b 1.33e-05 | LR_h 6.67e-05
+[Eval-EMA] Iter 30600 Acc: 0.640000
+Iter 30650/40000 | Loss 2.5796 | LR_b 1.32e-05 | LR_h 6.60e-05
+Iter 30700/40000 | Loss 2.5228 | LR_b 1.31e-05 | LR_h 6.53e-05
+Iter 30750/40000 | Loss 2.2815 | LR_b 1.29e-05 | LR_h 6.47e-05
+Iter 30800/40000 | Loss 2.2851 | LR_b 1.28e-05 | LR_h 6.40e-05
+[Eval-EMA] Iter 30800 Acc: 0.655000
+Iter 30850/40000 | Loss 2.9142 | LR_b 1.27e-05 | LR_h 6.33e-05
+Iter 30900/40000 | Loss 1.9990 | LR_b 1.25e-05 | LR_h 6.27e-05
+Iter 30950/40000 | Loss 3.0499 | LR_b 1.24e-05 | LR_h 6.20e-05
+Iter 31000/40000 | Loss 2.4511 | LR_b 1.23e-05 | LR_h 6.14e-05
+[Eval-EMA] Iter 31000 Acc: 0.614000
+Iter 31050/40000 | Loss 2.8718 | LR_b 1.21e-05 | LR_h 6.07e-05
+Iter 31100/40000 | Loss 2.6563 | LR_b 1.20e-05 | LR_h 6.01e-05
+Iter 31150/40000 | Loss 2.2261 | LR_b 1.19e-05 | LR_h 5.94e-05
+Iter 31200/40000 | Loss 3.1722 | LR_b 1.18e-05 | LR_h 5.88e-05
+[Eval-EMA] Iter 31200 Acc: 0.631000
+[Save] Saved to ../model2/Large_1.pth
+Iter 31250/40000 | Loss 2.3808 | LR_b 1.16e-05 | LR_h 5.81e-05
+Iter 31300/40000 | Loss 2.2801 | LR_b 1.15e-05 | LR_h 5.75e-05
+Iter 31350/40000 | Loss 1.5001 | LR_b 1.14e-05 | LR_h 5.69e-05
+Iter 31400/40000 | Loss 2.8203 | LR_b 1.12e-05 | LR_h 5.62e-05
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+[Eval-EMA] Iter 31400 Acc: 0.634000
+Iter 31450/40000 | Loss 3.0196 | LR_b 1.11e-05 | LR_h 5.56e-05
+Iter 31500/40000 | Loss 2.1769 | LR_b 1.10e-05 | LR_h 5.50e-05
+Iter 31550/40000 | Loss 2.4493 | LR_b 1.09e-05 | LR_h 5.44e-05
+Iter 31600/40000 | Loss 3.5317 | LR_b 1.08e-05 | LR_h 5.38e-05
+[Eval-EMA] Iter 31600 Acc: 0.639000
+Iter 31650/40000 | Loss 2.6602 | LR_b 1.06e-05 | LR_h 5.31e-05
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 31700/40000 | Loss 2.0166 | LR_b 1.05e-05 | LR_h 5.25e-05
+Iter 31750/40000 | Loss 1.5930 | LR_b 1.04e-05 | LR_h 5.19e-05
+Iter 31800/40000 | Loss 1.6431 | LR_b 1.03e-05 | LR_h 5.13e-05
+[Eval-EMA] Iter 31800 Acc: 0.637000
+Iter 31850/40000 | Loss 2.0049 | LR_b 1.01e-05 | LR_h 5.07e-05
+Iter 31900/40000 | Loss 2.2335 | LR_b 1.00e-05 | LR_h 5.01e-05
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 2. 
+  warnings.warn(str(msg))
+Iter 31950/40000 | Loss 2.1136 | LR_b 9.91e-06 | LR_h 4.95e-05
+Iter 32000/40000 | Loss 1.5506 | LR_b 9.79e-06 | LR_h 4.89e-05
+[Eval-EMA] Iter 32000 Acc: 0.643000
+[Save] Saved to ../model2/Large_1.pth
+Iter 32050/40000 | Loss 1.5227 | LR_b 9.67e-06 | LR_h 4.83e-05
+Iter 32100/40000 | Loss 1.9358 | LR_b 9.55e-06 | LR_h 4.78e-05
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 32150/40000 | Loss 3.2291 | LR_b 9.43e-06 | LR_h 4.72e-05
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 32200/40000 | Loss 1.9617 | LR_b 9.32e-06 | LR_h 4.66e-05
+[Eval-EMA] Iter 32200 Acc: 0.650000
+Iter 32250/40000 | Loss 1.8171 | LR_b 9.20e-06 | LR_h 4.60e-05
+Iter 32300/40000 | Loss 2.1816 | LR_b 9.09e-06 | LR_h 4.54e-05
+Iter 32350/40000 | Loss 2.1304 | LR_b 8.98e-06 | LR_h 4.49e-05
+Iter 32400/40000 | Loss 2.0116 | LR_b 8.86e-06 | LR_h 4.43e-05
+[Eval-EMA] Iter 32400 Acc: 0.637000
+Iter 32450/40000 | Loss 1.6407 | LR_b 8.75e-06 | LR_h 4.37e-05
+Iter 32500/40000 | Loss 1.8247 | LR_b 8.64e-06 | LR_h 4.32e-05
+Iter 32550/40000 | Loss 3.8064 | LR_b 8.53e-06 | LR_h 4.26e-05
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 32600/40000 | Loss 1.8181 | LR_b 8.41e-06 | LR_h 4.21e-05
+[Eval-EMA] Iter 32600 Acc: 0.651000
+Iter 32650/40000 | Loss 1.8592 | LR_b 8.30e-06 | LR_h 4.15e-05
+Iter 32700/40000 | Loss 2.0253 | LR_b 8.20e-06 | LR_h 4.10e-05
+Iter 32750/40000 | Loss 1.8862 | LR_b 8.09e-06 | LR_h 4.04e-05
+Iter 32800/40000 | Loss 1.6307 | LR_b 7.98e-06 | LR_h 3.99e-05
+[Eval-EMA] Iter 32800 Acc: 0.640000
+[Save] Saved to ../model2/Large_1.pth
+Iter 32850/40000 | Loss 2.3553 | LR_b 7.87e-06 | LR_h 3.94e-05
+Iter 32900/40000 | Loss 3.2633 | LR_b 7.76e-06 | LR_h 3.88e-05
+Iter 32950/40000 | Loss 1.4659 | LR_b 7.66e-06 | LR_h 3.83e-05
+Iter 33000/40000 | Loss 2.1614 | LR_b 7.55e-06 | LR_h 3.78e-05
+[Eval-EMA] Iter 33000 Acc: 0.614000
+Iter 33050/40000 | Loss 1.8703 | LR_b 7.45e-06 | LR_h 3.72e-05
+Iter 33100/40000 | Loss 2.4655 | LR_b 7.34e-06 | LR_h 3.67e-05
+Iter 33150/40000 | Loss 1.7191 | LR_b 7.24e-06 | LR_h 3.62e-05
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 2. 
+  warnings.warn(str(msg))
+Iter 33200/40000 | Loss 2.7550 | LR_b 7.14e-06 | LR_h 3.57e-05
+[Eval-EMA] Iter 33200 Acc: 0.650000
+Iter 33250/40000 | Loss 1.9470 | LR_b 7.04e-06 | LR_h 3.52e-05
+Iter 33300/40000 | Loss 2.2022 | LR_b 6.93e-06 | LR_h 3.47e-05
+Iter 33350/40000 | Loss 2.3698 | LR_b 6.83e-06 | LR_h 3.42e-05
+Iter 33400/40000 | Loss 2.5384 | LR_b 6.73e-06 | LR_h 3.37e-05
+[Eval-EMA] Iter 33400 Acc: 0.624000
+Iter 33450/40000 | Loss 1.5283 | LR_b 6.63e-06 | LR_h 3.32e-05
+Iter 33500/40000 | Loss 1.5835 | LR_b 6.54e-06 | LR_h 3.27e-05
+Iter 33550/40000 | Loss 2.3018 | LR_b 6.44e-06 | LR_h 3.22e-05
+Iter 33600/40000 | Loss 1.8361 | LR_b 6.34e-06 | LR_h 3.17e-05
+[Eval-EMA] Iter 33600 Acc: 0.660000
+[Save] Saved to ../model2/Large_1.pth
+Iter 33650/40000 | Loss 2.6148 | LR_b 6.24e-06 | LR_h 3.12e-05
+Iter 33700/40000 | Loss 2.1526 | LR_b 6.15e-06 | LR_h 3.07e-05
+Iter 33750/40000 | Loss 1.9737 | LR_b 6.05e-06 | LR_h 3.03e-05
+Iter 33800/40000 | Loss 2.5265 | LR_b 5.96e-06 | LR_h 2.98e-05
+[Eval-EMA] Iter 33800 Acc: 0.639000
+Iter 33850/40000 | Loss 1.8467 | LR_b 5.86e-06 | LR_h 2.93e-05
+Iter 33900/40000 | Loss 1.8956 | LR_b 5.77e-06 | LR_h 2.89e-05
+Iter 33950/40000 | Loss 2.0867 | LR_b 5.68e-06 | LR_h 2.84e-05
+Iter 34000/40000 | Loss 3.0900 | LR_b 5.59e-06 | LR_h 2.79e-05
+[Eval-EMA] Iter 34000 Acc: 0.646000
+Iter 34050/40000 | Loss 2.0114 | LR_b 5.50e-06 | LR_h 2.75e-05
+Iter 34100/40000 | Loss 2.3799 | LR_b 5.41e-06 | LR_h 2.70e-05
+Iter 34150/40000 | Loss 1.9849 | LR_b 5.32e-06 | LR_h 2.66e-05
+Iter 34200/40000 | Loss 2.4647 | LR_b 5.23e-06 | LR_h 2.61e-05
+[Eval-EMA] Iter 34200 Acc: 0.621000
+Iter 34250/40000 | Loss 1.6745 | LR_b 5.14e-06 | LR_h 2.57e-05
+Iter 34300/40000 | Loss 3.3242 | LR_b 5.05e-06 | LR_h 2.53e-05
+Iter 34350/40000 | Loss 1.8677 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 34400/40000 | Loss 1.8272 | LR_b 5.00e-06 | LR_h 2.50e-05
+[Eval-EMA] Iter 34400 Acc: 0.637000
+[Save] Saved to ../model2/Large_1.pth
+Iter 34450/40000 | Loss 2.4347 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 34500/40000 | Loss 1.8283 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 34550/40000 | Loss 1.8131 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 34600/40000 | Loss 1.9681 | LR_b 5.00e-06 | LR_h 2.50e-05
+[Eval-EMA] Iter 34600 Acc: 0.628000
+Iter 34650/40000 | Loss 1.7426 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 34700/40000 | Loss 2.3322 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 34750/40000 | Loss 1.8484 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 34800/40000 | Loss 2.2110 | LR_b 5.00e-06 | LR_h 2.50e-05
+[Eval-EMA] Iter 34800 Acc: 0.651000
+Iter 34850/40000 | Loss 2.2121 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 34900/40000 | Loss 2.2276 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 34950/40000 | Loss 2.5363 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 35000/40000 | Loss 2.1533 | LR_b 5.00e-06 | LR_h 2.50e-05
+[Eval-EMA] Iter 35000 Acc: 0.634000
+Iter 35050/40000 | Loss 2.5874 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 35100/40000 | Loss 2.3952 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 35150/40000 | Loss 1.7526 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 35200/40000 | Loss 3.2536 | LR_b 5.00e-06 | LR_h 2.50e-05
+[Eval-EMA] Iter 35200 Acc: 0.654000
+[Save] Saved to ../model2/Large_1.pth
+Iter 35250/40000 | Loss 1.6480 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 35300/40000 | Loss 1.9541 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 35350/40000 | Loss 1.8089 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 35400/40000 | Loss 1.5183 | LR_b 5.00e-06 | LR_h 2.50e-05
+[Eval-EMA] Iter 35400 Acc: 0.651000
+Iter 35450/40000 | Loss 2.3243 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 35500/40000 | Loss 1.9731 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 35550/40000 | Loss 1.7222 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 35600/40000 | Loss 2.2933 | LR_b 5.00e-06 | LR_h 2.50e-05
+[Eval-EMA] Iter 35600 Acc: 0.654000
+Iter 35650/40000 | Loss 1.8393 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 35700/40000 | Loss 2.8183 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 35750/40000 | Loss 2.1084 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 35800/40000 | Loss 2.4199 | LR_b 5.00e-06 | LR_h 2.50e-05
+[Eval-EMA] Iter 35800 Acc: 0.649000
+Iter 35850/40000 | Loss 2.0869 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 35900/40000 | Loss 2.3281 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 35950/40000 | Loss 1.9373 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 36000/40000 | Loss 1.5096 | LR_b 5.00e-06 | LR_h 2.50e-05
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+[Eval-EMA] Iter 36000 Acc: 0.654000
+[Save] Saved to ../model2/Large_1.pth
+Iter 36050/40000 | Loss 1.7269 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 36100/40000 | Loss 2.7625 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 36150/40000 | Loss 1.9622 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 36200/40000 | Loss 2.2166 | LR_b 5.00e-06 | LR_h 2.50e-05
+[Eval-EMA] Iter 36200 Acc: 0.645000
+Iter 36250/40000 | Loss 1.5154 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 36300/40000 | Loss 2.1721 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 36350/40000 | Loss 2.2875 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 36400/40000 | Loss 3.5736 | LR_b 5.00e-06 | LR_h 2.50e-05
+[Eval-EMA] Iter 36400 Acc: 0.642000
+Iter 36450/40000 | Loss 2.5791 | LR_b 5.00e-06 | LR_h 2.50e-05
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 2. 
+  warnings.warn(str(msg))
+Iter 36500/40000 | Loss 1.6270 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 36550/40000 | Loss 1.5714 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 36600/40000 | Loss 1.6850 | LR_b 5.00e-06 | LR_h 2.50e-05
+[Eval-EMA] Iter 36600 Acc: 0.648000
+Iter 36650/40000 | Loss 2.0742 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 36700/40000 | Loss 2.3663 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 36750/40000 | Loss 1.9851 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 36800/40000 | Loss 2.2871 | LR_b 5.00e-06 | LR_h 2.50e-05
+[Eval-EMA] Iter 36800 Acc: 0.647000
+[Save] Saved to ../model2/Large_1.pth
+Iter 36850/40000 | Loss 2.2662 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 36900/40000 | Loss 2.2568 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 36950/40000 | Loss 1.6857 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 37000/40000 | Loss 1.9589 | LR_b 5.00e-06 | LR_h 2.50e-05
+[Eval-EMA] Iter 37000 Acc: 0.633000
+Iter 37050/40000 | Loss 2.1687 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 37100/40000 | Loss 2.5086 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 37150/40000 | Loss 2.2526 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 37200/40000 | Loss 2.7058 | LR_b 5.00e-06 | LR_h 2.50e-05
+[Eval-EMA] Iter 37200 Acc: 0.640000
+Iter 37250/40000 | Loss 1.9960 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 37300/40000 | Loss 2.4522 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 37350/40000 | Loss 1.8733 | LR_b 5.00e-06 | LR_h 2.50e-05
+Iter 37400/40000 | Loss 1.6079 | LR_b 5.00e-06 | LR_h 2.50e-05
+[Eval-EMA] Iter 37400 Acc: 0.626000
+
+===== New run: 2025-10-04T17:44:24.043547 =====
+timm version: 1.0.17
+pretrained cfg: {'url': 'https://github.com/SwinTransformer/storage/releases/download/v2.0.0/swinv2_large_patch4_window12to24_192to384_22kto1k_ft.pth', 'hf_hub_id': 'timm/swinv2_large_window12to24_192to384.ms_in22k_ft_in1k', 'architecture': 'swinv2_large_window12to24_192to384', 'tag': 'ms_in22k_ft_in1k', 'custom_load': False, 'input_size': (3, 384, 384), 'fixed_input_size': True, 'interpolation': 'bicubic', 'crop_pct': 1.0, 'crop_mode': 'center', 'mean': (0.485, 0.456, 0.406), 'std': (0.229, 0.224, 0.225), 'num_classes': 1000, 'pool_size': (12, 12), 'first_conv': 'patch_embed.proj', 'classifier': 'head.fc', 'license': 'mit'}
+[DP] Using DataParallel with 3 GPUs
+[Resume] resume from global_step=36800
+Starting training on train_B (SwinV2-Large@384) with Gradient Accumulation...
+Iter 36850/40000 | Loss 1.7972 | LR_b 1.00e-07 | LR_h 5.00e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 2. 
+  warnings.warn(str(msg))
+Iter 36900/40000 | Loss 2.2525 | LR_b 1.00e-07 | LR_h 5.00e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/JpegImagePlugin.py:890: UserWarning: Image appears to be a malformed MPO file, it will be interpreted as a base JPEG file
+  warnings.warn(
+Iter 36950/40000 | Loss 2.3875 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 37000/40000 | Loss 1.8872 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 37000 Acc: 0.799000
+[BEST] Acc improved -1.000000 → 0.799000 at iter 37000. Saved BEST to ../model2/Large_best2.pth
+Iter 37050/40000 | Loss 1.9603 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 37100/40000 | Loss 1.9937 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 37150/40000 | Loss 1.8222 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 37200/40000 | Loss 2.3720 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 37200 Acc: 0.780000
+Iter 37250/40000 | Loss 1.9106 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 37300/40000 | Loss 1.6757 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 37350/40000 | Loss 2.1246 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 37400/40000 | Loss 2.3919 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 37400 Acc: 0.781000
+Iter 37450/40000 | Loss 3.0021 | LR_b 1.00e-07 | LR_h 5.00e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/JpegImagePlugin.py:890: UserWarning: Image appears to be a malformed MPO file, it will be interpreted as a base JPEG file
+  warnings.warn(
+Iter 37500/40000 | Loss 1.5649 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 37550/40000 | Loss 2.2352 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 37600/40000 | Loss 2.0560 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 37600 Acc: 0.793000
+[Save] Saved to ../model2/Large_2.pth
+Iter 37650/40000 | Loss 1.5394 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 37700/40000 | Loss 1.5569 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 37750/40000 | Loss 1.8307 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 37800/40000 | Loss 1.7573 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 37800 Acc: 0.808000
+[BEST] Acc improved 0.799000 → 0.808000 at iter 37800. Saved BEST to ../model2/Large_best2.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 37850/40000 | Loss 2.1549 | LR_b 1.00e-07 | LR_h 5.00e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 37900/40000 | Loss 1.6028 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 37950/40000 | Loss 3.7809 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 38000/40000 | Loss 1.5090 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 38000 Acc: 0.798000
+Iter 38050/40000 | Loss 2.2754 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 38100/40000 | Loss 1.6255 | LR_b 1.00e-07 | LR_h 5.00e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 38150/40000 | Loss 2.2536 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 38200/40000 | Loss 1.4829 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 38200 Acc: 0.813000
+[BEST] Acc improved 0.808000 → 0.813000 at iter 38200. Saved BEST to ../model2/Large_best2.pth
+Iter 38250/40000 | Loss 2.0810 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 38300/40000 | Loss 1.7399 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 38350/40000 | Loss 1.7389 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 38400/40000 | Loss 1.8292 | LR_b 1.00e-07 | LR_h 5.00e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 2. 
+  warnings.warn(str(msg))
+[Eval-EMA] Iter 38400 Acc: 0.792000
+[Save] Saved to ../model2/Large_2.pth
+Iter 38450/40000 | Loss 2.3341 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 38500/40000 | Loss 3.2310 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 38550/40000 | Loss 2.2226 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 38600/40000 | Loss 2.3270 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 38600 Acc: 0.792000
+Iter 38650/40000 | Loss 1.8314 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 38700/40000 | Loss 1.6576 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 38750/40000 | Loss 1.9479 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 38800/40000 | Loss 1.5969 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 38800 Acc: 0.777000
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Iter 38850/40000 | Loss 1.6387 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 38900/40000 | Loss 2.0158 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 38950/40000 | Loss 2.1506 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 39000/40000 | Loss 2.6071 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 39000 Acc: 0.788000
+Iter 39050/40000 | Loss 3.2707 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 39100/40000 | Loss 2.2025 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 39150/40000 | Loss 1.8649 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 39200/40000 | Loss 2.9102 | LR_b 1.00e-07 | LR_h 5.00e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 2. 
+  warnings.warn(str(msg))
+[Eval-EMA] Iter 39200 Acc: 0.771000
+[Save] Saved to ../model2/Large_2.pth
+Iter 39250/40000 | Loss 1.7458 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 39300/40000 | Loss 2.1402 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 39350/40000 | Loss 2.8076 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 39400/40000 | Loss 1.5361 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 39400 Acc: 0.804000
+Iter 39450/40000 | Loss 1.7015 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 39500/40000 | Loss 2.2489 | LR_b 1.00e-07 | LR_h 5.00e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:949: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 2. 
+  warnings.warn(str(msg))
+Iter 39550/40000 | Loss 1.7013 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 39600/40000 | Loss 1.9429 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 39600 Acc: 0.782000
+Iter 39650/40000 | Loss 2.6771 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 39700/40000 | Loss 2.4146 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 39750/40000 | Loss 1.7468 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 39800/40000 | Loss 2.2445 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 39800 Acc: 0.801000
+Iter 39850/40000 | Loss 2.3399 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 39900/40000 | Loss 2.5292 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 39950/40000 | Loss 1.9030 | LR_b 1.00e-07 | LR_h 5.00e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:3402: DecompressionBombWarning: Image size (92366680 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Iter 40000/40000 | Loss 1.5701 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 40000 Acc: 0.798000
+[Save] Saved to ../model2/Large_2.pth

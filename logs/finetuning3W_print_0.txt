@@ -1,0 +1,1046 @@
+
+===== New run: 2025-10-04T21:03:35.557943 =====
+timm version: 1.0.17
+pretrained cfg: {'url': 'https://github.com/SwinTransformer/storage/releases/download/v2.0.0/swinv2_large_patch4_window12to24_192to384_22kto1k_ft.pth', 'hf_hub_id': 'timm/swinv2_large_window12to24_192to384.ms_in22k_ft_in1k', 'architecture': 'swinv2_large_window12to24_192to384', 'tag': 'ms_in22k_ft_in1k', 'custom_load': False, 'input_size': (3, 384, 384), 'fixed_input_size': True, 'interpolation': 'bicubic', 'crop_pct': 1.0, 'crop_mode': 'center', 'mean': (0.485, 0.456, 0.406), 'std': (0.229, 0.224, 0.225), 'num_classes': 1000, 'pool_size': (12, 12), 'first_conv': 'patch_embed.proj', 'classifier': 'head.fc', 'license': 'mit'}
+[DP] Using DataParallel with 3 GPUs
+Starting training on train_B (SwinV2-Large@384) with Gradient Accumulation...
+Iter 50/30000 | Loss 6.0272 | LR_b 2.00e-07 | LR_h 1.00e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 100/30000 | Loss 6.1038 | LR_b 4.00e-07 | LR_h 2.00e-06
+Iter 150/30000 | Loss 6.0096 | LR_b 6.00e-07 | LR_h 3.00e-06
+Iter 200/30000 | Loss 5.9470 | LR_b 8.00e-07 | LR_h 4.00e-06
+[Eval-EMA] Iter 200 Acc: 0.004646
+[BEST] Acc improved -1.000000 → 0.004646 at iter 200. Saved BEST to ../model2/Large_best0.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 250/30000 | Loss 5.9604 | LR_b 1.00e-06 | LR_h 5.00e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 300/30000 | Loss 5.9704 | LR_b 1.20e-06 | LR_h 6.00e-06
+Iter 350/30000 | Loss 5.8999 | LR_b 1.40e-06 | LR_h 7.00e-06
+Iter 400/30000 | Loss 5.9485 | LR_b 1.60e-06 | LR_h 8.00e-06
+[Eval-EMA] Iter 400 Acc: 0.004646
+Iter 450/30000 | Loss 5.7729 | LR_b 1.80e-06 | LR_h 9.00e-06
+Iter 500/30000 | Loss 5.7528 | LR_b 2.00e-06 | LR_h 1.00e-05
+Iter 550/30000 | Loss 5.6388 | LR_b 2.00e-06 | LR_h 1.00e-05
+Iter 600/30000 | Loss 5.4891 | LR_b 2.00e-06 | LR_h 1.00e-05
+[Eval-EMA] Iter 600 Acc: 0.004646
+Iter 650/30000 | Loss 5.3264 | LR_b 2.00e-06 | LR_h 1.00e-05
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 700/30000 | Loss 5.5319 | LR_b 2.00e-06 | LR_h 1.00e-05
+Iter 750/30000 | Loss 5.5509 | LR_b 2.00e-06 | LR_h 1.00e-05
+Iter 800/30000 | Loss 5.0615 | LR_b 2.00e-06 | LR_h 1.00e-05
+[Eval-EMA] Iter 800 Acc: 0.005807
+[BEST] Acc improved 0.004646 → 0.005807 at iter 800. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+Iter 850/30000 | Loss 5.1178 | LR_b 2.00e-06 | LR_h 1.00e-05
+Iter 900/30000 | Loss 5.3160 | LR_b 2.00e-06 | LR_h 1.00e-05
+Iter 950/30000 | Loss 5.0399 | LR_b 2.00e-06 | LR_h 9.99e-06
+Iter 1000/30000 | Loss 5.0250 | LR_b 2.00e-06 | LR_h 9.99e-06
+[Eval-EMA] Iter 1000 Acc: 0.011614
+[BEST] Acc improved 0.005807 → 0.011614 at iter 1000. Saved BEST to ../model2/Large_best0.pth
+Iter 1050/30000 | Loss 5.1654 | LR_b 2.00e-06 | LR_h 9.99e-06
+Iter 1100/30000 | Loss 4.3336 | LR_b 2.00e-06 | LR_h 9.99e-06
+Iter 1150/30000 | Loss 4.2005 | LR_b 2.00e-06 | LR_h 9.99e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 1200/30000 | Loss 4.7599 | LR_b 2.00e-06 | LR_h 9.99e-06
+[Eval-EMA] Iter 1200 Acc: 0.012776
+[BEST] Acc improved 0.011614 → 0.012776 at iter 1200. Saved BEST to ../model2/Large_best0.pth
+Iter 1250/30000 | Loss 3.9740 | LR_b 2.00e-06 | LR_h 9.98e-06
+Iter 1300/30000 | Loss 4.7234 | LR_b 2.00e-06 | LR_h 9.98e-06
+Iter 1350/30000 | Loss 4.5428 | LR_b 2.00e-06 | LR_h 9.98e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 1400/30000 | Loss 4.0229 | LR_b 2.00e-06 | LR_h 9.98e-06
+[Eval-EMA] Iter 1400 Acc: 0.018583
+[BEST] Acc improved 0.012776 → 0.018583 at iter 1400. Saved BEST to ../model2/Large_best0.pth
+Iter 1450/30000 | Loss 4.8383 | LR_b 1.99e-06 | LR_h 9.97e-06
+Iter 1500/30000 | Loss 4.2870 | LR_b 1.99e-06 | LR_h 9.97e-06
+Iter 1550/30000 | Loss 4.7573 | LR_b 1.99e-06 | LR_h 9.97e-06
+Iter 1600/30000 | Loss 3.4321 | LR_b 1.99e-06 | LR_h 9.97e-06
+[Eval-EMA] Iter 1600 Acc: 0.025552
+[BEST] Acc improved 0.018583 → 0.025552 at iter 1600. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+Iter 1650/30000 | Loss 3.8434 | LR_b 1.99e-06 | LR_h 9.96e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 1700/30000 | Loss 4.2098 | LR_b 1.99e-06 | LR_h 9.96e-06
+Iter 1750/30000 | Loss 4.2433 | LR_b 1.99e-06 | LR_h 9.96e-06
+Iter 1800/30000 | Loss 4.0806 | LR_b 1.99e-06 | LR_h 9.95e-06
+[Eval-EMA] Iter 1800 Acc: 0.037166
+[BEST] Acc improved 0.025552 → 0.037166 at iter 1800. Saved BEST to ../model2/Large_best0.pth
+Iter 1850/30000 | Loss 3.4733 | LR_b 1.99e-06 | LR_h 9.95e-06
+Iter 1900/30000 | Loss 2.7451 | LR_b 1.99e-06 | LR_h 9.94e-06
+Iter 1950/30000 | Loss 3.5985 | LR_b 1.99e-06 | LR_h 9.94e-06
+Iter 2000/30000 | Loss 3.7777 | LR_b 1.99e-06 | LR_h 9.94e-06
+[Eval-EMA] Iter 2000 Acc: 0.060395
+[BEST] Acc improved 0.037166 → 0.060395 at iter 2000. Saved BEST to ../model2/Large_best0.pth
+Iter 2050/30000 | Loss 3.8521 | LR_b 1.99e-06 | LR_h 9.93e-06
+Iter 2100/30000 | Loss 3.5038 | LR_b 1.99e-06 | LR_h 9.93e-06
+Iter 2150/30000 | Loss 4.0516 | LR_b 1.98e-06 | LR_h 9.92e-06
+Iter 2200/30000 | Loss 3.1966 | LR_b 1.98e-06 | LR_h 9.92e-06
+[Eval-EMA] Iter 2200 Acc: 0.084785
+[BEST] Acc improved 0.060395 → 0.084785 at iter 2200. Saved BEST to ../model2/Large_best0.pth
+Iter 2250/30000 | Loss 3.0034 | LR_b 1.98e-06 | LR_h 9.91e-06
+Iter 2300/30000 | Loss 3.0563 | LR_b 1.98e-06 | LR_h 9.91e-06
+Iter 2350/30000 | Loss 3.5225 | LR_b 1.98e-06 | LR_h 9.90e-06
+Iter 2400/30000 | Loss 3.5205 | LR_b 1.98e-06 | LR_h 9.90e-06
+[Eval-EMA] Iter 2400 Acc: 0.116144
+[BEST] Acc improved 0.084785 → 0.116144 at iter 2400. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 2450/30000 | Loss 3.5766 | LR_b 1.98e-06 | LR_h 9.89e-06
+Iter 2500/30000 | Loss 3.9737 | LR_b 1.98e-06 | LR_h 9.89e-06
+Iter 2550/30000 | Loss 3.2666 | LR_b 1.98e-06 | LR_h 9.88e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 2600/30000 | Loss 3.4405 | LR_b 1.98e-06 | LR_h 9.88e-06
+[Eval-EMA] Iter 2600 Acc: 0.142857
+[BEST] Acc improved 0.116144 → 0.142857 at iter 2600. Saved BEST to ../model2/Large_best0.pth
+Iter 2650/30000 | Loss 3.6032 | LR_b 1.97e-06 | LR_h 9.87e-06
+Iter 2700/30000 | Loss 3.3103 | LR_b 1.97e-06 | LR_h 9.86e-06
+Iter 2750/30000 | Loss 4.0543 | LR_b 1.97e-06 | LR_h 9.86e-06
+Iter 2800/30000 | Loss 2.8310 | LR_b 1.97e-06 | LR_h 9.85e-06
+[Eval-EMA] Iter 2800 Acc: 0.173055
+[BEST] Acc improved 0.142857 → 0.173055 at iter 2800. Saved BEST to ../model2/Large_best0.pth
+Iter 2850/30000 | Loss 3.1670 | LR_b 1.97e-06 | LR_h 9.84e-06
+Iter 2900/30000 | Loss 3.9278 | LR_b 1.97e-06 | LR_h 9.84e-06
+Iter 2950/30000 | Loss 3.3979 | LR_b 1.97e-06 | LR_h 9.83e-06
+Iter 3000/30000 | Loss 3.8631 | LR_b 1.96e-06 | LR_h 9.82e-06
+[Eval-EMA] Iter 3000 Acc: 0.198606
+[BEST] Acc improved 0.173055 → 0.198606 at iter 3000. Saved BEST to ../model2/Large_best0.pth
+Iter 3050/30000 | Loss 2.9803 | LR_b 1.96e-06 | LR_h 9.82e-06
+Iter 3100/30000 | Loss 3.0789 | LR_b 1.96e-06 | LR_h 9.81e-06
+Iter 3150/30000 | Loss 3.5648 | LR_b 1.96e-06 | LR_h 9.80e-06
+Iter 3200/30000 | Loss 4.1449 | LR_b 1.96e-06 | LR_h 9.79e-06
+[Eval-EMA] Iter 3200 Acc: 0.224158
+[BEST] Acc improved 0.198606 → 0.224158 at iter 3200. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+Iter 3250/30000 | Loss 3.1342 | LR_b 1.96e-06 | LR_h 9.79e-06
+Iter 3300/30000 | Loss 3.0166 | LR_b 1.96e-06 | LR_h 9.78e-06
+Iter 3350/30000 | Loss 2.9905 | LR_b 1.95e-06 | LR_h 9.77e-06
+Iter 3400/30000 | Loss 3.4701 | LR_b 1.95e-06 | LR_h 9.76e-06
+[Eval-EMA] Iter 3400 Acc: 0.241580
+[BEST] Acc improved 0.224158 → 0.241580 at iter 3400. Saved BEST to ../model2/Large_best0.pth
+Iter 3450/30000 | Loss 3.3214 | LR_b 1.95e-06 | LR_h 9.76e-06
+Iter 3500/30000 | Loss 2.0628 | LR_b 1.95e-06 | LR_h 9.75e-06
+Iter 3550/30000 | Loss 2.6234 | LR_b 1.95e-06 | LR_h 9.74e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 3600/30000 | Loss 3.0292 | LR_b 1.95e-06 | LR_h 9.73e-06
+[Eval-EMA] Iter 3600 Acc: 0.264808
+[BEST] Acc improved 0.241580 → 0.264808 at iter 3600. Saved BEST to ../model2/Large_best0.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 3650/30000 | Loss 3.7229 | LR_b 1.94e-06 | LR_h 9.72e-06
+Iter 3700/30000 | Loss 3.8680 | LR_b 1.94e-06 | LR_h 9.71e-06
+Iter 3750/30000 | Loss 3.4743 | LR_b 1.94e-06 | LR_h 9.70e-06
+Iter 3800/30000 | Loss 2.3833 | LR_b 1.94e-06 | LR_h 9.69e-06
+[Eval-EMA] Iter 3800 Acc: 0.291521
+[BEST] Acc improved 0.264808 → 0.291521 at iter 3800. Saved BEST to ../model2/Large_best0.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 3850/30000 | Loss 3.0861 | LR_b 1.94e-06 | LR_h 9.69e-06
+Iter 3900/30000 | Loss 2.4244 | LR_b 1.94e-06 | LR_h 9.68e-06
+Iter 3950/30000 | Loss 3.2167 | LR_b 1.93e-06 | LR_h 9.67e-06
+Iter 4000/30000 | Loss 2.9279 | LR_b 1.93e-06 | LR_h 9.66e-06
+[Eval-EMA] Iter 4000 Acc: 0.317073
+[BEST] Acc improved 0.291521 → 0.317073 at iter 4000. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+Iter 4050/30000 | Loss 3.3950 | LR_b 1.93e-06 | LR_h 9.65e-06
+Iter 4100/30000 | Loss 2.9952 | LR_b 1.93e-06 | LR_h 9.64e-06
+Iter 4150/30000 | Loss 3.4710 | LR_b 1.93e-06 | LR_h 9.63e-06
+Iter 4200/30000 | Loss 4.1379 | LR_b 1.92e-06 | LR_h 9.62e-06
+[Eval-EMA] Iter 4200 Acc: 0.342625
+[BEST] Acc improved 0.317073 → 0.342625 at iter 4200. Saved BEST to ../model2/Large_best0.pth
+Iter 4250/30000 | Loss 2.8111 | LR_b 1.92e-06 | LR_h 9.61e-06
+Iter 4300/30000 | Loss 2.6932 | LR_b 1.92e-06 | LR_h 9.60e-06
+Iter 4350/30000 | Loss 2.6909 | LR_b 1.92e-06 | LR_h 9.59e-06
+Iter 4400/30000 | Loss 2.3977 | LR_b 1.92e-06 | LR_h 9.58e-06
+[Eval-EMA] Iter 4400 Acc: 0.367015
+[BEST] Acc improved 0.342625 → 0.367015 at iter 4400. Saved BEST to ../model2/Large_best0.pth
+Iter 4450/30000 | Loss 2.5729 | LR_b 1.91e-06 | LR_h 9.56e-06
+Iter 4500/30000 | Loss 2.9187 | LR_b 1.91e-06 | LR_h 9.55e-06
+Iter 4550/30000 | Loss 2.9889 | LR_b 1.91e-06 | LR_h 9.54e-06
+Iter 4600/30000 | Loss 2.7971 | LR_b 1.91e-06 | LR_h 9.53e-06
+[Eval-EMA] Iter 4600 Acc: 0.387921
+[BEST] Acc improved 0.367015 → 0.387921 at iter 4600. Saved BEST to ../model2/Large_best0.pth
+Iter 4650/30000 | Loss 2.2960 | LR_b 1.90e-06 | LR_h 9.52e-06
+Iter 4700/30000 | Loss 3.0234 | LR_b 1.90e-06 | LR_h 9.51e-06
+Iter 4750/30000 | Loss 2.5485 | LR_b 1.90e-06 | LR_h 9.50e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 4800/30000 | Loss 3.0810 | LR_b 1.90e-06 | LR_h 9.49e-06
+[Eval-EMA] Iter 4800 Acc: 0.404181
+[BEST] Acc improved 0.387921 → 0.404181 at iter 4800. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+Iter 4850/30000 | Loss 3.0392 | LR_b 1.89e-06 | LR_h 9.47e-06
+Iter 4900/30000 | Loss 2.5586 | LR_b 1.89e-06 | LR_h 9.46e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 4950/30000 | Loss 2.7968 | LR_b 1.89e-06 | LR_h 9.45e-06
+Iter 5000/30000 | Loss 2.2335 | LR_b 1.89e-06 | LR_h 9.44e-06
+[Eval-EMA] Iter 5000 Acc: 0.409988
+[BEST] Acc improved 0.404181 → 0.409988 at iter 5000. Saved BEST to ../model2/Large_best0.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 5050/30000 | Loss 2.8132 | LR_b 1.88e-06 | LR_h 9.42e-06
+Iter 5100/30000 | Loss 2.4977 | LR_b 1.88e-06 | LR_h 9.41e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 5150/30000 | Loss 3.2337 | LR_b 1.88e-06 | LR_h 9.40e-06
+Iter 5200/30000 | Loss 3.2377 | LR_b 1.88e-06 | LR_h 9.39e-06
+[Eval-EMA] Iter 5200 Acc: 0.426249
+[BEST] Acc improved 0.409988 → 0.426249 at iter 5200. Saved BEST to ../model2/Large_best0.pth
+Iter 5250/30000 | Loss 2.7961 | LR_b 1.87e-06 | LR_h 9.37e-06
+Iter 5300/30000 | Loss 3.0699 | LR_b 1.87e-06 | LR_h 9.36e-06
+Iter 5350/30000 | Loss 2.6312 | LR_b 1.87e-06 | LR_h 9.35e-06
+Iter 5400/30000 | Loss 2.7958 | LR_b 1.87e-06 | LR_h 9.33e-06
+[Eval-EMA] Iter 5400 Acc: 0.442509
+[BEST] Acc improved 0.426249 → 0.442509 at iter 5400. Saved BEST to ../model2/Large_best0.pth
+Iter 5450/30000 | Loss 2.8052 | LR_b 1.86e-06 | LR_h 9.32e-06
+Iter 5500/30000 | Loss 2.6214 | LR_b 1.86e-06 | LR_h 9.31e-06
+Iter 5550/30000 | Loss 3.0433 | LR_b 1.86e-06 | LR_h 9.29e-06
+Iter 5600/30000 | Loss 3.1844 | LR_b 1.86e-06 | LR_h 9.28e-06
+[Eval-EMA] Iter 5600 Acc: 0.456446
+[BEST] Acc improved 0.442509 → 0.456446 at iter 5600. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+Iter 5650/30000 | Loss 2.4306 | LR_b 1.85e-06 | LR_h 9.27e-06
+Iter 5700/30000 | Loss 2.1815 | LR_b 1.85e-06 | LR_h 9.25e-06
+Iter 5750/30000 | Loss 2.4944 | LR_b 1.85e-06 | LR_h 9.24e-06
+Iter 5800/30000 | Loss 3.2991 | LR_b 1.84e-06 | LR_h 9.22e-06
+[Eval-EMA] Iter 5800 Acc: 0.470383
+[BEST] Acc improved 0.456446 → 0.470383 at iter 5800. Saved BEST to ../model2/Large_best0.pth
+Iter 5850/30000 | Loss 2.2496 | LR_b 1.84e-06 | LR_h 9.21e-06
+Iter 5900/30000 | Loss 2.9965 | LR_b 1.84e-06 | LR_h 9.20e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 5950/30000 | Loss 1.7424 | LR_b 1.84e-06 | LR_h 9.18e-06
+Iter 6000/30000 | Loss 2.7759 | LR_b 1.83e-06 | LR_h 9.17e-06
+[Eval-EMA] Iter 6000 Acc: 0.478513
+[BEST] Acc improved 0.470383 → 0.478513 at iter 6000. Saved BEST to ../model2/Large_best0.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 6050/30000 | Loss 2.6742 | LR_b 1.83e-06 | LR_h 9.15e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 6100/30000 | Loss 2.9085 | LR_b 1.83e-06 | LR_h 9.14e-06
+Iter 6150/30000 | Loss 2.9215 | LR_b 1.82e-06 | LR_h 9.12e-06
+Iter 6200/30000 | Loss 2.2812 | LR_b 1.82e-06 | LR_h 9.11e-06
+[Eval-EMA] Iter 6200 Acc: 0.488966
+[BEST] Acc improved 0.478513 → 0.488966 at iter 6200. Saved BEST to ../model2/Large_best0.pth
+Iter 6250/30000 | Loss 2.8520 | LR_b 1.82e-06 | LR_h 9.09e-06
+Iter 6300/30000 | Loss 2.0915 | LR_b 1.82e-06 | LR_h 9.08e-06
+Iter 6350/30000 | Loss 2.3235 | LR_b 1.81e-06 | LR_h 9.06e-06
+Iter 6400/30000 | Loss 2.5644 | LR_b 1.81e-06 | LR_h 9.05e-06
+[Eval-EMA] Iter 6400 Acc: 0.501742
+[BEST] Acc improved 0.488966 → 0.501742 at iter 6400. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+Iter 6450/30000 | Loss 2.5645 | LR_b 1.81e-06 | LR_h 9.03e-06
+Iter 6500/30000 | Loss 2.2000 | LR_b 1.80e-06 | LR_h 9.01e-06
+Iter 6550/30000 | Loss 3.4347 | LR_b 1.80e-06 | LR_h 9.00e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 6600/30000 | Loss 2.4403 | LR_b 1.80e-06 | LR_h 8.98e-06
+[Eval-EMA] Iter 6600 Acc: 0.505226
+[BEST] Acc improved 0.501742 → 0.505226 at iter 6600. Saved BEST to ../model2/Large_best0.pth
+Iter 6650/30000 | Loss 2.4302 | LR_b 1.79e-06 | LR_h 8.97e-06
+Iter 6700/30000 | Loss 2.5850 | LR_b 1.79e-06 | LR_h 8.95e-06
+Iter 6750/30000 | Loss 2.6457 | LR_b 1.79e-06 | LR_h 8.93e-06
+Iter 6800/30000 | Loss 2.3738 | LR_b 1.78e-06 | LR_h 8.92e-06
+[Eval-EMA] Iter 6800 Acc: 0.509872
+[BEST] Acc improved 0.505226 → 0.509872 at iter 6800. Saved BEST to ../model2/Large_best0.pth
+Iter 6850/30000 | Loss 2.5918 | LR_b 1.78e-06 | LR_h 8.90e-06
+Iter 6900/30000 | Loss 2.3019 | LR_b 1.78e-06 | LR_h 8.88e-06
+Iter 6950/30000 | Loss 2.4288 | LR_b 1.77e-06 | LR_h 8.87e-06
+Iter 7000/30000 | Loss 2.1848 | LR_b 1.77e-06 | LR_h 8.85e-06
+[Eval-EMA] Iter 7000 Acc: 0.524971
+[BEST] Acc improved 0.509872 → 0.524971 at iter 7000. Saved BEST to ../model2/Large_best0.pth
+Iter 7050/30000 | Loss 2.7416 | LR_b 1.77e-06 | LR_h 8.83e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 7100/30000 | Loss 2.7714 | LR_b 1.76e-06 | LR_h 8.82e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 7150/30000 | Loss 2.4152 | LR_b 1.76e-06 | LR_h 8.80e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 7200/30000 | Loss 1.8647 | LR_b 1.76e-06 | LR_h 8.78e-06
+[Eval-EMA] Iter 7200 Acc: 0.530778
+[BEST] Acc improved 0.524971 → 0.530778 at iter 7200. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 7250/30000 | Loss 2.3592 | LR_b 1.75e-06 | LR_h 8.76e-06
+Iter 7300/30000 | Loss 2.3089 | LR_b 1.75e-06 | LR_h 8.75e-06
+Iter 7350/30000 | Loss 2.7396 | LR_b 1.75e-06 | LR_h 8.73e-06
+Iter 7400/30000 | Loss 2.4170 | LR_b 1.74e-06 | LR_h 8.71e-06
+[Eval-EMA] Iter 7400 Acc: 0.541231
+[BEST] Acc improved 0.530778 → 0.541231 at iter 7400. Saved BEST to ../model2/Large_best0.pth
+Iter 7450/30000 | Loss 2.6376 | LR_b 1.74e-06 | LR_h 8.69e-06
+Iter 7500/30000 | Loss 2.3684 | LR_b 1.73e-06 | LR_h 8.67e-06
+Iter 7550/30000 | Loss 1.8043 | LR_b 1.73e-06 | LR_h 8.66e-06
+Iter 7600/30000 | Loss 2.2860 | LR_b 1.73e-06 | LR_h 8.64e-06
+[Eval-EMA] Iter 7600 Acc: 0.543554
+[BEST] Acc improved 0.541231 → 0.543554 at iter 7600. Saved BEST to ../model2/Large_best0.pth
+Iter 7650/30000 | Loss 2.6278 | LR_b 1.72e-06 | LR_h 8.62e-06
+Iter 7700/30000 | Loss 1.6733 | LR_b 1.72e-06 | LR_h 8.60e-06
+Iter 7750/30000 | Loss 2.6399 | LR_b 1.72e-06 | LR_h 8.58e-06
+Iter 7800/30000 | Loss 2.6602 | LR_b 1.71e-06 | LR_h 8.56e-06
+[Eval-EMA] Iter 7800 Acc: 0.549361
+[BEST] Acc improved 0.543554 → 0.549361 at iter 7800. Saved BEST to ../model2/Large_best0.pth
+Iter 7850/30000 | Loss 2.4024 | LR_b 1.71e-06 | LR_h 8.55e-06
+Iter 7900/30000 | Loss 2.7515 | LR_b 1.71e-06 | LR_h 8.53e-06
+Iter 7950/30000 | Loss 1.4736 | LR_b 1.70e-06 | LR_h 8.51e-06
+Iter 8000/30000 | Loss 2.3628 | LR_b 1.70e-06 | LR_h 8.49e-06
+[Eval-EMA] Iter 8000 Acc: 0.554007
+[BEST] Acc improved 0.549361 → 0.554007 at iter 8000. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+Iter 8050/30000 | Loss 2.5739 | LR_b 1.69e-06 | LR_h 8.47e-06
+Iter 8100/30000 | Loss 2.1694 | LR_b 1.69e-06 | LR_h 8.45e-06
+Iter 8150/30000 | Loss 1.9199 | LR_b 1.69e-06 | LR_h 8.43e-06
+Iter 8200/30000 | Loss 2.5888 | LR_b 1.68e-06 | LR_h 8.41e-06
+[Eval-EMA] Iter 8200 Acc: 0.557491
+[BEST] Acc improved 0.554007 → 0.557491 at iter 8200. Saved BEST to ../model2/Large_best0.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 8250/30000 | Loss 2.1693 | LR_b 1.68e-06 | LR_h 8.39e-06
+Iter 8300/30000 | Loss 3.1064 | LR_b 1.67e-06 | LR_h 8.37e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 8350/30000 | Loss 2.4999 | LR_b 1.67e-06 | LR_h 8.35e-06
+Iter 8400/30000 | Loss 2.6272 | LR_b 1.67e-06 | LR_h 8.33e-06
+[Eval-EMA] Iter 8400 Acc: 0.559814
+[BEST] Acc improved 0.557491 → 0.559814 at iter 8400. Saved BEST to ../model2/Large_best0.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 8450/30000 | Loss 2.1669 | LR_b 1.66e-06 | LR_h 8.31e-06
+Iter 8500/30000 | Loss 2.7192 | LR_b 1.66e-06 | LR_h 8.29e-06
+Iter 8550/30000 | Loss 2.5290 | LR_b 1.65e-06 | LR_h 8.27e-06
+Iter 8600/30000 | Loss 2.0870 | LR_b 1.65e-06 | LR_h 8.25e-06
+[Eval-EMA] Iter 8600 Acc: 0.565621
+[BEST] Acc improved 0.559814 → 0.565621 at iter 8600. Saved BEST to ../model2/Large_best0.pth
+Iter 8650/30000 | Loss 1.7902 | LR_b 1.65e-06 | LR_h 8.23e-06
+Iter 8700/30000 | Loss 2.1096 | LR_b 1.64e-06 | LR_h 8.21e-06
+Iter 8750/30000 | Loss 1.7143 | LR_b 1.64e-06 | LR_h 8.19e-06
+Iter 8800/30000 | Loss 2.4742 | LR_b 1.63e-06 | LR_h 8.17e-06
+[Eval-EMA] Iter 8800 Acc: 0.570267
+[BEST] Acc improved 0.565621 → 0.570267 at iter 8800. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+Iter 8850/30000 | Loss 2.0443 | LR_b 1.63e-06 | LR_h 8.15e-06
+Iter 8900/30000 | Loss 2.7617 | LR_b 1.63e-06 | LR_h 8.13e-06
+Iter 8950/30000 | Loss 3.1174 | LR_b 1.62e-06 | LR_h 8.11e-06
+Iter 9000/30000 | Loss 2.2281 | LR_b 1.62e-06 | LR_h 8.09e-06
+[Eval-EMA] Iter 9000 Acc: 0.579559
+[BEST] Acc improved 0.570267 → 0.579559 at iter 9000. Saved BEST to ../model2/Large_best0.pth
+Iter 9050/30000 | Loss 1.4586 | LR_b 1.61e-06 | LR_h 8.07e-06
+Iter 9100/30000 | Loss 2.8141 | LR_b 1.61e-06 | LR_h 8.05e-06
+Iter 9150/30000 | Loss 2.9324 | LR_b 1.60e-06 | LR_h 8.02e-06
+Iter 9200/30000 | Loss 2.2965 | LR_b 1.60e-06 | LR_h 8.00e-06
+[Eval-EMA] Iter 9200 Acc: 0.583043
+[BEST] Acc improved 0.579559 → 0.583043 at iter 9200. Saved BEST to ../model2/Large_best0.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 9250/30000 | Loss 1.9829 | LR_b 1.60e-06 | LR_h 7.98e-06
+Iter 9300/30000 | Loss 2.4022 | LR_b 1.59e-06 | LR_h 7.96e-06
+Iter 9350/30000 | Loss 2.3209 | LR_b 1.59e-06 | LR_h 7.94e-06
+Iter 9400/30000 | Loss 2.2223 | LR_b 1.58e-06 | LR_h 7.92e-06
+[Eval-EMA] Iter 9400 Acc: 0.588850
+[BEST] Acc improved 0.583043 → 0.588850 at iter 9400. Saved BEST to ../model2/Large_best0.pth
+Iter 9450/30000 | Loss 1.8499 | LR_b 1.58e-06 | LR_h 7.90e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 9500/30000 | Loss 2.3322 | LR_b 1.57e-06 | LR_h 7.87e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 9550/30000 | Loss 2.3351 | LR_b 1.57e-06 | LR_h 7.85e-06
+Iter 9600/30000 | Loss 2.1343 | LR_b 1.57e-06 | LR_h 7.83e-06
+[Eval-EMA] Iter 9600 Acc: 0.590012
+[BEST] Acc improved 0.588850 → 0.590012 at iter 9600. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+Iter 9650/30000 | Loss 2.0492 | LR_b 1.56e-06 | LR_h 7.81e-06
+Iter 9700/30000 | Loss 1.6475 | LR_b 1.56e-06 | LR_h 7.79e-06
+Iter 9750/30000 | Loss 1.9992 | LR_b 1.55e-06 | LR_h 7.76e-06
+Iter 9800/30000 | Loss 2.4029 | LR_b 1.55e-06 | LR_h 7.74e-06
+[Eval-EMA] Iter 9800 Acc: 0.591173
+[BEST] Acc improved 0.590012 → 0.591173 at iter 9800. Saved BEST to ../model2/Large_best0.pth
+Iter 9850/30000 | Loss 2.8860 | LR_b 1.54e-06 | LR_h 7.72e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 9900/30000 | Loss 2.5250 | LR_b 1.54e-06 | LR_h 7.70e-06
+Iter 9950/30000 | Loss 1.9279 | LR_b 1.54e-06 | LR_h 7.68e-06
+Iter 10000/30000 | Loss 1.9685 | LR_b 1.53e-06 | LR_h 7.65e-06
+[Eval-EMA] Iter 10000 Acc: 0.593496
+[BEST] Acc improved 0.591173 → 0.593496 at iter 10000. Saved BEST to ../model2/Large_best0.pth
+Iter 10050/30000 | Loss 2.0724 | LR_b 1.53e-06 | LR_h 7.63e-06
+Iter 10100/30000 | Loss 2.0038 | LR_b 1.52e-06 | LR_h 7.61e-06
+Iter 10150/30000 | Loss 2.4472 | LR_b 1.52e-06 | LR_h 7.58e-06
+Iter 10200/30000 | Loss 1.7041 | LR_b 1.51e-06 | LR_h 7.56e-06
+[Eval-EMA] Iter 10200 Acc: 0.595819
+[BEST] Acc improved 0.593496 → 0.595819 at iter 10200. Saved BEST to ../model2/Large_best0.pth
+Iter 10250/30000 | Loss 1.9135 | LR_b 1.51e-06 | LR_h 7.54e-06
+Iter 10300/30000 | Loss 1.7648 | LR_b 1.50e-06 | LR_h 7.52e-06
+Iter 10350/30000 | Loss 3.3499 | LR_b 1.50e-06 | LR_h 7.49e-06
+Iter 10400/30000 | Loss 2.8059 | LR_b 1.49e-06 | LR_h 7.47e-06
+[Eval-EMA] Iter 10400 Acc: 0.596980
+[BEST] Acc improved 0.595819 → 0.596980 at iter 10400. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+Iter 10450/30000 | Loss 2.6691 | LR_b 1.49e-06 | LR_h 7.45e-06
+Iter 10500/30000 | Loss 2.3308 | LR_b 1.48e-06 | LR_h 7.42e-06
+Iter 10550/30000 | Loss 2.0272 | LR_b 1.48e-06 | LR_h 7.40e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 10600/30000 | Loss 2.6067 | LR_b 1.48e-06 | LR_h 7.38e-06
+[Eval-EMA] Iter 10600 Acc: 0.601626
+[BEST] Acc improved 0.596980 → 0.601626 at iter 10600. Saved BEST to ../model2/Large_best0.pth
+Iter 10650/30000 | Loss 2.5444 | LR_b 1.47e-06 | LR_h 7.35e-06
+Iter 10700/30000 | Loss 1.9857 | LR_b 1.47e-06 | LR_h 7.33e-06
+Iter 10750/30000 | Loss 2.6112 | LR_b 1.46e-06 | LR_h 7.31e-06
+Iter 10800/30000 | Loss 1.5242 | LR_b 1.46e-06 | LR_h 7.28e-06
+[Eval-EMA] Iter 10800 Acc: 0.603949
+[BEST] Acc improved 0.601626 → 0.603949 at iter 10800. Saved BEST to ../model2/Large_best0.pth
+Iter 10850/30000 | Loss 2.5483 | LR_b 1.45e-06 | LR_h 7.26e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 10900/30000 | Loss 2.2638 | LR_b 1.45e-06 | LR_h 7.23e-06
+Iter 10950/30000 | Loss 1.6387 | LR_b 1.44e-06 | LR_h 7.21e-06
+Iter 11000/30000 | Loss 1.6453 | LR_b 1.44e-06 | LR_h 7.19e-06
+[Eval-EMA] Iter 11000 Acc: 0.606272
+[BEST] Acc improved 0.603949 → 0.606272 at iter 11000. Saved BEST to ../model2/Large_best0.pth
+Iter 11050/30000 | Loss 2.4790 | LR_b 1.43e-06 | LR_h 7.16e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 11100/30000 | Loss 1.5763 | LR_b 1.43e-06 | LR_h 7.14e-06
+Iter 11150/30000 | Loss 2.1062 | LR_b 1.42e-06 | LR_h 7.11e-06
+Iter 11200/30000 | Loss 2.0501 | LR_b 1.42e-06 | LR_h 7.09e-06
+[Eval-EMA] Iter 11200 Acc: 0.610918
+[BEST] Acc improved 0.606272 → 0.610918 at iter 11200. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+Iter 11250/30000 | Loss 2.6717 | LR_b 1.41e-06 | LR_h 7.07e-06
+Iter 11300/30000 | Loss 2.5087 | LR_b 1.41e-06 | LR_h 7.04e-06
+Iter 11350/30000 | Loss 1.5515 | LR_b 1.40e-06 | LR_h 7.02e-06
+Iter 11400/30000 | Loss 1.8028 | LR_b 1.40e-06 | LR_h 6.99e-06
+[Eval-EMA] Iter 11400 Acc: 0.613240
+[BEST] Acc improved 0.610918 → 0.613240 at iter 11400. Saved BEST to ../model2/Large_best0.pth
+Iter 11450/30000 | Loss 2.5058 | LR_b 1.39e-06 | LR_h 6.97e-06
+Iter 11500/30000 | Loss 2.4787 | LR_b 1.39e-06 | LR_h 6.94e-06
+Iter 11550/30000 | Loss 2.0066 | LR_b 1.38e-06 | LR_h 6.92e-06
+Iter 11600/30000 | Loss 1.7903 | LR_b 1.38e-06 | LR_h 6.90e-06
+[Eval-EMA] Iter 11600 Acc: 0.617886
+[BEST] Acc improved 0.613240 → 0.617886 at iter 11600. Saved BEST to ../model2/Large_best0.pth
+Iter 11650/30000 | Loss 1.5912 | LR_b 1.37e-06 | LR_h 6.87e-06
+Iter 11700/30000 | Loss 2.6607 | LR_b 1.37e-06 | LR_h 6.85e-06
+Iter 11750/30000 | Loss 2.7216 | LR_b 1.36e-06 | LR_h 6.82e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 11800/30000 | Loss 1.5332 | LR_b 1.36e-06 | LR_h 6.80e-06
+[Eval-EMA] Iter 11800 Acc: 0.617886
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 11850/30000 | Loss 1.5930 | LR_b 1.35e-06 | LR_h 6.77e-06
+Iter 11900/30000 | Loss 2.5969 | LR_b 1.35e-06 | LR_h 6.75e-06
+Iter 11950/30000 | Loss 2.6541 | LR_b 1.34e-06 | LR_h 6.72e-06
+Iter 12000/30000 | Loss 1.5900 | LR_b 1.34e-06 | LR_h 6.70e-06
+[Eval-EMA] Iter 12000 Acc: 0.621370
+[BEST] Acc improved 0.617886 → 0.621370 at iter 12000. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+Iter 12050/30000 | Loss 2.3403 | LR_b 1.33e-06 | LR_h 6.67e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 12100/30000 | Loss 2.5934 | LR_b 1.33e-06 | LR_h 6.65e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 12150/30000 | Loss 2.1277 | LR_b 1.32e-06 | LR_h 6.62e-06
+Iter 12200/30000 | Loss 1.7177 | LR_b 1.32e-06 | LR_h 6.60e-06
+[Eval-EMA] Iter 12200 Acc: 0.621370
+Iter 12250/30000 | Loss 2.4867 | LR_b 1.31e-06 | LR_h 6.57e-06
+Iter 12300/30000 | Loss 1.9893 | LR_b 1.31e-06 | LR_h 6.55e-06
+Iter 12350/30000 | Loss 2.3627 | LR_b 1.30e-06 | LR_h 6.52e-06
+Iter 12400/30000 | Loss 1.7058 | LR_b 1.30e-06 | LR_h 6.49e-06
+[Eval-EMA] Iter 12400 Acc: 0.622532
+[BEST] Acc improved 0.621370 → 0.622532 at iter 12400. Saved BEST to ../model2/Large_best0.pth
+Iter 12450/30000 | Loss 1.3434 | LR_b 1.29e-06 | LR_h 6.47e-06
+Iter 12500/30000 | Loss 1.4671 | LR_b 1.29e-06 | LR_h 6.44e-06
+Iter 12550/30000 | Loss 1.9325 | LR_b 1.28e-06 | LR_h 6.42e-06
+Iter 12600/30000 | Loss 2.3043 | LR_b 1.28e-06 | LR_h 6.39e-06
+[Eval-EMA] Iter 12600 Acc: 0.621370
+Iter 12650/30000 | Loss 2.1011 | LR_b 1.27e-06 | LR_h 6.37e-06
+Iter 12700/30000 | Loss 2.6163 | LR_b 1.27e-06 | LR_h 6.34e-06
+Iter 12750/30000 | Loss 2.2743 | LR_b 1.26e-06 | LR_h 6.32e-06
+Iter 12800/30000 | Loss 2.0933 | LR_b 1.26e-06 | LR_h 6.29e-06
+[Eval-EMA] Iter 12800 Acc: 0.623693
+[BEST] Acc improved 0.622532 → 0.623693 at iter 12800. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+Iter 12850/30000 | Loss 1.4875 | LR_b 1.25e-06 | LR_h 6.26e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 12900/30000 | Loss 1.5646 | LR_b 1.25e-06 | LR_h 6.24e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 12950/30000 | Loss 2.3502 | LR_b 1.24e-06 | LR_h 6.21e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 13000/30000 | Loss 1.7049 | LR_b 1.24e-06 | LR_h 6.19e-06
+[Eval-EMA] Iter 13000 Acc: 0.627178
+[BEST] Acc improved 0.623693 → 0.627178 at iter 13000. Saved BEST to ../model2/Large_best0.pth
+Iter 13050/30000 | Loss 2.0449 | LR_b 1.23e-06 | LR_h 6.16e-06
+Iter 13100/30000 | Loss 1.5792 | LR_b 1.23e-06 | LR_h 6.14e-06
+Iter 13150/30000 | Loss 1.6559 | LR_b 1.22e-06 | LR_h 6.11e-06
+Iter 13200/30000 | Loss 1.4444 | LR_b 1.22e-06 | LR_h 6.08e-06
+[Eval-EMA] Iter 13200 Acc: 0.628339
+[BEST] Acc improved 0.627178 → 0.628339 at iter 13200. Saved BEST to ../model2/Large_best0.pth
+Iter 13250/30000 | Loss 1.9514 | LR_b 1.21e-06 | LR_h 6.06e-06
+Iter 13300/30000 | Loss 2.0213 | LR_b 1.21e-06 | LR_h 6.03e-06
+Iter 13350/30000 | Loss 2.1726 | LR_b 1.20e-06 | LR_h 6.01e-06
+Iter 13400/30000 | Loss 2.3424 | LR_b 1.20e-06 | LR_h 5.98e-06
+[Eval-EMA] Iter 13400 Acc: 0.629501
+[BEST] Acc improved 0.628339 → 0.629501 at iter 13400. Saved BEST to ../model2/Large_best0.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 13450/30000 | Loss 2.6668 | LR_b 1.19e-06 | LR_h 5.95e-06
+Iter 13500/30000 | Loss 2.2830 | LR_b 1.19e-06 | LR_h 5.93e-06
+Iter 13550/30000 | Loss 1.5401 | LR_b 1.18e-06 | LR_h 5.90e-06
+Iter 13600/30000 | Loss 1.9629 | LR_b 1.17e-06 | LR_h 5.87e-06
+[Eval-EMA] Iter 13600 Acc: 0.628339
+[Save] Saved to ../model2/Large_0.pth
+Iter 13650/30000 | Loss 1.9256 | LR_b 1.17e-06 | LR_h 5.85e-06
+Iter 13700/30000 | Loss 1.7297 | LR_b 1.16e-06 | LR_h 5.82e-06
+Iter 13750/30000 | Loss 1.6192 | LR_b 1.16e-06 | LR_h 5.80e-06
+Iter 13800/30000 | Loss 2.1402 | LR_b 1.15e-06 | LR_h 5.77e-06
+[Eval-EMA] Iter 13800 Acc: 0.627178
+Iter 13850/30000 | Loss 2.0816 | LR_b 1.15e-06 | LR_h 5.74e-06
+Iter 13900/30000 | Loss 1.9934 | LR_b 1.14e-06 | LR_h 5.72e-06
+Iter 13950/30000 | Loss 1.8436 | LR_b 1.14e-06 | LR_h 5.69e-06
+Iter 14000/30000 | Loss 1.6931 | LR_b 1.13e-06 | LR_h 5.66e-06
+[Eval-EMA] Iter 14000 Acc: 0.626016
+Iter 14050/30000 | Loss 1.7418 | LR_b 1.13e-06 | LR_h 5.64e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 14100/30000 | Loss 1.7018 | LR_b 1.12e-06 | LR_h 5.61e-06
+Iter 14150/30000 | Loss 1.6645 | LR_b 1.12e-06 | LR_h 5.58e-06
+Iter 14200/30000 | Loss 1.7475 | LR_b 1.11e-06 | LR_h 5.56e-06
+[Eval-EMA] Iter 14200 Acc: 0.626016
+Iter 14250/30000 | Loss 1.5792 | LR_b 1.11e-06 | LR_h 5.53e-06
+Iter 14300/30000 | Loss 2.4827 | LR_b 1.10e-06 | LR_h 5.51e-06
+Iter 14350/30000 | Loss 2.4009 | LR_b 1.10e-06 | LR_h 5.48e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 14400/30000 | Loss 1.7013 | LR_b 1.09e-06 | LR_h 5.45e-06
+[Eval-EMA] Iter 14400 Acc: 0.628339
+[Save] Saved to ../model2/Large_0.pth
+Iter 14450/30000 | Loss 2.5179 | LR_b 1.09e-06 | LR_h 5.43e-06
+Iter 14500/30000 | Loss 2.2728 | LR_b 1.08e-06 | LR_h 5.40e-06
+Iter 14550/30000 | Loss 1.6396 | LR_b 1.07e-06 | LR_h 5.37e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 14600/30000 | Loss 1.7714 | LR_b 1.07e-06 | LR_h 5.35e-06
+[Eval-EMA] Iter 14600 Acc: 0.630662
+[BEST] Acc improved 0.629501 → 0.630662 at iter 14600. Saved BEST to ../model2/Large_best0.pth
+Iter 14650/30000 | Loss 1.3265 | LR_b 1.06e-06 | LR_h 5.32e-06
+Iter 14700/30000 | Loss 1.3208 | LR_b 1.06e-06 | LR_h 5.29e-06
+Iter 14750/30000 | Loss 1.5836 | LR_b 1.05e-06 | LR_h 5.27e-06
+Iter 14800/30000 | Loss 2.2229 | LR_b 1.05e-06 | LR_h 5.24e-06
+[Eval-EMA] Iter 14800 Acc: 0.634146
+[BEST] Acc improved 0.630662 → 0.634146 at iter 14800. Saved BEST to ../model2/Large_best0.pth
+Iter 14850/30000 | Loss 1.7868 | LR_b 1.04e-06 | LR_h 5.21e-06
+Iter 14900/30000 | Loss 2.0894 | LR_b 1.04e-06 | LR_h 5.19e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 14950/30000 | Loss 1.9434 | LR_b 1.03e-06 | LR_h 5.16e-06
+Iter 15000/30000 | Loss 2.0135 | LR_b 1.03e-06 | LR_h 5.13e-06
+[Eval-EMA] Iter 15000 Acc: 0.635308
+[BEST] Acc improved 0.634146 → 0.635308 at iter 15000. Saved BEST to ../model2/Large_best0.pth
+Iter 15050/30000 | Loss 1.9420 | LR_b 1.02e-06 | LR_h 5.11e-06
+Iter 15100/30000 | Loss 2.4967 | LR_b 1.02e-06 | LR_h 5.08e-06
+Iter 15150/30000 | Loss 2.8989 | LR_b 1.01e-06 | LR_h 5.05e-06
+Iter 15200/30000 | Loss 2.2298 | LR_b 1.01e-06 | LR_h 5.03e-06
+[Eval-EMA] Iter 15200 Acc: 0.636469
+[BEST] Acc improved 0.635308 → 0.636469 at iter 15200. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 15250/30000 | Loss 1.8457 | LR_b 1.00e-06 | LR_h 5.00e-06
+Iter 15300/30000 | Loss 1.3521 | LR_b 9.95e-07 | LR_h 4.97e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 15350/30000 | Loss 1.9688 | LR_b 9.89e-07 | LR_h 4.95e-06
+Iter 15400/30000 | Loss 1.6269 | LR_b 9.84e-07 | LR_h 4.92e-06
+[Eval-EMA] Iter 15400 Acc: 0.639954
+[BEST] Acc improved 0.636469 → 0.639954 at iter 15400. Saved BEST to ../model2/Large_best0.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 15450/30000 | Loss 2.2166 | LR_b 9.79e-07 | LR_h 4.89e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 15500/30000 | Loss 1.8723 | LR_b 9.73e-07 | LR_h 4.87e-06
+Iter 15550/30000 | Loss 2.1180 | LR_b 9.68e-07 | LR_h 4.84e-06
+Iter 15600/30000 | Loss 1.3413 | LR_b 9.63e-07 | LR_h 4.81e-06
+[Eval-EMA] Iter 15600 Acc: 0.639954
+Iter 15650/30000 | Loss 1.9169 | LR_b 9.58e-07 | LR_h 4.79e-06
+Iter 15700/30000 | Loss 2.2627 | LR_b 9.52e-07 | LR_h 4.76e-06
+Iter 15750/30000 | Loss 1.9403 | LR_b 9.47e-07 | LR_h 4.73e-06
+Iter 15800/30000 | Loss 1.8968 | LR_b 9.42e-07 | LR_h 4.71e-06
+[Eval-EMA] Iter 15800 Acc: 0.639954
+Iter 15850/30000 | Loss 1.8848 | LR_b 9.36e-07 | LR_h 4.68e-06
+Iter 15900/30000 | Loss 2.5465 | LR_b 9.31e-07 | LR_h 4.65e-06
+Iter 15950/30000 | Loss 1.6165 | LR_b 9.26e-07 | LR_h 4.63e-06
+Iter 16000/30000 | Loss 1.7429 | LR_b 9.20e-07 | LR_h 4.60e-06
+[Eval-EMA] Iter 16000 Acc: 0.644599
+[BEST] Acc improved 0.639954 → 0.644599 at iter 16000. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+Iter 16050/30000 | Loss 1.9013 | LR_b 9.15e-07 | LR_h 4.58e-06
+Iter 16100/30000 | Loss 1.6534 | LR_b 9.10e-07 | LR_h 4.55e-06
+Iter 16150/30000 | Loss 1.7484 | LR_b 9.04e-07 | LR_h 4.52e-06
+Iter 16200/30000 | Loss 1.6243 | LR_b 8.99e-07 | LR_h 4.50e-06
+[Eval-EMA] Iter 16200 Acc: 0.644599
+Iter 16250/30000 | Loss 2.1947 | LR_b 8.94e-07 | LR_h 4.47e-06
+Iter 16300/30000 | Loss 1.6917 | LR_b 8.89e-07 | LR_h 4.44e-06
+Iter 16350/30000 | Loss 1.5076 | LR_b 8.83e-07 | LR_h 4.42e-06
+Iter 16400/30000 | Loss 1.4363 | LR_b 8.78e-07 | LR_h 4.39e-06
+[Eval-EMA] Iter 16400 Acc: 0.641115
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 16450/30000 | Loss 1.4728 | LR_b 8.73e-07 | LR_h 4.36e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 16500/30000 | Loss 2.4294 | LR_b 8.67e-07 | LR_h 4.34e-06
+Iter 16550/30000 | Loss 2.3046 | LR_b 8.62e-07 | LR_h 4.31e-06
+Iter 16600/30000 | Loss 1.9442 | LR_b 8.57e-07 | LR_h 4.28e-06
+[Eval-EMA] Iter 16600 Acc: 0.644599
+Iter 16650/30000 | Loss 1.8741 | LR_b 8.52e-07 | LR_h 4.26e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 16700/30000 | Loss 1.7621 | LR_b 8.46e-07 | LR_h 4.23e-06
+Iter 16750/30000 | Loss 1.5736 | LR_b 8.41e-07 | LR_h 4.21e-06
+Iter 16800/30000 | Loss 1.8907 | LR_b 8.36e-07 | LR_h 4.18e-06
+[Eval-EMA] Iter 16800 Acc: 0.646922
+[BEST] Acc improved 0.644599 → 0.646922 at iter 16800. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+Iter 16850/30000 | Loss 1.7843 | LR_b 8.31e-07 | LR_h 4.15e-06
+Iter 16900/30000 | Loss 1.8769 | LR_b 8.25e-07 | LR_h 4.13e-06
+Iter 16950/30000 | Loss 1.3476 | LR_b 8.20e-07 | LR_h 4.10e-06
+Iter 17000/30000 | Loss 1.8917 | LR_b 8.15e-07 | LR_h 4.07e-06
+[Eval-EMA] Iter 17000 Acc: 0.643438
+Iter 17050/30000 | Loss 1.3954 | LR_b 8.10e-07 | LR_h 4.05e-06
+Iter 17100/30000 | Loss 1.5681 | LR_b 8.04e-07 | LR_h 4.02e-06
+Iter 17150/30000 | Loss 1.7475 | LR_b 7.99e-07 | LR_h 4.00e-06
+Iter 17200/30000 | Loss 1.7365 | LR_b 7.94e-07 | LR_h 3.97e-06
+[Eval-EMA] Iter 17200 Acc: 0.642276
+Iter 17250/30000 | Loss 1.4255 | LR_b 7.89e-07 | LR_h 3.94e-06
+Iter 17300/30000 | Loss 1.6676 | LR_b 7.84e-07 | LR_h 3.92e-06
+Iter 17350/30000 | Loss 2.1410 | LR_b 7.78e-07 | LR_h 3.89e-06
+Iter 17400/30000 | Loss 2.0531 | LR_b 7.73e-07 | LR_h 3.87e-06
+[Eval-EMA] Iter 17400 Acc: 0.644599
+Iter 17450/30000 | Loss 1.5391 | LR_b 7.68e-07 | LR_h 3.84e-06
+Iter 17500/30000 | Loss 2.2821 | LR_b 7.63e-07 | LR_h 3.81e-06
+Iter 17550/30000 | Loss 1.8072 | LR_b 7.58e-07 | LR_h 3.79e-06
+Iter 17600/30000 | Loss 1.7482 | LR_b 7.52e-07 | LR_h 3.76e-06
+[Eval-EMA] Iter 17600 Acc: 0.648084
+[BEST] Acc improved 0.646922 → 0.648084 at iter 17600. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 17650/30000 | Loss 1.6233 | LR_b 7.47e-07 | LR_h 3.74e-06
+Iter 17700/30000 | Loss 2.4326 | LR_b 7.42e-07 | LR_h 3.71e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 17750/30000 | Loss 1.5927 | LR_b 7.37e-07 | LR_h 3.69e-06
+Iter 17800/30000 | Loss 1.8498 | LR_b 7.32e-07 | LR_h 3.66e-06
+[Eval-EMA] Iter 17800 Acc: 0.648084
+Iter 17850/30000 | Loss 1.7353 | LR_b 7.27e-07 | LR_h 3.63e-06
+Iter 17900/30000 | Loss 1.7790 | LR_b 7.22e-07 | LR_h 3.61e-06
+Iter 17950/30000 | Loss 1.5531 | LR_b 7.17e-07 | LR_h 3.58e-06
+Iter 18000/30000 | Loss 1.7352 | LR_b 7.11e-07 | LR_h 3.56e-06
+[Eval-EMA] Iter 18000 Acc: 0.650407
+[BEST] Acc improved 0.648084 → 0.650407 at iter 18000. Saved BEST to ../model2/Large_best0.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 18050/30000 | Loss 1.7669 | LR_b 7.06e-07 | LR_h 3.53e-06
+Iter 18100/30000 | Loss 1.9847 | LR_b 7.01e-07 | LR_h 3.51e-06
+Iter 18150/30000 | Loss 1.5728 | LR_b 6.96e-07 | LR_h 3.48e-06
+Iter 18200/30000 | Loss 2.6146 | LR_b 6.91e-07 | LR_h 3.46e-06
+[Eval-EMA] Iter 18200 Acc: 0.650407
+Iter 18250/30000 | Loss 1.7600 | LR_b 6.86e-07 | LR_h 3.43e-06
+Iter 18300/30000 | Loss 2.0740 | LR_b 6.81e-07 | LR_h 3.40e-06
+Iter 18350/30000 | Loss 1.8906 | LR_b 6.76e-07 | LR_h 3.38e-06
+Iter 18400/30000 | Loss 1.7688 | LR_b 6.71e-07 | LR_h 3.35e-06
+[Eval-EMA] Iter 18400 Acc: 0.649245
+[Save] Saved to ../model2/Large_0.pth
+Iter 18450/30000 | Loss 1.9320 | LR_b 6.66e-07 | LR_h 3.33e-06
+Iter 18500/30000 | Loss 1.5114 | LR_b 6.61e-07 | LR_h 3.30e-06
+Iter 18550/30000 | Loss 1.7252 | LR_b 6.56e-07 | LR_h 3.28e-06
+Iter 18600/30000 | Loss 1.7945 | LR_b 6.51e-07 | LR_h 3.25e-06
+[Eval-EMA] Iter 18600 Acc: 0.650407
+Iter 18650/30000 | Loss 1.8230 | LR_b 6.46e-07 | LR_h 3.23e-06
+Iter 18700/30000 | Loss 1.7986 | LR_b 6.41e-07 | LR_h 3.20e-06
+Iter 18750/30000 | Loss 2.3431 | LR_b 6.36e-07 | LR_h 3.18e-06
+Iter 18800/30000 | Loss 1.8819 | LR_b 6.31e-07 | LR_h 3.15e-06
+[Eval-EMA] Iter 18800 Acc: 0.650407
+Iter 18850/30000 | Loss 1.5207 | LR_b 6.26e-07 | LR_h 3.13e-06
+Iter 18900/30000 | Loss 1.9430 | LR_b 6.21e-07 | LR_h 3.11e-06
+Iter 18950/30000 | Loss 1.4386 | LR_b 6.16e-07 | LR_h 3.08e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 19000/30000 | Loss 1.9741 | LR_b 6.11e-07 | LR_h 3.06e-06
+[Eval-EMA] Iter 19000 Acc: 0.652729
+[BEST] Acc improved 0.650407 → 0.652729 at iter 19000. Saved BEST to ../model2/Large_best0.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 19050/30000 | Loss 2.1557 | LR_b 6.06e-07 | LR_h 3.03e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 19100/30000 | Loss 1.4194 | LR_b 6.01e-07 | LR_h 3.01e-06
+Iter 19150/30000 | Loss 1.8426 | LR_b 5.97e-07 | LR_h 2.98e-06
+Iter 19200/30000 | Loss 1.7295 | LR_b 5.92e-07 | LR_h 2.96e-06
+[Eval-EMA] Iter 19200 Acc: 0.655052
+[BEST] Acc improved 0.652729 → 0.655052 at iter 19200. Saved BEST to ../model2/Large_best0.pth
+[Save] Saved to ../model2/Large_0.pth
+Iter 19250/30000 | Loss 1.6257 | LR_b 5.87e-07 | LR_h 2.93e-06
+Iter 19300/30000 | Loss 1.6738 | LR_b 5.82e-07 | LR_h 2.91e-06
+Iter 19350/30000 | Loss 1.4191 | LR_b 5.77e-07 | LR_h 2.89e-06
+Iter 19400/30000 | Loss 1.5160 | LR_b 5.72e-07 | LR_h 2.86e-06
+[Eval-EMA] Iter 19400 Acc: 0.656214
+[BEST] Acc improved 0.655052 → 0.656214 at iter 19400. Saved BEST to ../model2/Large_best0.pth
+Iter 19450/30000 | Loss 1.5813 | LR_b 5.68e-07 | LR_h 2.84e-06
+Iter 19500/30000 | Loss 1.5154 | LR_b 5.63e-07 | LR_h 2.81e-06
+Iter 19550/30000 | Loss 1.8338 | LR_b 5.58e-07 | LR_h 2.79e-06
+Iter 19600/30000 | Loss 1.6175 | LR_b 5.53e-07 | LR_h 2.77e-06
+[Eval-EMA] Iter 19600 Acc: 0.656214
+Iter 19650/30000 | Loss 1.4286 | LR_b 5.48e-07 | LR_h 2.74e-06
+Iter 19700/30000 | Loss 1.2333 | LR_b 5.44e-07 | LR_h 2.72e-06
+Iter 19750/30000 | Loss 1.6537 | LR_b 5.39e-07 | LR_h 2.70e-06
+Iter 19800/30000 | Loss 1.9115 | LR_b 5.34e-07 | LR_h 2.67e-06
+[Eval-EMA] Iter 19800 Acc: 0.655052
+Iter 19850/30000 | Loss 1.6862 | LR_b 5.30e-07 | LR_h 2.65e-06
+Iter 19900/30000 | Loss 1.8996 | LR_b 5.25e-07 | LR_h 2.62e-06
+Iter 19950/30000 | Loss 1.8294 | LR_b 5.20e-07 | LR_h 2.60e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 20000/30000 | Loss 2.2361 | LR_b 5.16e-07 | LR_h 2.58e-06
+[Eval-EMA] Iter 20000 Acc: 0.655052
+[Save] Saved to ../model2/Large_0.pth
+Iter 20050/30000 | Loss 1.8086 | LR_b 5.11e-07 | LR_h 2.55e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 20100/30000 | Loss 1.7169 | LR_b 5.06e-07 | LR_h 2.53e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 20150/30000 | Loss 2.0354 | LR_b 5.02e-07 | LR_h 2.51e-06
+Iter 20200/30000 | Loss 1.6221 | LR_b 4.97e-07 | LR_h 2.49e-06
+[Eval-EMA] Iter 20200 Acc: 0.653891
+Iter 20250/30000 | Loss 1.8676 | LR_b 4.92e-07 | LR_h 2.46e-06
+Iter 20300/30000 | Loss 1.6915 | LR_b 4.88e-07 | LR_h 2.44e-06
+Iter 20350/30000 | Loss 1.4248 | LR_b 4.83e-07 | LR_h 2.42e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 20400/30000 | Loss 1.9780 | LR_b 4.79e-07 | LR_h 2.39e-06
+[Eval-EMA] Iter 20400 Acc: 0.653891
+Iter 20450/30000 | Loss 1.9739 | LR_b 4.74e-07 | LR_h 2.37e-06
+Iter 20500/30000 | Loss 1.1931 | LR_b 4.70e-07 | LR_h 2.35e-06
+Iter 20550/30000 | Loss 2.1448 | LR_b 4.65e-07 | LR_h 2.33e-06
+Iter 20600/30000 | Loss 1.6599 | LR_b 4.61e-07 | LR_h 2.30e-06
+[Eval-EMA] Iter 20600 Acc: 0.652729
+Iter 20650/30000 | Loss 1.5545 | LR_b 4.56e-07 | LR_h 2.28e-06
+Iter 20700/30000 | Loss 1.2782 | LR_b 4.52e-07 | LR_h 2.26e-06
+Iter 20750/30000 | Loss 1.7003 | LR_b 4.47e-07 | LR_h 2.24e-06
+Iter 20800/30000 | Loss 1.9194 | LR_b 4.43e-07 | LR_h 2.21e-06
+[Eval-EMA] Iter 20800 Acc: 0.652729
+[Save] Saved to ../model2/Large_0.pth
+Iter 20850/30000 | Loss 1.4611 | LR_b 4.38e-07 | LR_h 2.19e-06
+Iter 20900/30000 | Loss 2.1050 | LR_b 4.34e-07 | LR_h 2.17e-06
+Iter 20950/30000 | Loss 2.0794 | LR_b 4.30e-07 | LR_h 2.15e-06
+Iter 21000/30000 | Loss 1.5830 | LR_b 4.25e-07 | LR_h 2.13e-06
+[Eval-EMA] Iter 21000 Acc: 0.653891
+Iter 21050/30000 | Loss 1.5550 | LR_b 4.21e-07 | LR_h 2.10e-06
+Iter 21100/30000 | Loss 1.3899 | LR_b 4.17e-07 | LR_h 2.08e-06
+Iter 21150/30000 | Loss 2.1114 | LR_b 4.12e-07 | LR_h 2.06e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 21200/30000 | Loss 1.4842 | LR_b 4.08e-07 | LR_h 2.04e-06
+[Eval-EMA] Iter 21200 Acc: 0.652729
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 21250/30000 | Loss 1.5676 | LR_b 4.04e-07 | LR_h 2.02e-06
+Iter 21300/30000 | Loss 1.3802 | LR_b 3.99e-07 | LR_h 2.00e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 21350/30000 | Loss 2.6302 | LR_b 3.95e-07 | LR_h 1.98e-06
+Iter 21400/30000 | Loss 1.8619 | LR_b 3.91e-07 | LR_h 1.95e-06
+[Eval-EMA] Iter 21400 Acc: 0.652729
+Iter 21450/30000 | Loss 1.6387 | LR_b 3.87e-07 | LR_h 1.93e-06
+Iter 21500/30000 | Loss 1.7249 | LR_b 3.83e-07 | LR_h 1.91e-06
+Iter 21550/30000 | Loss 1.6178 | LR_b 3.78e-07 | LR_h 1.89e-06
+Iter 21600/30000 | Loss 1.5691 | LR_b 3.74e-07 | LR_h 1.87e-06
+[Eval-EMA] Iter 21600 Acc: 0.652729
+[Save] Saved to ../model2/Large_0.pth
+Iter 21650/30000 | Loss 1.3326 | LR_b 3.70e-07 | LR_h 1.85e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 21700/30000 | Loss 1.7590 | LR_b 3.66e-07 | LR_h 1.83e-06
+Iter 21750/30000 | Loss 1.6798 | LR_b 3.62e-07 | LR_h 1.81e-06
+Iter 21800/30000 | Loss 1.5678 | LR_b 3.58e-07 | LR_h 1.79e-06
+[Eval-EMA] Iter 21800 Acc: 0.653891
+Iter 21850/30000 | Loss 1.5803 | LR_b 3.54e-07 | LR_h 1.77e-06
+Iter 21900/30000 | Loss 1.8526 | LR_b 3.50e-07 | LR_h 1.75e-06
+Iter 21950/30000 | Loss 1.5876 | LR_b 3.46e-07 | LR_h 1.73e-06
+Iter 22000/30000 | Loss 1.7095 | LR_b 3.42e-07 | LR_h 1.71e-06
+[Eval-EMA] Iter 22000 Acc: 0.653891
+Iter 22050/30000 | Loss 1.7047 | LR_b 3.38e-07 | LR_h 1.69e-06
+Iter 22100/30000 | Loss 2.0320 | LR_b 3.34e-07 | LR_h 1.67e-06
+Iter 22150/30000 | Loss 1.9940 | LR_b 3.30e-07 | LR_h 1.65e-06
+Iter 22200/30000 | Loss 2.0879 | LR_b 3.26e-07 | LR_h 1.63e-06
+[Eval-EMA] Iter 22200 Acc: 0.653891
+Iter 22250/30000 | Loss 1.9154 | LR_b 3.22e-07 | LR_h 1.61e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 22300/30000 | Loss 1.5298 | LR_b 3.18e-07 | LR_h 1.59e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 22350/30000 | Loss 1.8057 | LR_b 3.14e-07 | LR_h 1.57e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 22400/30000 | Loss 1.7755 | LR_b 3.10e-07 | LR_h 1.55e-06
+[Eval-EMA] Iter 22400 Acc: 0.656214
+[Save] Saved to ../model2/Large_0.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 22450/30000 | Loss 1.7549 | LR_b 3.06e-07 | LR_h 1.53e-06
+Iter 22500/30000 | Loss 2.0950 | LR_b 3.02e-07 | LR_h 1.51e-06
+Iter 22550/30000 | Loss 1.3777 | LR_b 2.99e-07 | LR_h 1.49e-06
+Iter 22600/30000 | Loss 2.2672 | LR_b 2.95e-07 | LR_h 1.47e-06
+[Eval-EMA] Iter 22600 Acc: 0.656214
+Iter 22650/30000 | Loss 1.8317 | LR_b 2.91e-07 | LR_h 1.46e-06
+Iter 22700/30000 | Loss 1.6283 | LR_b 2.87e-07 | LR_h 1.44e-06
+Iter 22750/30000 | Loss 1.7449 | LR_b 2.84e-07 | LR_h 1.42e-06
+Iter 22800/30000 | Loss 1.4897 | LR_b 2.80e-07 | LR_h 1.40e-06
+[Eval-EMA] Iter 22800 Acc: 0.657375
+[BEST] Acc improved 0.656214 → 0.657375 at iter 22800. Saved BEST to ../model2/Large_best0.pth
+Iter 22850/30000 | Loss 1.3565 | LR_b 2.76e-07 | LR_h 1.38e-06
+Iter 22900/30000 | Loss 1.3230 | LR_b 2.73e-07 | LR_h 1.36e-06
+Iter 22950/30000 | Loss 1.5366 | LR_b 2.69e-07 | LR_h 1.34e-06
+Iter 23000/30000 | Loss 1.6113 | LR_b 2.65e-07 | LR_h 1.33e-06
+[Eval-EMA] Iter 23000 Acc: 0.657375
+Iter 23050/30000 | Loss 1.6541 | LR_b 2.62e-07 | LR_h 1.31e-06
+Iter 23100/30000 | Loss 2.1955 | LR_b 2.58e-07 | LR_h 1.29e-06
+Iter 23150/30000 | Loss 1.2369 | LR_b 2.55e-07 | LR_h 1.27e-06
+Iter 23200/30000 | Loss 1.6037 | LR_b 2.51e-07 | LR_h 1.26e-06
+[Eval-EMA] Iter 23200 Acc: 0.657375
+[Save] Saved to ../model2/Large_0.pth
+Iter 23250/30000 | Loss 2.0415 | LR_b 2.47e-07 | LR_h 1.24e-06
+Iter 23300/30000 | Loss 1.5511 | LR_b 2.44e-07 | LR_h 1.22e-06
+Iter 23350/30000 | Loss 1.9388 | LR_b 2.41e-07 | LR_h 1.20e-06
+Iter 23400/30000 | Loss 1.8279 | LR_b 2.37e-07 | LR_h 1.19e-06
+[Eval-EMA] Iter 23400 Acc: 0.657375
+Iter 23450/30000 | Loss 1.5646 | LR_b 2.34e-07 | LR_h 1.17e-06
+Iter 23500/30000 | Loss 1.3099 | LR_b 2.30e-07 | LR_h 1.15e-06
+Iter 23550/30000 | Loss 1.5355 | LR_b 2.27e-07 | LR_h 1.13e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 23600/30000 | Loss 1.7016 | LR_b 2.23e-07 | LR_h 1.12e-06
+[Eval-EMA] Iter 23600 Acc: 0.657375
+Iter 23650/30000 | Loss 1.6666 | LR_b 2.20e-07 | LR_h 1.10e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 23700/30000 | Loss 1.3737 | LR_b 2.17e-07 | LR_h 1.08e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 23750/30000 | Loss 1.3476 | LR_b 2.14e-07 | LR_h 1.07e-06
+Iter 23800/30000 | Loss 1.8544 | LR_b 2.10e-07 | LR_h 1.05e-06
+[Eval-EMA] Iter 23800 Acc: 0.658537
+[BEST] Acc improved 0.657375 → 0.658537 at iter 23800. Saved BEST to ../model2/Large_best0.pth
+Iter 23850/30000 | Loss 1.7746 | LR_b 2.07e-07 | LR_h 1.03e-06
+Iter 23900/30000 | Loss 1.2955 | LR_b 2.04e-07 | LR_h 1.02e-06
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 23950/30000 | Loss 1.3361 | LR_b 2.01e-07 | LR_h 1.00e-06
+Iter 24000/30000 | Loss 1.3710 | LR_b 1.97e-07 | LR_h 9.87e-07
+[Eval-EMA] Iter 24000 Acc: 0.658537
+[Save] Saved to ../model2/Large_0.pth
+Iter 24050/30000 | Loss 1.6531 | LR_b 1.94e-07 | LR_h 9.71e-07
+Iter 24100/30000 | Loss 1.8999 | LR_b 1.91e-07 | LR_h 9.55e-07
+Iter 24150/30000 | Loss 1.5047 | LR_b 1.88e-07 | LR_h 9.40e-07
+Iter 24200/30000 | Loss 1.6242 | LR_b 1.85e-07 | LR_h 9.24e-07
+[Eval-EMA] Iter 24200 Acc: 0.658537
+Iter 24250/30000 | Loss 1.7754 | LR_b 1.82e-07 | LR_h 9.09e-07
+Iter 24300/30000 | Loss 1.3381 | LR_b 1.79e-07 | LR_h 8.94e-07
+Iter 24350/30000 | Loss 1.7734 | LR_b 1.76e-07 | LR_h 8.78e-07
+Iter 24400/30000 | Loss 1.6275 | LR_b 1.73e-07 | LR_h 8.63e-07
+[Eval-EMA] Iter 24400 Acc: 0.659698
+[BEST] Acc improved 0.658537 → 0.659698 at iter 24400. Saved BEST to ../model2/Large_best0.pth
+Iter 24450/30000 | Loss 1.3681 | LR_b 1.70e-07 | LR_h 8.49e-07
+Iter 24500/30000 | Loss 2.1233 | LR_b 1.67e-07 | LR_h 8.34e-07
+Iter 24550/30000 | Loss 1.9662 | LR_b 1.64e-07 | LR_h 8.19e-07
+Iter 24600/30000 | Loss 1.8993 | LR_b 1.61e-07 | LR_h 8.05e-07
+[Eval-EMA] Iter 24600 Acc: 0.660859
+[BEST] Acc improved 0.659698 → 0.660859 at iter 24600. Saved BEST to ../model2/Large_best0.pth
+Iter 24650/30000 | Loss 1.5744 | LR_b 1.58e-07 | LR_h 7.90e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 24700/30000 | Loss 1.6625 | LR_b 1.55e-07 | LR_h 7.76e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 24750/30000 | Loss 2.0617 | LR_b 1.52e-07 | LR_h 7.62e-07
+Iter 24800/30000 | Loss 1.8017 | LR_b 1.50e-07 | LR_h 7.48e-07
+[Eval-EMA] Iter 24800 Acc: 0.660859
+[Save] Saved to ../model2/Large_0.pth
+Iter 24850/30000 | Loss 1.7596 | LR_b 1.47e-07 | LR_h 7.34e-07
+Iter 24900/30000 | Loss 1.5368 | LR_b 1.44e-07 | LR_h 7.20e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 24950/30000 | Loss 1.3959 | LR_b 1.41e-07 | LR_h 7.06e-07
+Iter 25000/30000 | Loss 1.9983 | LR_b 1.38e-07 | LR_h 6.92e-07
+[Eval-EMA] Iter 25000 Acc: 0.659698
+Iter 25050/30000 | Loss 1.6147 | LR_b 1.36e-07 | LR_h 6.79e-07
+Iter 25100/30000 | Loss 1.5045 | LR_b 1.33e-07 | LR_h 6.66e-07
+Iter 25150/30000 | Loss 1.2714 | LR_b 1.30e-07 | LR_h 6.52e-07
+Iter 25200/30000 | Loss 1.2706 | LR_b 1.28e-07 | LR_h 6.39e-07
+[Eval-EMA] Iter 25200 Acc: 0.659698
+Iter 25250/30000 | Loss 1.9517 | LR_b 1.25e-07 | LR_h 6.26e-07
+Iter 25300/30000 | Loss 2.0371 | LR_b 1.23e-07 | LR_h 6.14e-07
+Iter 25350/30000 | Loss 1.7342 | LR_b 1.20e-07 | LR_h 6.01e-07
+Iter 25400/30000 | Loss 1.5066 | LR_b 1.18e-07 | LR_h 5.88e-07
+[Eval-EMA] Iter 25400 Acc: 0.659698
+Iter 25450/30000 | Loss 1.9221 | LR_b 1.15e-07 | LR_h 5.76e-07
+Iter 25500/30000 | Loss 1.8986 | LR_b 1.13e-07 | LR_h 5.63e-07
+Iter 25550/30000 | Loss 1.5350 | LR_b 1.10e-07 | LR_h 5.51e-07
+Iter 25600/30000 | Loss 1.6505 | LR_b 1.08e-07 | LR_h 5.39e-07
+[Eval-EMA] Iter 25600 Acc: 0.659698
+[Save] Saved to ../model2/Large_0.pth
+Iter 25650/30000 | Loss 1.6294 | LR_b 1.05e-07 | LR_h 5.27e-07
+Iter 25700/30000 | Loss 1.9439 | LR_b 1.03e-07 | LR_h 5.15e-07
+Iter 25750/30000 | Loss 2.1807 | LR_b 1.01e-07 | LR_h 5.04e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 25800/30000 | Loss 2.0325 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 25800 Acc: 0.660859
+Iter 25850/30000 | Loss 1.5893 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 25900/30000 | Loss 1.2968 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 25950/30000 | Loss 1.8434 | LR_b 1.00e-07 | LR_h 5.00e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 26000/30000 | Loss 1.8449 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 26000 Acc: 0.659698
+Iter 26050/30000 | Loss 2.0138 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 26100/30000 | Loss 1.2872 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 26150/30000 | Loss 1.7601 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 26200/30000 | Loss 1.6989 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 26200 Acc: 0.657375
+Iter 26250/30000 | Loss 1.5247 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 26300/30000 | Loss 2.2069 | LR_b 1.00e-07 | LR_h 5.00e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 26350/30000 | Loss 1.9547 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 26400/30000 | Loss 1.5333 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 26400 Acc: 0.659698
+[Save] Saved to ../model2/Large_0.pth
+Iter 26450/30000 | Loss 2.2464 | LR_b 1.00e-07 | LR_h 5.00e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 26500/30000 | Loss 1.5268 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 26550/30000 | Loss 1.9302 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 26600/30000 | Loss 1.5466 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 26600 Acc: 0.659698
+Iter 26650/30000 | Loss 1.2933 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 26700/30000 | Loss 1.6089 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 26750/30000 | Loss 1.6481 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 26800/30000 | Loss 1.2513 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 26800 Acc: 0.659698
+Iter 26850/30000 | Loss 1.6125 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 26900/30000 | Loss 1.4656 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 26950/30000 | Loss 1.3823 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 27000/30000 | Loss 2.0563 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 27000 Acc: 0.659698
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 27050/30000 | Loss 1.9009 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 27100/30000 | Loss 2.6200 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 27150/30000 | Loss 1.8522 | LR_b 1.00e-07 | LR_h 5.00e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 27200/30000 | Loss 1.5096 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 27200 Acc: 0.659698
+[Save] Saved to ../model2/Large_0.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 27250/30000 | Loss 1.7363 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 27300/30000 | Loss 1.6045 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 27350/30000 | Loss 1.5631 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 27400/30000 | Loss 1.8340 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 27400 Acc: 0.659698
+Iter 27450/30000 | Loss 1.8540 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 27500/30000 | Loss 1.7975 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 27550/30000 | Loss 1.8793 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 27600/30000 | Loss 1.4962 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 27600 Acc: 0.659698
+Iter 27650/30000 | Loss 1.8324 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 27700/30000 | Loss 1.6158 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 27750/30000 | Loss 1.5658 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 27800/30000 | Loss 1.9395 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 27800 Acc: 0.659698
+Iter 27850/30000 | Loss 2.1340 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 27900/30000 | Loss 1.7651 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 27950/30000 | Loss 1.2968 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 28000/30000 | Loss 1.7998 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 28000 Acc: 0.659698
+[Save] Saved to ../model2/Large_0.pth
+Iter 28050/30000 | Loss 1.8438 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 28100/30000 | Loss 1.6184 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 28150/30000 | Loss 2.2755 | LR_b 1.00e-07 | LR_h 5.00e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 28200/30000 | Loss 1.8884 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 28200 Acc: 0.659698
+Iter 28250/30000 | Loss 1.5700 | LR_b 1.00e-07 | LR_h 5.00e-07
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 28300/30000 | Loss 1.7970 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 28350/30000 | Loss 1.7434 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 28400/30000 | Loss 1.3051 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 28400 Acc: 0.660859
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 28450/30000 | Loss 1.6658 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 28500/30000 | Loss 1.4226 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 28550/30000 | Loss 1.6902 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 28600/30000 | Loss 1.3695 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 28600 Acc: 0.660859
+Iter 28650/30000 | Loss 1.2925 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 28700/30000 | Loss 1.9419 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 28750/30000 | Loss 2.3244 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 28800/30000 | Loss 1.3558 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 28800 Acc: 0.660859
+[Save] Saved to ../model2/Large_0.pth
+Iter 28850/30000 | Loss 1.3878 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 28900/30000 | Loss 2.5574 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 28950/30000 | Loss 1.5437 | LR_b 1.00e-07 | LR_h 5.00e-07
+Iter 29000/30000 | Loss 1.7906 | LR_b 1.00e-07 | LR_h 5.00e-07
+[Eval-EMA] Iter 29000 Acc: 0.660859
+Iter 29050/30000 | Loss 1.9077 | LR_b 1.00e-07 | LR_h 5.00e-07

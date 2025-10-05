@@ -1,0 +1,447 @@
+
+===== New run: 2025-10-04T20:09:48.753137 =====
+timm version: 1.0.17
+pretrained cfg: {'url': 'https://github.com/SwinTransformer/storage/releases/download/v2.0.0/swinv2_large_patch4_window12to24_192to384_22kto1k_ft.pth', 'hf_hub_id': 'timm/swinv2_large_window12to24_192to384.ms_in22k_ft_in1k', 'architecture': 'swinv2_large_window12to24_192to384', 'tag': 'ms_in22k_ft_in1k', 'custom_load': False, 'input_size': (3, 384, 384), 'fixed_input_size': True, 'interpolation': 'bicubic', 'crop_pct': 1.0, 'crop_mode': 'center', 'mean': (0.485, 0.456, 0.406), 'std': (0.229, 0.224, 0.225), 'num_classes': 1000, 'pool_size': (12, 12), 'first_conv': 'patch_embed.proj', 'classifier': 'head.fc', 'license': 'mit'}
+[Finetune] Loaded pretrained weights from ../model2/Large_best2.pth (no optimizer/iter restore).
+[DP] Using DataParallel with 3 GPUs
+[Freeze] Total params: 203.50M | Trainable: 8.30M
+[Freeze] Backbone last block: LayerNorm | Trainable in last block: 0.00M
+Starting fine-tuning on train_A (SwinV2-Large@384) with Gradient Accumulation & Freezing...
+Iter 50/20000 | Loss 6.0457 | LR_b(last) 1.00e-05 | LR_heads 5.00e-05
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 100/20000 | Loss 5.9277 | LR_b(last) 2.00e-05 | LR_heads 1.00e-04
+Iter 150/20000 | Loss 5.4115 | LR_b(last) 3.00e-05 | LR_heads 1.50e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 200/20000 | Loss 5.1386 | LR_b(last) 4.00e-05 | LR_heads 2.00e-04
+[Eval-EMA] Iter 200 Acc: 0.003484
+[BEST] Acc improved -1.000000 → 0.003484 at iter 200. Saved BEST to ../model2/Large_best_ft.pth
+Iter 250/20000 | Loss 4.9820 | LR_b(last) 5.00e-05 | LR_heads 2.50e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 300/20000 | Loss 4.4435 | LR_b(last) 6.00e-05 | LR_heads 3.00e-04
+Iter 350/20000 | Loss 4.9756 | LR_b(last) 7.00e-05 | LR_heads 3.50e-04
+Iter 400/20000 | Loss 4.3577 | LR_b(last) 8.00e-05 | LR_heads 4.00e-04
+[Eval-EMA] Iter 400 Acc: 0.027875
+[BEST] Acc improved 0.003484 → 0.027875 at iter 400. Saved BEST to ../model2/Large_best_ft.pth
+Iter 450/20000 | Loss 3.6199 | LR_b(last) 9.00e-05 | LR_heads 4.50e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 500/20000 | Loss 3.6140 | LR_b(last) 1.00e-04 | LR_heads 5.00e-04
+Iter 550/20000 | Loss 4.9043 | LR_b(last) 1.00e-04 | LR_heads 5.00e-04
+Iter 600/20000 | Loss 4.1549 | LR_b(last) 1.00e-04 | LR_heads 5.00e-04
+[Eval-EMA] Iter 600 Acc: 0.144019
+[BEST] Acc improved 0.027875 → 0.144019 at iter 600. Saved BEST to ../model2/Large_best_ft.pth
+Iter 650/20000 | Loss 3.9076 | LR_b(last) 1.00e-04 | LR_heads 5.00e-04
+Iter 700/20000 | Loss 3.8606 | LR_b(last) 1.00e-04 | LR_heads 5.00e-04
+Iter 750/20000 | Loss 3.1876 | LR_b(last) 1.00e-04 | LR_heads 5.00e-04
+Iter 800/20000 | Loss 4.1482 | LR_b(last) 9.99e-05 | LR_heads 5.00e-04
+[Eval-EMA] Iter 800 Acc: 0.235772
+[BEST] Acc improved 0.144019 → 0.235772 at iter 800. Saved BEST to ../model2/Large_best_ft.pth
+[Save] Saved to ../model2/Large_ft.pth
+Iter 850/20000 | Loss 2.9963 | LR_b(last) 9.99e-05 | LR_heads 5.00e-04
+Iter 900/20000 | Loss 3.7160 | LR_b(last) 9.99e-05 | LR_heads 4.99e-04
+Iter 950/20000 | Loss 2.7779 | LR_b(last) 9.99e-05 | LR_heads 4.99e-04
+Iter 1000/20000 | Loss 3.4703 | LR_b(last) 9.98e-05 | LR_heads 4.99e-04
+[Eval-EMA] Iter 1000 Acc: 0.314750
+[BEST] Acc improved 0.235772 → 0.314750 at iter 1000. Saved BEST to ../model2/Large_best_ft.pth
+Iter 1050/20000 | Loss 3.1776 | LR_b(last) 9.98e-05 | LR_heads 4.99e-04
+Iter 1100/20000 | Loss 3.4802 | LR_b(last) 9.98e-05 | LR_heads 4.99e-04
+Iter 1150/20000 | Loss 2.8873 | LR_b(last) 9.97e-05 | LR_heads 4.99e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 1200/20000 | Loss 3.0089 | LR_b(last) 9.97e-05 | LR_heads 4.98e-04
+[Eval-EMA] Iter 1200 Acc: 0.363531
+[BEST] Acc improved 0.314750 → 0.363531 at iter 1200. Saved BEST to ../model2/Large_best_ft.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 1250/20000 | Loss 3.1904 | LR_b(last) 9.96e-05 | LR_heads 4.98e-04
+Iter 1300/20000 | Loss 2.7553 | LR_b(last) 9.96e-05 | LR_heads 4.98e-04
+Iter 1350/20000 | Loss 3.0523 | LR_b(last) 9.95e-05 | LR_heads 4.98e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 1400/20000 | Loss 3.1355 | LR_b(last) 9.95e-05 | LR_heads 4.97e-04
+[Eval-EMA] Iter 1400 Acc: 0.411150
+[BEST] Acc improved 0.363531 → 0.411150 at iter 1400. Saved BEST to ../model2/Large_best_ft.pth
+Iter 1450/20000 | Loss 2.2460 | LR_b(last) 9.94e-05 | LR_heads 4.97e-04
+Iter 1500/20000 | Loss 3.0500 | LR_b(last) 9.94e-05 | LR_heads 4.97e-04
+Iter 1550/20000 | Loss 3.2589 | LR_b(last) 9.93e-05 | LR_heads 4.96e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 1600/20000 | Loss 2.8330 | LR_b(last) 9.92e-05 | LR_heads 4.96e-04
+[Eval-EMA] Iter 1600 Acc: 0.428571
+[BEST] Acc improved 0.411150 → 0.428571 at iter 1600. Saved BEST to ../model2/Large_best_ft.pth
+[Save] Saved to ../model2/Large_ft.pth
+Iter 1650/20000 | Loss 2.4567 | LR_b(last) 9.91e-05 | LR_heads 4.96e-04
+Iter 1700/20000 | Loss 2.2001 | LR_b(last) 9.91e-05 | LR_heads 4.95e-04
+Iter 1750/20000 | Loss 2.4182 | LR_b(last) 9.90e-05 | LR_heads 4.95e-04
+Iter 1800/20000 | Loss 2.3916 | LR_b(last) 9.89e-05 | LR_heads 4.95e-04
+[Eval-EMA] Iter 1800 Acc: 0.450639
+[BEST] Acc improved 0.428571 → 0.450639 at iter 1800. Saved BEST to ../model2/Large_best_ft.pth
+Iter 1850/20000 | Loss 2.6683 | LR_b(last) 9.88e-05 | LR_heads 4.94e-04
+Iter 1900/20000 | Loss 2.9419 | LR_b(last) 9.87e-05 | LR_heads 4.94e-04
+Iter 1950/20000 | Loss 2.8793 | LR_b(last) 9.86e-05 | LR_heads 4.93e-04
+Iter 2000/20000 | Loss 3.7164 | LR_b(last) 9.85e-05 | LR_heads 4.93e-04
+[Eval-EMA] Iter 2000 Acc: 0.469222
+[BEST] Acc improved 0.450639 → 0.469222 at iter 2000. Saved BEST to ../model2/Large_best_ft.pth
+Iter 2050/20000 | Loss 3.3629 | LR_b(last) 9.85e-05 | LR_heads 4.92e-04
+Iter 2100/20000 | Loss 2.8173 | LR_b(last) 9.84e-05 | LR_heads 4.92e-04
+Iter 2150/20000 | Loss 2.2163 | LR_b(last) 9.82e-05 | LR_heads 4.91e-04
+Iter 2200/20000 | Loss 2.0470 | LR_b(last) 9.81e-05 | LR_heads 4.91e-04
+[Eval-EMA] Iter 2200 Acc: 0.484321
+[BEST] Acc improved 0.469222 → 0.484321 at iter 2200. Saved BEST to ../model2/Large_best_ft.pth
+Iter 2250/20000 | Loss 2.6192 | LR_b(last) 9.80e-05 | LR_heads 4.90e-04
+Iter 2300/20000 | Loss 2.4426 | LR_b(last) 9.79e-05 | LR_heads 4.90e-04
+Iter 2350/20000 | Loss 1.7980 | LR_b(last) 9.78e-05 | LR_heads 4.89e-04
+Iter 2400/20000 | Loss 2.3467 | LR_b(last) 9.77e-05 | LR_heads 4.88e-04
+[Eval-EMA] Iter 2400 Acc: 0.490128
+[BEST] Acc improved 0.484321 → 0.490128 at iter 2400. Saved BEST to ../model2/Large_best_ft.pth
+[Save] Saved to ../model2/Large_ft.pth
+Iter 2450/20000 | Loss 2.9479 | LR_b(last) 9.76e-05 | LR_heads 4.88e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 2500/20000 | Loss 1.9096 | LR_b(last) 9.74e-05 | LR_heads 4.87e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 2550/20000 | Loss 2.1157 | LR_b(last) 9.73e-05 | LR_heads 4.87e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 2600/20000 | Loss 2.4216 | LR_b(last) 9.72e-05 | LR_heads 4.86e-04
+[Eval-EMA] Iter 2600 Acc: 0.500581
+[BEST] Acc improved 0.490128 → 0.500581 at iter 2600. Saved BEST to ../model2/Large_best_ft.pth
+Iter 2650/20000 | Loss 2.6349 | LR_b(last) 9.70e-05 | LR_heads 4.85e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 2700/20000 | Loss 2.2209 | LR_b(last) 9.69e-05 | LR_heads 4.84e-04
+Iter 2750/20000 | Loss 2.1908 | LR_b(last) 9.68e-05 | LR_heads 4.84e-04
+Iter 2800/20000 | Loss 2.7364 | LR_b(last) 9.66e-05 | LR_heads 4.83e-04
+[Eval-EMA] Iter 2800 Acc: 0.507549
+[BEST] Acc improved 0.500581 → 0.507549 at iter 2800. Saved BEST to ../model2/Large_best_ft.pth
+Iter 2850/20000 | Loss 2.6232 | LR_b(last) 9.65e-05 | LR_heads 4.82e-04
+Iter 2900/20000 | Loss 2.1870 | LR_b(last) 9.63e-05 | LR_heads 4.82e-04
+Iter 2950/20000 | Loss 1.8389 | LR_b(last) 9.62e-05 | LR_heads 4.81e-04
+Iter 3000/20000 | Loss 2.7640 | LR_b(last) 9.60e-05 | LR_heads 4.80e-04
+[Eval-EMA] Iter 3000 Acc: 0.513357
+[BEST] Acc improved 0.507549 → 0.513357 at iter 3000. Saved BEST to ../model2/Large_best_ft.pth
+Iter 3050/20000 | Loss 1.8125 | LR_b(last) 9.58e-05 | LR_heads 4.79e-04
+Iter 3100/20000 | Loss 2.2839 | LR_b(last) 9.57e-05 | LR_heads 4.78e-04
+Iter 3150/20000 | Loss 2.8198 | LR_b(last) 9.55e-05 | LR_heads 4.78e-04
+Iter 3200/20000 | Loss 3.3014 | LR_b(last) 9.53e-05 | LR_heads 4.77e-04
+[Eval-EMA] Iter 3200 Acc: 0.519164
+[BEST] Acc improved 0.513357 → 0.519164 at iter 3200. Saved BEST to ../model2/Large_best_ft.pth
+[Save] Saved to ../model2/Large_ft.pth
+Iter 3250/20000 | Loss 2.7976 | LR_b(last) 9.52e-05 | LR_heads 4.76e-04
+Iter 3300/20000 | Loss 2.5982 | LR_b(last) 9.50e-05 | LR_heads 4.75e-04
+Iter 3350/20000 | Loss 2.1549 | LR_b(last) 9.48e-05 | LR_heads 4.74e-04
+Iter 3400/20000 | Loss 1.6272 | LR_b(last) 9.46e-05 | LR_heads 4.73e-04
+[Eval-EMA] Iter 3400 Acc: 0.521487
+[BEST] Acc improved 0.519164 → 0.521487 at iter 3400. Saved BEST to ../model2/Large_best_ft.pth
+Iter 3450/20000 | Loss 2.0314 | LR_b(last) 9.45e-05 | LR_heads 4.72e-04
+Iter 3500/20000 | Loss 2.5258 | LR_b(last) 9.43e-05 | LR_heads 4.71e-04
+Iter 3550/20000 | Loss 1.3938 | LR_b(last) 9.41e-05 | LR_heads 4.70e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 3600/20000 | Loss 1.9134 | LR_b(last) 9.39e-05 | LR_heads 4.69e-04
+[Eval-EMA] Iter 3600 Acc: 0.521487
+Iter 3650/20000 | Loss 2.3966 | LR_b(last) 9.37e-05 | LR_heads 4.69e-04
+Iter 3700/20000 | Loss 1.9007 | LR_b(last) 9.35e-05 | LR_heads 4.68e-04
+Iter 3750/20000 | Loss 1.9590 | LR_b(last) 9.33e-05 | LR_heads 4.67e-04
+Iter 3800/20000 | Loss 1.9249 | LR_b(last) 9.31e-05 | LR_heads 4.66e-04
+[Eval-EMA] Iter 3800 Acc: 0.528455
+[BEST] Acc improved 0.521487 → 0.528455 at iter 3800. Saved BEST to ../model2/Large_best_ft.pth
+Iter 3850/20000 | Loss 2.2313 | LR_b(last) 9.29e-05 | LR_heads 4.64e-04
+Iter 3900/20000 | Loss 2.5302 | LR_b(last) 9.27e-05 | LR_heads 4.63e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 3950/20000 | Loss 2.7442 | LR_b(last) 9.25e-05 | LR_heads 4.62e-04
+Iter 4000/20000 | Loss 2.4028 | LR_b(last) 9.23e-05 | LR_heads 4.61e-04
+[Eval-EMA] Iter 4000 Acc: 0.527294
+[Save] Saved to ../model2/Large_ft.pth
+Iter 4050/20000 | Loss 2.5469 | LR_b(last) 9.20e-05 | LR_heads 4.60e-04
+Iter 4100/20000 | Loss 2.4886 | LR_b(last) 9.18e-05 | LR_heads 4.59e-04
+Iter 4150/20000 | Loss 1.9299 | LR_b(last) 9.16e-05 | LR_heads 4.58e-04
+Iter 4200/20000 | Loss 2.4896 | LR_b(last) 9.14e-05 | LR_heads 4.57e-04
+[Eval-EMA] Iter 4200 Acc: 0.529617
+[BEST] Acc improved 0.528455 → 0.529617 at iter 4200. Saved BEST to ../model2/Large_best_ft.pth
+Iter 4250/20000 | Loss 2.5646 | LR_b(last) 9.12e-05 | LR_heads 4.56e-04
+Iter 4300/20000 | Loss 2.5779 | LR_b(last) 9.09e-05 | LR_heads 4.55e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 4350/20000 | Loss 2.1219 | LR_b(last) 9.07e-05 | LR_heads 4.53e-04
+Iter 4400/20000 | Loss 1.7701 | LR_b(last) 9.05e-05 | LR_heads 4.52e-04
+[Eval-EMA] Iter 4400 Acc: 0.534262
+[BEST] Acc improved 0.529617 → 0.534262 at iter 4400. Saved BEST to ../model2/Large_best_ft.pth
+Iter 4450/20000 | Loss 2.5934 | LR_b(last) 9.02e-05 | LR_heads 4.51e-04
+Iter 4500/20000 | Loss 2.5444 | LR_b(last) 9.00e-05 | LR_heads 4.50e-04
+Iter 4550/20000 | Loss 2.1994 | LR_b(last) 8.97e-05 | LR_heads 4.49e-04
+Iter 4600/20000 | Loss 2.3239 | LR_b(last) 8.95e-05 | LR_heads 4.47e-04
+[Eval-EMA] Iter 4600 Acc: 0.545877
+[BEST] Acc improved 0.534262 → 0.545877 at iter 4600. Saved BEST to ../model2/Large_best_ft.pth
+Iter 4650/20000 | Loss 2.9013 | LR_b(last) 8.92e-05 | LR_heads 4.46e-04
+Iter 4700/20000 | Loss 1.3448 | LR_b(last) 8.90e-05 | LR_heads 4.45e-04
+Iter 4750/20000 | Loss 2.3426 | LR_b(last) 8.87e-05 | LR_heads 4.44e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 4800/20000 | Loss 2.1584 | LR_b(last) 8.85e-05 | LR_heads 4.42e-04
+[Eval-EMA] Iter 4800 Acc: 0.555168
+[BEST] Acc improved 0.545877 → 0.555168 at iter 4800. Saved BEST to ../model2/Large_best_ft.pth
+[Save] Saved to ../model2/Large_ft.pth
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 4850/20000 | Loss 1.9662 | LR_b(last) 8.82e-05 | LR_heads 4.41e-04
+Iter 4900/20000 | Loss 1.9329 | LR_b(last) 8.80e-05 | LR_heads 4.40e-04
+Iter 4950/20000 | Loss 1.6472 | LR_b(last) 8.77e-05 | LR_heads 4.38e-04
+Iter 5000/20000 | Loss 2.2268 | LR_b(last) 8.74e-05 | LR_heads 4.37e-04
+[Eval-EMA] Iter 5000 Acc: 0.557491
+[BEST] Acc improved 0.555168 → 0.557491 at iter 5000. Saved BEST to ../model2/Large_best_ft.pth
+Iter 5050/20000 | Loss 1.8011 | LR_b(last) 8.72e-05 | LR_heads 4.36e-04
+Iter 5100/20000 | Loss 2.3156 | LR_b(last) 8.69e-05 | LR_heads 4.34e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 5150/20000 | Loss 2.0408 | LR_b(last) 8.66e-05 | LR_heads 4.33e-04
+Iter 5200/20000 | Loss 2.1567 | LR_b(last) 8.63e-05 | LR_heads 4.32e-04
+[Eval-EMA] Iter 5200 Acc: 0.559814
+[BEST] Acc improved 0.557491 → 0.559814 at iter 5200. Saved BEST to ../model2/Large_best_ft.pth
+Iter 5250/20000 | Loss 2.1182 | LR_b(last) 8.61e-05 | LR_heads 4.30e-04
+Iter 5300/20000 | Loss 1.9101 | LR_b(last) 8.58e-05 | LR_heads 4.29e-04
+Iter 5350/20000 | Loss 2.1913 | LR_b(last) 8.55e-05 | LR_heads 4.28e-04
+Iter 5400/20000 | Loss 1.9509 | LR_b(last) 8.52e-05 | LR_heads 4.26e-04
+[Eval-EMA] Iter 5400 Acc: 0.563298
+[BEST] Acc improved 0.559814 → 0.563298 at iter 5400. Saved BEST to ../model2/Large_best_ft.pth
+Iter 5450/20000 | Loss 2.3501 | LR_b(last) 8.49e-05 | LR_heads 4.25e-04
+Iter 5500/20000 | Loss 1.5268 | LR_b(last) 8.46e-05 | LR_heads 4.23e-04
+Iter 5550/20000 | Loss 2.1554 | LR_b(last) 8.44e-05 | LR_heads 4.22e-04
+Iter 5600/20000 | Loss 1.8092 | LR_b(last) 8.41e-05 | LR_heads 4.20e-04
+[Eval-EMA] Iter 5600 Acc: 0.563298
+[Save] Saved to ../model2/Large_ft.pth
+Iter 5650/20000 | Loss 2.4377 | LR_b(last) 8.38e-05 | LR_heads 4.19e-04
+Iter 5700/20000 | Loss 2.0018 | LR_b(last) 8.35e-05 | LR_heads 4.17e-04
+Iter 5750/20000 | Loss 2.1237 | LR_b(last) 8.32e-05 | LR_heads 4.16e-04
+Iter 5800/20000 | Loss 2.4764 | LR_b(last) 8.29e-05 | LR_heads 4.14e-04
+[Eval-EMA] Iter 5800 Acc: 0.567944
+[BEST] Acc improved 0.563298 → 0.567944 at iter 5800. Saved BEST to ../model2/Large_best_ft.pth
+Iter 5850/20000 | Loss 2.7238 | LR_b(last) 8.26e-05 | LR_heads 4.13e-04
+Iter 5900/20000 | Loss 2.2003 | LR_b(last) 8.22e-05 | LR_heads 4.11e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 5950/20000 | Loss 1.7549 | LR_b(last) 8.19e-05 | LR_heads 4.10e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 6000/20000 | Loss 1.7626 | LR_b(last) 8.16e-05 | LR_heads 4.08e-04
+[Eval-EMA] Iter 6000 Acc: 0.570267
+[BEST] Acc improved 0.567944 → 0.570267 at iter 6000. Saved BEST to ../model2/Large_best_ft.pth
+Iter 6050/20000 | Loss 2.4404 | LR_b(last) 8.13e-05 | LR_heads 4.07e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 6100/20000 | Loss 1.7325 | LR_b(last) 8.10e-05 | LR_heads 4.05e-04
+Iter 6150/20000 | Loss 2.1047 | LR_b(last) 8.07e-05 | LR_heads 4.03e-04
+Iter 6200/20000 | Loss 1.7447 | LR_b(last) 8.04e-05 | LR_heads 4.02e-04
+[Eval-EMA] Iter 6200 Acc: 0.572590
+[BEST] Acc improved 0.570267 → 0.572590 at iter 6200. Saved BEST to ../model2/Large_best_ft.pth
+Iter 6250/20000 | Loss 2.2354 | LR_b(last) 8.00e-05 | LR_heads 4.00e-04
+Iter 6300/20000 | Loss 1.5720 | LR_b(last) 7.97e-05 | LR_heads 3.99e-04
+Iter 6350/20000 | Loss 1.6790 | LR_b(last) 7.94e-05 | LR_heads 3.97e-04
+Iter 6400/20000 | Loss 1.8162 | LR_b(last) 7.91e-05 | LR_heads 3.95e-04
+[Eval-EMA] Iter 6400 Acc: 0.579559
+[BEST] Acc improved 0.572590 → 0.579559 at iter 6400. Saved BEST to ../model2/Large_best_ft.pth
+[Save] Saved to ../model2/Large_ft.pth
+Iter 6450/20000 | Loss 2.3276 | LR_b(last) 7.87e-05 | LR_heads 3.94e-04
+Iter 6500/20000 | Loss 2.4905 | LR_b(last) 7.84e-05 | LR_heads 3.92e-04
+Iter 6550/20000 | Loss 2.5036 | LR_b(last) 7.81e-05 | LR_heads 3.90e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 6600/20000 | Loss 1.6024 | LR_b(last) 7.77e-05 | LR_heads 3.89e-04
+[Eval-EMA] Iter 6600 Acc: 0.578397
+Iter 6650/20000 | Loss 1.9083 | LR_b(last) 7.74e-05 | LR_heads 3.87e-04
+Iter 6700/20000 | Loss 1.7513 | LR_b(last) 7.71e-05 | LR_heads 3.85e-04
+Iter 6750/20000 | Loss 1.9503 | LR_b(last) 7.67e-05 | LR_heads 3.84e-04
+Iter 6800/20000 | Loss 1.7421 | LR_b(last) 7.64e-05 | LR_heads 3.82e-04
+[Eval-EMA] Iter 6800 Acc: 0.577236
+Iter 6850/20000 | Loss 1.5510 | LR_b(last) 7.60e-05 | LR_heads 3.80e-04
+Iter 6900/20000 | Loss 1.8624 | LR_b(last) 7.57e-05 | LR_heads 3.79e-04
+Iter 6950/20000 | Loss 2.2281 | LR_b(last) 7.54e-05 | LR_heads 3.77e-04
+Iter 7000/20000 | Loss 1.9461 | LR_b(last) 7.50e-05 | LR_heads 3.75e-04
+[Eval-EMA] Iter 7000 Acc: 0.577236
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 7050/20000 | Loss 1.6906 | LR_b(last) 7.47e-05 | LR_heads 3.73e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 7100/20000 | Loss 1.6379 | LR_b(last) 7.43e-05 | LR_heads 3.72e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 7150/20000 | Loss 1.6276 | LR_b(last) 7.40e-05 | LR_heads 3.70e-04
+Iter 7200/20000 | Loss 1.6877 | LR_b(last) 7.36e-05 | LR_heads 3.68e-04
+[Eval-EMA] Iter 7200 Acc: 0.581882
+[BEST] Acc improved 0.579559 → 0.581882 at iter 7200. Saved BEST to ../model2/Large_best_ft.pth
+[Save] Saved to ../model2/Large_ft.pth
+Iter 7250/20000 | Loss 1.6645 | LR_b(last) 7.32e-05 | LR_heads 3.66e-04
+Iter 7300/20000 | Loss 2.4116 | LR_b(last) 7.29e-05 | LR_heads 3.64e-04
+Iter 7350/20000 | Loss 1.6596 | LR_b(last) 7.25e-05 | LR_heads 3.63e-04
+Iter 7400/20000 | Loss 2.2429 | LR_b(last) 7.22e-05 | LR_heads 3.61e-04
+[Eval-EMA] Iter 7400 Acc: 0.583043
+[BEST] Acc improved 0.581882 → 0.583043 at iter 7400. Saved BEST to ../model2/Large_best_ft.pth
+Iter 7450/20000 | Loss 1.8616 | LR_b(last) 7.18e-05 | LR_heads 3.59e-04
+Iter 7500/20000 | Loss 1.8885 | LR_b(last) 7.14e-05 | LR_heads 3.57e-04
+Iter 7550/20000 | Loss 1.6330 | LR_b(last) 7.11e-05 | LR_heads 3.55e-04
+Iter 7600/20000 | Loss 1.9164 | LR_b(last) 7.07e-05 | LR_heads 3.54e-04
+[Eval-EMA] Iter 7600 Acc: 0.586527
+[BEST] Acc improved 0.583043 → 0.586527 at iter 7600. Saved BEST to ../model2/Large_best_ft.pth
+Iter 7650/20000 | Loss 1.6013 | LR_b(last) 7.03e-05 | LR_heads 3.52e-04
+Iter 7700/20000 | Loss 2.0563 | LR_b(last) 7.00e-05 | LR_heads 3.50e-04
+Iter 7750/20000 | Loss 1.4401 | LR_b(last) 6.96e-05 | LR_heads 3.48e-04
+Iter 7800/20000 | Loss 2.3561 | LR_b(last) 6.92e-05 | LR_heads 3.46e-04
+[Eval-EMA] Iter 7800 Acc: 0.583043
+Iter 7850/20000 | Loss 1.8580 | LR_b(last) 6.89e-05 | LR_heads 3.44e-04
+Iter 7900/20000 | Loss 2.1326 | LR_b(last) 6.85e-05 | LR_heads 3.42e-04
+Iter 7950/20000 | Loss 2.3943 | LR_b(last) 6.81e-05 | LR_heads 3.41e-04
+Iter 8000/20000 | Loss 1.6374 | LR_b(last) 6.77e-05 | LR_heads 3.39e-04
+[Eval-EMA] Iter 8000 Acc: 0.585366
+[Save] Saved to ../model2/Large_ft.pth
+Iter 8050/20000 | Loss 2.2108 | LR_b(last) 6.74e-05 | LR_heads 3.37e-04
+Iter 8100/20000 | Loss 1.4493 | LR_b(last) 6.70e-05 | LR_heads 3.35e-04
+Iter 8150/20000 | Loss 1.7878 | LR_b(last) 6.66e-05 | LR_heads 3.33e-04
+Iter 8200/20000 | Loss 1.9710 | LR_b(last) 6.62e-05 | LR_heads 3.31e-04
+[Eval-EMA] Iter 8200 Acc: 0.584204
+Iter 8250/20000 | Loss 1.8021 | LR_b(last) 6.58e-05 | LR_heads 3.29e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 8300/20000 | Loss 2.0140 | LR_b(last) 6.55e-05 | LR_heads 3.27e-04
+Iter 8350/20000 | Loss 1.3277 | LR_b(last) 6.51e-05 | LR_heads 3.25e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 8400/20000 | Loss 2.8396 | LR_b(last) 6.47e-05 | LR_heads 3.23e-04
+[Eval-EMA] Iter 8400 Acc: 0.584204
+Iter 8450/20000 | Loss 1.6404 | LR_b(last) 6.43e-05 | LR_heads 3.22e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 8500/20000 | Loss 1.9380 | LR_b(last) 6.39e-05 | LR_heads 3.20e-04
+Iter 8550/20000 | Loss 1.5593 | LR_b(last) 6.35e-05 | LR_heads 3.18e-04
+Iter 8600/20000 | Loss 2.0164 | LR_b(last) 6.31e-05 | LR_heads 3.16e-04
+[Eval-EMA] Iter 8600 Acc: 0.583043
+Iter 8650/20000 | Loss 1.9549 | LR_b(last) 6.28e-05 | LR_heads 3.14e-04
+Iter 8700/20000 | Loss 1.8913 | LR_b(last) 6.24e-05 | LR_heads 3.12e-04
+Iter 8750/20000 | Loss 1.8656 | LR_b(last) 6.20e-05 | LR_heads 3.10e-04
+Iter 8800/20000 | Loss 1.4078 | LR_b(last) 6.16e-05 | LR_heads 3.08e-04
+[Eval-EMA] Iter 8800 Acc: 0.583043
+[Save] Saved to ../model2/Large_ft.pth
+Iter 8850/20000 | Loss 1.7040 | LR_b(last) 6.12e-05 | LR_heads 3.06e-04
+Iter 8900/20000 | Loss 2.1661 | LR_b(last) 6.08e-05 | LR_heads 3.04e-04
+Iter 8950/20000 | Loss 1.5042 | LR_b(last) 6.04e-05 | LR_heads 3.02e-04
+Iter 9000/20000 | Loss 2.7092 | LR_b(last) 6.00e-05 | LR_heads 3.00e-04
+[Eval-EMA] Iter 9000 Acc: 0.586527
+Iter 9050/20000 | Loss 1.6860 | LR_b(last) 5.96e-05 | LR_heads 2.98e-04
+Iter 9100/20000 | Loss 1.7633 | LR_b(last) 5.92e-05 | LR_heads 2.96e-04
+Iter 9150/20000 | Loss 1.8944 | LR_b(last) 5.88e-05 | LR_heads 2.94e-04
+Iter 9200/20000 | Loss 1.5418 | LR_b(last) 5.84e-05 | LR_heads 2.92e-04
+[Eval-EMA] Iter 9200 Acc: 0.585366
+Iter 9250/20000 | Loss 1.4495 | LR_b(last) 5.80e-05 | LR_heads 2.90e-04
+Iter 9300/20000 | Loss 2.3274 | LR_b(last) 5.76e-05 | LR_heads 2.88e-04
+Iter 9350/20000 | Loss 1.8623 | LR_b(last) 5.72e-05 | LR_heads 2.86e-04
+Iter 9400/20000 | Loss 1.3668 | LR_b(last) 5.68e-05 | LR_heads 2.84e-04
+[Eval-EMA] Iter 9400 Acc: 0.581882
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 9450/20000 | Loss 1.8388 | LR_b(last) 5.64e-05 | LR_heads 2.82e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 9500/20000 | Loss 1.6989 | LR_b(last) 5.60e-05 | LR_heads 2.80e-04
+Iter 9550/20000 | Loss 2.2837 | LR_b(last) 5.56e-05 | LR_heads 2.78e-04
+/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/PIL/Image.py:1045: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+Iter 9600/20000 | Loss 1.8637 | LR_b(last) 5.52e-05 | LR_heads 2.76e-04
+[Eval-EMA] Iter 9600 Acc: 0.581882
+[Save] Saved to ../model2/Large_ft.pth
+Iter 9650/20000 | Loss 1.5147 | LR_b(last) 5.48e-05 | LR_heads 2.74e-04
+Traceback (most recent call last):
+  File "/home/knlin/project/Large/finetuning.py", line 288, in <module>
+  File "/home/knlin/project/Large/finetuning.py", line 216, in train
+    best_iter = global_step
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+
+===== New run: 2025-10-05T01:25:21.448832 =====
+timm version: 1.0.17
+pretrained cfg: {'url': 'https://github.com/SwinTransformer/storage/releases/download/v2.0.0/swinv2_large_patch4_window12to24_192to384_22kto1k_ft.pth', 'hf_hub_id': 'timm/swinv2_large_window12to24_192to384.ms_in22k_ft_in1k', 'architecture': 'swinv2_large_window12to24_192to384', 'tag': 'ms_in22k_ft_in1k', 'custom_load': False, 'input_size': (3, 384, 384), 'fixed_input_size': True, 'interpolation': 'bicubic', 'crop_pct': 1.0, 'crop_mode': 'center', 'mean': (0.485, 0.456, 0.406), 'std': (0.229, 0.224, 0.225), 'num_classes': 1000, 'pool_size': (12, 12), 'first_conv': 'patch_embed.proj', 'classifier': 'head.fc', 'license': 'mit'}
+[DP] Using DataParallel with 3 GPUs
+[Resume] resume from global_step=26400
+Starting training on train_B (SwinV2-Large@384) with Gradient Accumulation...
+Traceback (most recent call last):
+  File "/home/knlin/project/Large/finetuning.py", line 244, in <module>
+    train()
+  File "/home/knlin/project/Large/finetuning.py", line 167, in train
+    logits = model(imgs, ds_flag=0)   # 只训练 B 头
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 193, in forward
+    outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 212, in parallel_apply
+    return parallel_apply(
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/parallel/parallel_apply.py", line 126, in parallel_apply
+    output.reraise()
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/_utils.py", line 733, in reraise
+    raise exception
+torch.OutOfMemoryError: Caught OutOfMemoryError in replica 1 on device 1.
+Original Traceback (most recent call last):
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/parallel/parallel_apply.py", line 96, in _worker
+    output = module(*input, **kwargs)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/knlin/project/Large/model.py", line 26, in forward
+    feats = self.backbone(x)  # 提取特征
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/timm/models/swin_transformer_v2.py", line 967, in forward
+    x = self.forward_features(x)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/timm/models/swin_transformer_v2.py", line 942, in forward_features
+    x = self.layers(x)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/timm/models/swin_transformer_v2.py", line 624, in forward
+    x = blk(x)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/timm/models/swin_transformer_v2.py", line 451, in forward
+    x = x + self.drop_path1(self.norm1(self._attn(x)))
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/timm/models/swin_transformer_v2.py", line 435, in _attn
+    attn_windows = self.attn(x_windows, mask=attn_mask)  # nW*B, window_size*window_size, C
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/knlin/anaconda3/envs/knl/lib/python3.10/site-packages/timm/models/swin_transformer_v2.py", line 202, in forward
+    attn = attn * logit_scale
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 122.00 MiB. GPU 1 has a total capacity of 23.68 GiB of which 38.88 MiB is free. Process 774569 has 14.24 GiB memory in use. Including non-PyTorch memory, this process has 9.39 GiB memory in use. Of the allocated memory 8.90 GiB is allocated by PyTorch, and 104.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
