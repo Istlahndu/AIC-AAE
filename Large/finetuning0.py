@@ -1,4 +1,3 @@
-# train_B.py (Large + Gradient Accumulation + 新AMP API)
 import os
 import math
 import torch

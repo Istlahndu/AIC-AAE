@@ -9,9 +9,6 @@ import timm
 from timm.data import resolve_model_data_config, create_transform
 
 
-# ==========================================================
-#  模型定义（与你给出的完全一致）
-# ==========================================================
 class SwinV2MultiHead(nn.Module):
     def __init__(self, num_classes_a=400, num_classes_b=5000):
         super().__init__()
@@ -32,9 +29,6 @@ class SwinV2MultiHead(nn.Module):
             return self.head_b(feats)
 
 
-# ==========================================================
-#  图片数据集
-# ==========================================================
 IMG_EXTS = (".jpg", ".jpeg", ".png", ".bmp", ".webp", ".tif", ".tiff")
 
 
@@ -57,9 +51,6 @@ class ImageFolderFlat(Dataset):
         return img, path.name
 
 
-# ==========================================================
-#  加载 checkpoint（优先 EMA）
-# ==========================================================
 def load_checkpoint(model, ckpt_path, device):
     ckpt = torch.load(ckpt_path, map_location=device)
     if isinstance(ckpt, dict) and "ema" in ckpt and isinstance(ckpt["ema"], dict) and "module" in ckpt["ema"]:
@@ -73,9 +64,6 @@ def load_checkpoint(model, ckpt_path, device):
         print(f"[INFO] Loaded plain state_dict from {ckpt_path}")
 
 
-# ==========================================================
-#  推理函数
-# ==========================================================
 @torch.inference_mode()
 def run_infer(model, dataloader, device, ds_flag):
     model.eval()
@@ -98,13 +86,11 @@ def write_csv(results, out_path):
     print(f"[OK] {out_path} written, {len(results)} lines")
 
 
-# ==========================================================
-#  主函数（无命令行参数）
-# ==========================================================
 def main():
-    # === 路径配置（请根据你的路径修改） ===
-    test_5000_dir = "../data/test_B"
-    test_400_dir = "../data/test_A"
+    # test_5000_dir = "../data/test_B"  # 初赛5000
+    # test_400_dir = "../data/test_A"  # 初赛400
+    test_5000_dir = "../data/data2/test_5000"  # 复赛5000
+    test_400_dir = "../data/data2/test_400"  # 复赛400
     ckpt_5000 = "../model2/Large_best2.pth"
     ckpt_400 = "../model2/Large_best0.pth"
     out_5000 = "preds_5000.csv"
@@ -112,21 +98,21 @@ def main():
     batch_size = 32
     num_workers = 4
 
-    device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cuda:2" if torch.cuda.is_available() else "cpu")
     print(f"[INFO] Device: {device}")
 
     model = SwinV2MultiHead(num_classes_a=400, num_classes_b=5000).to(device)
     transform = create_transform(**resolve_model_data_config(model.backbone))
 
-    # ---------- 5000 类 ----------
-    # print("\n[Stage] 5000-class inference")
-    # load_checkpoint(model, ckpt_5000, device)
-    # ds_5000 = ImageFolderFlat(test_5000_dir, transform)
-    # dl_5000 = DataLoader(ds_5000, batch_size=batch_size, shuffle=False, num_workers=num_workers)
-    # results_5000 = run_infer(model, dl_5000, device, ds_flag=1)
-    # write_csv(results_5000, out_5000)
+    # ---------- 5000 ----------
+    print("\n[Stage] 5000-class inference")
+    load_checkpoint(model, ckpt_5000, device)
+    ds_5000 = ImageFolderFlat(test_5000_dir, transform)
+    dl_5000 = DataLoader(ds_5000, batch_size=batch_size, shuffle=False, num_workers=num_workers)
+    results_5000 = run_infer(model, dl_5000, device, ds_flag=1)
+    write_csv(results_5000, out_5000)
 
-    # ---------- 400 类 ----------
+    # ---------- 400 ----------
     print("\n[Stage] 400-class inference")
     load_checkpoint(model, ckpt_400, device)
     ds_400 = ImageFolderFlat(test_400_dir, transform)
