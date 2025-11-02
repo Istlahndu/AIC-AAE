@@ -1,0 +1,54 @@
+name: Build and push Docker image to GHCR
+
+on:
+  workflow_dispatch: {}          # 手动触发
+  # 也可在推送时自动触发（按需开启）
+  # push:
+  #   branches: [ main, master ]
+
+permissions:
+  contents: read
+  packages: write                # 允许向 GHCR 推送镜像
+  id-token: write
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # 规范化命名：GHCR 仓库名必须小写
+      - name: Prepare image name (lowercase owner)
+        id: prep
+        run: |
+          OWNER_LC=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          echo "OWNER_LC=$OWNER_LC" >> $GITHUB_ENV
+          echo "SHORT_SHA=${GITHUB_SHA::7}" >> $GITHUB_ENV
+          echo "IMAGE=ghcr.io/$OWNER_LC/aaetraining" >> $GITHUB_ENV
+          echo "Image will be tagged as: ghcr.io/$OWNER_LC/aaetraining:{latest,${GITHUB_SHA::7}}"
+
+      # 构建并推送（带缓存，加速后续构建）
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .                 # 若 Dockerfile 不在根目录，改成对应路径
+          file: ./Dockerfile         # 若文件名/路径不同，也在此修改
+          platforms: linux/amd64     # 按需添加：linux/arm64
+          push: true
+          tags: |
+            ${{ env.IMAGE }}:latest
+            ${{ env.IMAGE }}:${{ env.SHORT_SHA }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
