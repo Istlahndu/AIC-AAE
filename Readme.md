@@ -34,11 +34,13 @@ python eval.py
 ### 相关说明
 + 本项目文件仅包含源代码与模型权重，docker镜像请在网盘链接中获取
 
-+ 本项目需在至少 3*3090 环境下训练 60+h 复现请根据实际情况调整batchsize
-
 + 相关代码托管于github：https://github.com/Istlahndu/AIC-AAE
 
 + 代码库含有本项目的docker镜像：
 https://github.com/Istlahndu/AIC-AAE/pkgs/container/aaetraining
+
++ 训练不使用脚本进行，执行训练代码请参照前文给出的命令，不再单独使用bash
+
++ 训练需要在多卡分布式进行，请确保有足够的容量存放batchsize
 
 + 由于docker镜像用于辅助复现，镜像内不含模型权重文件

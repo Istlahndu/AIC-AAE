@@ -9,7 +9,7 @@ class SwinV2MultiHead(nn.Module):
         super().__init__()
         self.backbone = timm.create_model(
             'swinv2_large_window12to24_192to384',
-            pretrained=True,
+            pretrained=False,
             num_classes=0   
         )
         print("timm version:", timm.__version__)

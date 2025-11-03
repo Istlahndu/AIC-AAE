@@ -39,7 +39,7 @@ def unwrap(m):
 DATASET        = '../data/train_B'
 BATCH_SIZE     = 12                      
 ACCUM_STEPS    = 3                       
-TOTAL_ITERS    = 40000                   
+TOTAL_ITERS    = 60000                   
 BASE_LR        = 1e-4                    
 HEAD_LR_MULT   = 5.0                     
 WEIGHT_DECAY   = 5e-2
